@@ -13,6 +13,25 @@
 - After/present contrast:
 - Transformation/tension:
 
+## Hook Candidate Tournament
+
+| Candidate | Strategy ID | Surface form | Opening signature | Concrete anchor | Tension | Early payoff path | Similarity risk |
+|---|---|---|---|---|---|---|---|
+| 1 | | | | | | | |
+| 2 | | | | | | | |
+| 3 | | | | | | | |
+| 4 | | | | | | | |
+
+## Hook Strategy Selection
+
+- Strategy ID:
+- Hook archetype:
+- Surface form:
+- Opening signature:
+- Recent projects checked:
+- Rejected similar patterns:
+- Why this opening is distinct:
+
 ## Central question
 
 
