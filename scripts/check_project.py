@@ -8,6 +8,8 @@ import json
 import re
 from pathlib import Path
 
+from anti_template import validate as validate_anti_template
+
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_FILES = [
     "00_input.md",
@@ -64,6 +66,11 @@ def gate_passed(value: object) -> bool:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check a YouTube script project")
     parser.add_argument("project", help="Project slug or path")
+    parser.add_argument(
+        "--write-style-state",
+        action="store_true",
+        help="Write style fingerprint and anti-template gate results to project_state.json",
+    )
     args = parser.parse_args()
 
     project = Path(args.project)
@@ -146,9 +153,28 @@ def main() -> int:
             f"Final contains {len(percentages)} percentage claim(s); confirm every one has direct ledger support"
         )
 
+    anti_report = None
+    if final_text and state_path.exists():
+        anti_errors, anti_warnings, anti_report = validate_anti_template(
+            project,
+            write=args.write_style_state,
+        )
+        errors.extend(f"Anti-template: {item}" for item in anti_errors)
+        warnings.extend(f"Anti-template: {item}" for item in anti_warnings)
+
     project_display = project.relative_to(ROOT) if project.is_relative_to(ROOT) else project
     print(f"Project: {project_display}")
     print(f"Final words: {final_words}" + (f" / target {target}" if target else ""))
+    if anti_report:
+        print(
+            "Anti-template: "
+            f"surface={anti_report['surface']} "
+            f"signature={anti_report['signature'] or '-'} "
+            f"scaffolding={anti_report['scaffold_hits']} "
+            f"max_similarity={anti_report['max_similarity']:.3f}"
+        )
+        if anti_report["closest_project"]:
+            print(f"Closest recent project: {anti_report['closest_project']}")
 
     for item in warnings:
         print(f"WARN: {item}")
