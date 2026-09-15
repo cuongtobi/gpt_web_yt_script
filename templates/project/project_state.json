@@ -1,5 +1,6 @@
 {
   "project": "",
+  "pipeline_version": "simple_v1",
   "current_stage": "input",
   "language": "",
   "duration_minutes": 0,
@@ -8,36 +9,10 @@
   "draft_words": 0,
   "final_words": 0,
   "estimated_duration_minutes": 0,
-  "architecture_gate": "PENDING",
   "fact_audit": "PENDING",
-  "retention_audit": "PENDING",
-  "first_3_minutes": "PENDING",
-  "act_progression": "PENDING",
-  "scale_escalation": "PENDING",
-  "scene_density": "PENDING",
-  "reveal_ladder": "PENDING",
   "timing_gate": "PENDING",
-  "anti_template_version": 1,
-  "narrator_scaffolding_gate": "PENDING",
-  "cross_project_similarity_gate": {
-    "verdict": "PENDING",
-    "compared_projects": [],
-    "closest_project": "",
-    "max_opening_similarity": 0.0,
-    "surface_form_repeat": false,
-    "opening_signature_repeat": false
-  },
-  "style_fingerprint": {
-    "hook_strategy": "",
-    "hook_surface_form": "",
-    "opening_signature": "",
-    "opening_first_words": "",
-    "dominant_transition_forms": [],
-    "narrator_scaffolding_hits": 0,
-    "rhetorical_question_count": 0,
-    "sentence_length_profile": "",
-    "finalized": false
-  },
   "blocked_claims": [],
+  "important_uncertainties": [],
+  "stage_history": [],
   "updated_at": ""
 }
