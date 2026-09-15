@@ -5,32 +5,40 @@
 
 ## Hook — 0:00–0:45
 - Word budget:
-- Question:
+- Central contradiction:
+- Central question:
+- Concrete image:
 - Claim IDs:
-- Evidence:
-- Meaning:
-- Consequence:
+- Reveal / promise:
 - Visual anchor:
-- Open loop:
-- Payoff delivered:
-- Novelty/stakes:
+- Macro loop opened:
 
 ## Beat 1 —
 - Time:
 - Word budget:
-- Question:
-- Claim IDs:
-- Evidence:
+- Viewer currently wants to know:
+- Story tension / contradiction:
+- Question being answered:
+- Key claim IDs:
+- Concrete evidence / scene:
+- Reveal / payoff:
 - Meaning:
 - Consequence:
+- Curiosity handoff:
 - Visual anchor:
-- Open loop / transition:
-- Payoff delivered:
-- Novelty/stakes:
+- Open loops opened:
+- Open loops paid:
+- Reveal level: R1/R2/R3/R4/R5
+- Novelty/stakes: 1–5
+
+## Beat dependency check
+
+Because the viewer just learned ______, the next thing they naturally need to know is ______.
 
 ## Ending
 - Time:
 - Word budget:
 - Answer:
+- Reframe:
 - Larger implication:
 - Callback:
