@@ -17,6 +17,27 @@
   "scene_density": "PENDING",
   "reveal_ladder": "PENDING",
   "timing_gate": "PENDING",
+  "anti_template_version": 1,
+  "narrator_scaffolding_gate": "PENDING",
+  "cross_project_similarity_gate": {
+    "verdict": "PENDING",
+    "compared_projects": [],
+    "closest_project": "",
+    "max_opening_similarity": 0.0,
+    "surface_form_repeat": false,
+    "opening_signature_repeat": false
+  },
+  "style_fingerprint": {
+    "hook_strategy": "",
+    "hook_surface_form": "",
+    "opening_signature": "",
+    "opening_first_words": "",
+    "dominant_transition_forms": [],
+    "narrator_scaffolding_hits": 0,
+    "rhetorical_question_count": 0,
+    "sentence_length_profile": "",
+    "finalized": false
+  },
   "blocked_claims": [],
   "updated_at": ""
 }
