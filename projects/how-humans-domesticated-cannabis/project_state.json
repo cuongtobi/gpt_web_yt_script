@@ -1,7 +1,7 @@
 {
   "project": "how-humans-domesticated-cannabis",
   "pipeline_version": "simple_v1",
-  "current_stage": "draft",
+  "current_stage": "fact_audit",
   "language": "English",
   "duration_minutes": 25,
   "target_wpm": 158,
@@ -9,7 +9,7 @@
   "draft_words": 3892,
   "final_words": 0,
   "estimated_duration_minutes": 0,
-  "fact_audit": "PENDING",
+  "fact_audit": "PASS",
   "timing_gate": "PENDING",
   "blocked_claims": [],
   "important_uncertainties": [
@@ -21,7 +21,8 @@
     {"stage": "input", "status": "COMPLETE", "timestamp": "2026-09-15T22:20:00+07:00"},
     {"stage": "research", "status": "PASS", "timestamp": "2026-09-15T22:20:00+07:00"},
     {"stage": "story_spine", "status": "PASS", "timestamp": "2026-09-15T22:20:00+07:00"},
-    {"stage": "draft", "status": "PASS", "timestamp": "2026-09-15T22:20:00+07:00"}
+    {"stage": "draft", "status": "PASS", "timestamp": "2026-09-15T22:20:00+07:00"},
+    {"stage": "fact_audit", "status": "PASS", "timestamp": "2026-09-15T22:20:00+07:00"}
   ],
   "updated_at": "2026-09-15T22:20:00+07:00"
 }
