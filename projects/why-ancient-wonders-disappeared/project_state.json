@@ -1,0 +1,30 @@
+{
+  "pipeline_version": "simple_v1",
+  "project": "why-ancient-wonders-disappeared",
+  "current_stage": "final",
+  "language": "tiếng Việt",
+  "duration_minutes": 15,
+  "target_wpm": 152,
+  "target_words": 2280,
+  "draft_words": 2374,
+  "final_words": 2370,
+  "estimated_duration_minutes": 15.59,
+  "fact_audit": "PASS",
+  "timing_gate": "PASS",
+  "blocked_claims": [],
+  "important_uncertainties": [
+    "The final removal of the fallen Colossus is uncertain; the scrap-sale story is late and disputed.",
+    "The final fate of the Statue of Zeus is uncertain; the Constantinople/fire tradition is qualified.",
+    "The Hanging Gardens have no universally accepted archaeological identification at Babylon; the Nineveh hypothesis remains debated.",
+    "The explanation for Great Pyramid survival is comparative interpretation, not a single experimentally proven cause."
+  ],
+  "stage_history": [
+    "input",
+    "research",
+    "story_spine",
+    "draft",
+    "fact_audit",
+    "final"
+  ],
+  "updated_at": "2026-09-15T21:45:00+07:00"
+}
