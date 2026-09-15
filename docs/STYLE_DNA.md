@@ -33,6 +33,18 @@ Opening đẹp nhưng không chứa contradiction của toàn video là hook y�
 
 Không mở bằng định nghĩa, methodology, caveat, disclaimer hoặc 60 giây bối cảnh trước khi có tension.
 
+### Hai hook archetype ưu tiên
+
+**Transformation Hook**
+
+`concrete before-state → extreme after/present contrast → transformation cần giải thích → central question`
+
+**World-Before-X Hook**
+
+`đặt viewer vào thế giới trước khi X tồn tại → loại bỏ giả định quen thuộc → cho thấy hiện tại kỳ lạ thế nào → central question`
+
+Không cần ép mọi topic vào hai mẫu này, nhưng chúng là default mạnh cho documentary lịch sử/explainer.
+
 ## 2. The viewer-question chain
 
 Video phải có một chuỗi câu hỏi trong đầu viewer. Không nhất thiết đọc thành rhetorical question trên narration.
@@ -206,6 +218,8 @@ Phân loại reveal:
 
 Một video 15–30 phút nên có nhiều R1/R2, ít nhất một R3, và nếu topic cho phép một R4 trước R5.
 
+R4 không phải câu dramatic. R4 phải khiến viewer **sửa model** họ vừa hình thành.
+
 ## 13. Escalation
 
 Escalation không nhất thiết là drama. Nó có thể là:
@@ -269,11 +283,12 @@ Con số chỉ được dùng nếu có measurement/source rõ.
 
 ## 18. Good ending
 
-Ending có 3 lớp:
+Ending có 4 lớp:
 
 1. **Answer** — phiên bản ngắn, rõ của central question.
 2. **Reframe** — vì sao answer này làm chủ đề trông khác đi.
-3. **Callback** — trở lại opening image/contrast ở góc nhìn mới.
+3. **Larger implication** — zoom out đủ lớn để thấy meaning nhưng không triết lý rỗng.
+4. **Callback** — trở lại opening image/contrast ở góc nhìn mới.
 
 Final image nên cụ thể nếu topic cho phép. Ending yếu chỉ liệt kê lại các section.
 
@@ -290,3 +305,114 @@ Tránh lặp xuyên nhiều video:
 - luôn kết bằng một câu triết lý chung chung.
 
 Giữ **logic engine** nhất quán, nhưng thay **surface form** theo chủ đề.
+
+## 20. Act Architecture
+
+Long-form documentary nên có cảm giác đang đi qua 4–5 acts, không chỉ một chuỗi beats.
+
+Default progression:
+
+1. **The mystery / before-state**
+2. **How it began**
+3. **How humans/systems pushed it further**
+4. **Unexpected consequence / reversal**
+5. **What it became / what it means**
+
+Tên và số acts có thể thay đổi theo topic.
+
+Act tốt phải có:
+
+- entry question/belief;
+- payoff;
+- escalation về depth/scale/stakes;
+- consequence mở act sau.
+
+Act yếu chỉ là “phần tiếp theo của timeline”.
+
+## 21. Scale Escalation Controller
+
+Gắn story scale theo:
+
+`object → individual → community → institution → civilization → global/system`
+
+Không cần tăng tuyến tính. Documentary hay thường zoom in rồi zoom out.
+
+Rules:
+
+- mỗi 2–3 beats phải có intentional scale change hoặc lý do rõ để giữ scale;
+- sau abstract/system section, ưu tiên return to object/person/action;
+- sau concrete case, hỏi consequence có thể zoom out tới đâu;
+- cuối video nên cảm thấy story lớn hơn opening nếu topic cho phép.
+
+Scale expansion không thay thế causal logic. Nó làm causal logic có cảm giác ngày càng lớn.
+
+## 22. Story Expansion Test
+
+Mỗi beat phải làm ít nhất một:
+
+- **deepens mechanism**;
+- **widens scale**;
+- **changes interpretation**;
+- **raises stakes**.
+
+Nếu không, beat có nguy cơ chỉ là fact dump.
+
+Câu hỏi kiểm tra:
+
+> “Viewer vừa hiểu nhiều hơn, hay chỉ biết thêm một fact?”
+
+## 23. Playable Scene Density
+
+Phân biệt:
+
+- **Visual anchor:** chart/map/object giúp minh họa;
+- **Playable scene:** editor có thể dựng một sequence có place/object/person/action/mechanism đang diễn ra.
+
+Target mềm cho topic giàu visual evidence:
+
+- khoảng 60–90 giây có một playable scene hoặc physical sequence;
+- không để >2 phút chỉ abstraction;
+- after abstract mechanism, return to human-scale/concrete consequence.
+
+Không bịa historical detail để đạt quota.
+
+## 24. Historical / explanatory detours
+
+Detour tốt không phải padding.
+
+Được giữ nếu nó làm ít nhất một:
+
+- widen scale;
+- create playable scene;
+- prove causal step;
+- create pattern interrupt;
+- create reframe/reversal;
+- raise stakes/consequence.
+
+Detour phải quay lại central story bằng consequence rõ.
+
+Nếu chỉ là fact thú vị, bỏ.
+
+## 25. Dramatize structure, never facts
+
+Có thể dramatize:
+
+- thứ tự reveal;
+- contrast;
+- before/after;
+- act turn;
+- scale change;
+- timing của qualification;
+- framing một verified mechanism thành physical sequence.
+
+Không thể dramatize bằng cách bịa:
+
+- dialogue;
+- emotion;
+- weather/music/smell;
+- exact ancient action;
+- motive;
+- crowd behavior;
+- certainty mạnh hơn evidence.
+
+Nguyên tắc: **make the presentation cinematic; keep the evidence literal.**
