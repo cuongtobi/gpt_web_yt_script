@@ -6,11 +6,25 @@
 ## Central contradiction
 
 
-## Opening engine
+## Hook archetype
 
+- Type: Transformation Hook | World-Before-X Hook | other
+- Before-state:
+- After/present contrast:
+- Transformation/tension:
 
 ## Central question
 
+
+## Act Architecture
+
+| Act | Viewer enters believing/asking | Main payoff | Scale/stakes/depth increase | Consequence opening next act |
+|---|---|---|---|---|
+| Act 1 | | | | |
+| Act 2 | | | | |
+| Act 3 | | | | |
+| Act 4 | | | | |
+| Act 5 | | | | |
 
 ## Viewer-question chain
 
@@ -24,16 +38,33 @@
 |---|---|---|---|---|---|
 | 1 | | | | | |
 
+## Scale Escalation Map
+
+| Beat/Act | Scale | Zoom direction | Why this scale now? |
+|---|---|---|---|
+| | object / individual / community / institution / civilization / global-system | in / out / hold | |
+
+## Story Expansion Test
+
+| Beat | Deepens mechanism | Widens scale | Changes interpretation | Raises stakes | Keep/cut/compress |
+|---|---|---|---|---|---|
+| | | | | | |
+
 ## Reveal ladder
 
-| Reveal | Level | What viewer learns | Why it matters |
-|---|---|---|---|
-| | R1/R2/R3/R4/R5 | | |
+| Reveal | Level | What viewer learns | Why it matters | What model/belief changes |
+|---|---|---|---|---|
+| | R1/R2/R3/R4/R5 | | | |
 
 ## Curiosity debt map
 
 | Loop | Opened | Partial payoff | Final payoff | Handoff |
 |---|---|---|---|---|
+
+## Historical / explanatory detours
+
+| Detour | Why allowed | Scale/scene/reframe/stakes value | Return path to central question |
+|---|---|---|---|
 
 ## Story-order notes
 
@@ -44,8 +75,11 @@
 ## Escalation map
 
 
-## Visual map
+## Visual Scene Density Map
 
+| Beat | Visual anchor | Playable scene | Human-scale element | Abstract risk |
+|---|---|---|---|---|
+| | | | | |
 
 ## Uncertainty map
 
@@ -54,6 +88,9 @@
 
 
 ## Reframe
+
+
+## Larger implication
 
 
 ## Callback
