@@ -119,6 +119,44 @@ Default PASS khi final word count nằm trong ±7% target.
 
 Nếu voice/TTS profile có tốc độ đo thực tế, dùng estimated audio duration thay cho word count.
 
+## Gate G — Cross-Project Anti-Template
+
+Áp dụng cho project có `anti_template_version >= 1`.
+
+PASS khi:
+
+- `style_fingerprint` đã finalized;
+- có `hook_strategy`, `hook_surface_form`, `opening_signature`;
+- surface form không lặp với 2 project gần nhất;
+- `imperative_imagination` kiểu “Hãy tưởng tượng… / Hãy thử… / Imagine…” không lặp trong recent window;
+- opening signature không lặp exact với 2 project gần nhất;
+- opening similarity với 5 project gần nhất dưới hard threshold của checker;
+- final không drift từ surface đã chọn trong Architecture quay về một template quen thuộc;
+- `narrator_scaffolding_gate = PASS`;
+- `cross_project_similarity_gate.verdict = PASS`.
+
+Checker thực thi:
+
+```bash
+python scripts/check_project.py projects/<slug> --write-style-state
+python scripts/check_project.py projects/<slug>
+```
+
+Hard FAIL khi:
+
+- opening similarity >= 0.68 với một recent project;
+- hook surface lặp theo rule trên;
+- opening signature lặp exact với một trong 2 project gần nhất;
+- narrator scaffolding marker >= 7;
+- style fingerprint chưa finalized hoặc thiếu field bắt buộc.
+
+Soft WARN khi:
+
+- opening similarity >= 0.54 nhưng < 0.68;
+- narrator scaffolding marker từ 4 đến 6.
+
+Legacy project không có `anti_template_version` chỉ WARN để tránh phá archive cũ.
+
 ## Anti-pattern checklist
 
 Tự động flag nếu có:
@@ -142,4 +180,6 @@ Tự động flag nếu có:
 - 3+ beats cùng scale mà không có intentional reason;
 - detour không có scale/scene/reframe/stakes value;
 - R4 chỉ là dramatic wording, không làm viewer sửa model;
-- act transition không đổi question, scale, stakes hoặc interpretation.
+- act transition không đổi question, scale, stakes hoặc interpretation;
+- opening surface/signature lặp với recent project;
+- narrator liên tục tự báo “đây là bước ngoặt / đây là nơi / câu hỏi tiếp theo là…” thay vì để evidence tạo turn.
