@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a simple_v1 YouTube documentary project from templates."""
+"""Create a simple_v2 YouTube documentary project from templates."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TEMPLATE_DIR = ROOT / "templates" / "project"
+TEMPLATE_DIR = ROOT / "templates" / "project_v2"
 PROJECTS_DIR = ROOT / "projects"
 
 
@@ -39,7 +39,7 @@ def replace_field(text: str, label: str, value: str) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Initialize a simple YouTube documentary project")
+    parser = argparse.ArgumentParser(description="Initialize a simple_v2 YouTube documentary project")
     parser.add_argument("--topic", required=True)
     parser.add_argument("--language", required=True)
     parser.add_argument("--duration", type=float, required=True, help="Target duration in minutes")
@@ -87,7 +87,7 @@ def main() -> int:
     state.update(
         {
             "project": slug,
-            "pipeline_version": "simple_v1",
+            "pipeline_version": "simple_v2",
             "language": args.language,
             "duration_minutes": args.duration,
             "target_wpm": wpm,
@@ -98,9 +98,10 @@ def main() -> int:
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print(f"Created projects/{slug}")
-    print("Pipeline: simple_v1")
+    print("Pipeline: simple_v2")
     print(f"Target: {target_words} words at {wpm} WPM (~{args.duration:g} minutes)")
-    print(f"Final artifact: projects/{slug}/05_final_script.md")
+    print("Next gate: Research -> Hook Lab -> WAIT FOR USER HOOK SELECTION")
+    print(f"Final artifact after selection and completion: projects/{slug}/06_final_script.md")
     return 0
 
 

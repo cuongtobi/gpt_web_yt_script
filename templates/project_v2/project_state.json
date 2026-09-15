@@ -1,0 +1,21 @@
+{
+  "project": "",
+  "pipeline_version": "simple_v2",
+  "current_stage": "input",
+  "language": "",
+  "duration_minutes": 0,
+  "target_wpm": 0,
+  "target_words": 0,
+  "hook_selection": "PENDING",
+  "selected_hook": "",
+  "selected_hook_mechanism": "",
+  "draft_words": 0,
+  "final_words": 0,
+  "estimated_duration_minutes": 0,
+  "fact_audit": "PENDING",
+  "timing_gate": "PENDING",
+  "blocked_claims": [],
+  "important_uncertainties": [],
+  "stage_history": [],
+  "updated_at": ""
+}

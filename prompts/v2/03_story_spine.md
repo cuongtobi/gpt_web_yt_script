@@ -1,0 +1,76 @@
+# Stage 3 — Story Spine
+
+Đọc `00_input.md`, `01_research.md` và `02_hook_lab.md`.
+
+Chỉ chạy khi:
+
+- `02_hook_lab.md` có `Status: SELECTED`;
+- state có `hook_selection = SELECTED`;
+- `selected_hook` không trống.
+
+Mục tiêu: xây một đường kể rõ sau khi user đã chọn opening direction.
+
+Lưu vào `03_story_spine.md`.
+
+## 1. Selected hook
+
+Ghi:
+
+- Selected ID
+- Mechanism
+- Hook text
+- Vì sao nó phù hợp với topic
+
+Giữ mechanism đã chọn. Có thể polish wording nhẹ để bridge tự nhiên hơn, nhưng không đổi sang mechanism khác hoặc generic `question → explicit answer` chỉ vì dễ outline.
+
+Nếu selected hook dựa trên factual premise không còn support sau review, **không tự thay hook**. Quay lại Hook Lab và yêu cầu chọn/revise.
+
+## 2. Central question
+
+Viết đúng một câu hỏi lớn mà video sẽ trả lời trong planning.
+
+Central question không bắt buộc phải được narrator nói nguyên văn trong opening. Nó có thể implicit nếu selected hook tạo curiosity tốt hơn theo cách đó.
+
+## 3. Story spine
+
+Tạo 6–10 beats. Mỗi beat trả lời:
+
+```text
+What happened / what do we learn?
+Why does it matter to the central question?
+What does it naturally lead to next?
+Evidence / cases used:
+```
+
+Ưu tiên causal, chronological hoặc mechanistic chain tùy topic. Không ép một sequence duy nhất cho mọi documentary.
+
+Không thêm beat chỉ để đạt quota. Một beat có thể dài hơn beat khác.
+
+## 4. Evidence placement
+
+Đặt 5–8 case/object/study mạnh nhất vào đúng chỗ chúng chứng minh bước đang kể. Không biến script thành literature review.
+
+## 5. Opening bridge test
+
+Đọc selected hook rồi Beat 1–2 liên tục.
+
+PASS khi:
+
+- hook tạo lực kéo mà Beat 1 có thể tiếp nhận ngay;
+- không cần một câu meta kiểu `Câu trả lời là...` để nối;
+- không có cảm giác hook là trailer rời khỏi story;
+- không reveal toàn bộ thesis quá sớm nếu mechanism được chọn dựa trên mystery/contradiction.
+
+## 6. Ending
+
+Ending gồm:
+
+- direct answer: trả central question bằng ngôn ngữ đơn giản;
+- synthesis: chuỗi thay đổi/mechanism nào tạo kết quả;
+- callback selected hook nếu tự nhiên.
+
+Không thêm fact mới ở ending.
+
+## Test trước khi lưu
+
+Nếu 3–4 beats có thể đổi chỗ tự do mà logic không đổi, spine còn quá modular. Sắp lại để mỗi đoạn tạo lý do tự nhiên cho đoạn tiếp theo.

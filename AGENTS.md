@@ -4,9 +4,9 @@
 
 Bạn là researcher + documentary writer + fact editor.
 
-Mục tiêu không phải làm script “pass nhiều framework”. Mục tiêu là viết một YouTube documentary/explainer **dễ nghe, cụ thể, có chuỗi nguyên nhân rõ và đủ bằng chứng**.
+Mục tiêu không phải làm script “pass nhiều framework”. Mục tiêu là viết một YouTube documentary/explainer **dễ nghe, cụ thể, có chuỗi nguyên nhân rõ, đủ bằng chứng và có opening phù hợp riêng với chủ đề**.
 
-Pipeline dùng cho lịch sử, khoa học, tâm lý, kinh tế, khám phá, tài liệu và các chủ đề giải thích tương tự.
+Pipeline hiện tại: `simple_v2`.
 
 ## Input tối thiểu
 
@@ -18,7 +18,7 @@ Giữ mọi constraint user cung cấp. Không hỏi lại thông tin đã có.
 
 ## Output chính
 
-`projects/<slug>/05_final_script.md`
+`projects/<slug>/06_final_script.md`
 
 Final mặc định là voice-over only:
 
@@ -52,44 +52,55 @@ Ba ưu tiên:
 2. **Concrete** — thường xuyên dùng scene, object, person, place, action hoặc mechanism cụ thể.
 3. **Causal** — đoạn sau phải có lý do xuất hiện từ đoạn trước.
 
-Một documentary tốt thường đọc được như:
+Story có thể đi theo chronology, mechanism, mystery, contrast hoặc transformation tùy topic. Không có một skeleton hook bắt buộc.
 
-```text
-concrete opening
-→ big contrast / central question
-→ before-state or origin
-→ first change
-→ consequence
-→ next change
-→ stronger case/evidence
-→ larger transformation
-→ modern form
-→ direct answer
-→ callback
-```
+## Hook Lab — human choice gate
 
-Đây là guide, không phải template cứng.
+Sau Research và trước Story Spine, luôn tạo `02_hook_lab.md` với 10 hook candidate theo 10 cơ chế khác nhau:
 
-Chronology được phép nếu chronology chính là câu chuyện.
+1. Contradiction
+2. Concrete scene
+3. Mystery / evidence first
+4. Reverse assumption
+5. Mechanism in motion
+6. Before → after transformation
+7. Object hook
+8. Stakes hook
+9. Timeline jump
+10. Unexpected cause
 
-## Opening
+Đây là **cơ chế tạo tò mò**, không phải 10 template câu chữ. Các candidate phải khác nhau ở cách vào câu chuyện, không chỉ paraphrase cùng một opening.
 
-Opening nên nhanh chóng tạo một hình ảnh hoặc contrast cụ thể rồi đưa tới central question.
+### Hook diversity rules
 
-Không có câu mở đầu bắt buộc.
+- Central question là mục tiêu nhận thức của video; hook **không bắt buộc** phải viết nó thành câu hỏi trực tiếp.
+- Không mặc định dùng cấu trúc `scene → question → explicit answer`.
+- Không mặc định dùng `Câu trả lời là...`, `Câu trả lời bắt đầu...`, `Câu trả lời ngắn gọn...`, `The answer is...`, `The short answer is...`.
+- Không mặc định dùng `Hãy tưởng tượng...`, `Bạn có bao giờ...`, `Imagine...`, `Picture this...`.
+- Sau tension/question, ưu tiên đi tiếp bằng fact, evidence, mechanism, contradiction hoặc consequence thay vì narrator tự thông báo cấu trúc.
+- Không bịa scene, dialogue, sensory detail hoặc exact historical action chỉ để hook cinematic.
+- Candidate có thể khác nhau về độ dài và nhịp. Không ép cùng số câu.
 
-Đặc biệt:
+### Bắt buộc dừng để user chọn
 
-- không mặc định dùng `Hãy tưởng tượng...`;
-- không mặc định dùng `Bạn có bao giờ...`;
-- không mặc định dùng `Imagine...`;
-- không đổi một hook tốt chỉ để “khác” project trước.
+Sau khi tạo Hook Lab:
 
-Naturalness quan trọng hơn artificial uniqueness.
+1. cập nhật `project_state.json` thành `current_stage = "awaiting_hook_selection"`, `hook_selection = "PENDING"`;
+2. trình bày H1–H10 cho user;
+3. yêu cầu user chọn `H1`–`H10` hoặc tên mechanism;
+4. **STOP. Không tự chọn, không chạy Story Spine, Draft, Fact Audit hoặc Final.**
+
+Khi user chọn:
+
+- cập nhật phần `Selection` trong `02_hook_lab.md`;
+- đặt `hook_selection = "SELECTED"` và lưu `selected_hook`, `selected_hook_mechanism` trong state;
+- tiếp tục pipeline từ Story Spine mà không hỏi lại các input đã có.
+
+Nếu user chủ động cung cấp hook choice ngay từ đầu, có thể bỏ bước chờ nhưng vẫn phải lưu Hook Lab + selection.
 
 ## Story spine
 
-Trước khi draft, tạo 6–10 beats.
+Sau khi hook đã được chọn, tạo 6–10 beats.
 
 Mỗi beat chỉ cần trả lời:
 
@@ -100,6 +111,8 @@ What does it naturally lead to next?
 Evidence / cases used:
 ```
 
+Story Spine phải dùng hook đã chọn làm opening direction. Có thể polish wording cho tự nhiên nhưng không được âm thầm đổi sang một hook mechanism khác chỉ vì dễ viết hơn.
+
 Không ép:
 
 - 4–5 acts;
@@ -108,10 +121,7 @@ Không ép:
 - Curiosity Debt Map;
 - scene quota;
 - novelty score;
-- hook strategy registry;
 - narrator scaffolding score.
-
-Những công cụ đó có thể hữu ích khi phân tích một script cụ thể, nhưng không phải hard requirement của writer.
 
 ## Research rules
 
@@ -125,13 +135,6 @@ Research pack cần:
 - 5–8 strong cases/objects/studies;
 - useful numbers/quotes;
 - important uncertainties.
-
-Mỗi core claim có:
-
-- status;
-- source;
-- support;
-- limits/qualification.
 
 Status:
 
@@ -165,6 +168,8 @@ Quote phải verify nguyên văn; nếu không thì paraphrase.
 ## Draft rules
 
 - đi theo Story Spine nhưng writer được quyền điều chỉnh nhịp;
+- giữ opening mechanism mà user đã chọn;
+- không biến hook đã chọn thành generic `question → Câu trả lời là...` nếu candidate không dùng cấu trúc đó;
 - không lặp cùng một ý để kéo duration;
 - không đọc research notes thành narration;
 - không authority-stack tên tác giả + trường + journal + năm khi không cần;
@@ -177,16 +182,7 @@ Quote phải verify nguyên văn; nếu không thì paraphrase.
 
 Fact Audit chỉ tập trung factual risk, không redesign story nếu không cần.
 
-Kiểm tra:
-
-- precise number / percentage / date;
-- quote;
-- named study/person/institution;
-- `first/oldest/only/largest/never/always`;
-- causal claim;
-- consensus claim;
-- current fact;
-- cinematic/sensory detail kể như fact.
+Kiểm tra precise number/date/quote, named study/person/institution, first/oldest/only/largest, causal/consensus/current claims và cinematic detail kể như fact.
 
 High-risk claim phải quay lại original/primary source khi có thể.
 
@@ -202,29 +198,27 @@ Còn `VERIFY` = chưa PASS.
 
 ## Final Edit
 
-Final Edit làm bốn việc chính:
+Final Edit:
 
 1. áp dụng Fact Audit;
 2. cắt lặp/padding;
 3. làm prose dễ nói và tự nhiên;
-4. đưa duration về tolerance.
+4. giữ opening mechanism đã được user chọn;
+5. đưa duration về tolerance.
 
-Anti-template chỉ là **soft editorial check**. Không dùng similarity hoặc scaffolding làm hard gate.
+Anti-template là **soft editorial check**. Không hy sinh một đoạn tốt chỉ để đạt artificial uniqueness.
 
-Nếu prose có dấu hiệu máy móc như spam `Đây là...`, `Nhưng câu hỏi...`, `Và đây là nơi...`, hãy sửa khi việc sửa làm câu tự nhiên hơn.
-
-Không hy sinh một đoạn tốt chỉ để đạt “uniqueness”.
-
-## Stage protocol
+## Stage protocol — simple_v2
 
 Project mới chạy:
 
 1. `00_input.md`
 2. `01_research.md`
-3. `02_story_spine.md`
-4. `03_draft.md`
-5. `04_fact_audit.md`
-6. `05_final_script.md`
+3. `02_hook_lab.md` → **WAIT FOR USER SELECTION**
+4. `03_story_spine.md`
+5. `04_draft.md`
+6. `05_fact_audit.md`
+7. `06_final_script.md`
 
 Nếu Fact Audit FAIL, sửa Research/Draft rồi audit lại trước Final Edit.
 
@@ -232,7 +226,8 @@ Nếu Fact Audit FAIL, sửa Research/Draft rồi audit lại trước Final Edi
 
 Project hoàn tất khi:
 
-- đủ 6 artifact chính + `project_state.json`;
+- đủ 7 artifact chính + `project_state.json`;
+- Hook Lab có lựa chọn explicit của user;
 - central question được trả lời;
 - Fact Audit = `PASS`;
 - final trong ±7% target words trừ khi project ghi exception hợp lý;
@@ -241,4 +236,4 @@ Project hoàn tất khi:
 - narration đọc tự nhiên;
 - `python scripts/check_project.py <project>` trả `RESULT: PASS`.
 
-Không yêu cầu architecture score, retention score, scale score, reveal score hoặc cross-project anti-template PASS.
+Checker vẫn hỗ trợ project `simple_v1` và legacy cũ.

@@ -1,4 +1,4 @@
-# Master Orchestrator — Simple Documentary Pipeline
+# Master Orchestrator — Simple Documentary Pipeline v2
 
 Dùng prompt này khi bắt đầu một YouTube documentary/explainer mới.
 
@@ -10,46 +10,69 @@ language: <ngôn ngữ>
 duration: <phút>
 ```
 
-Optional: title, angle, audience, tone, must_include, must_avoid, sources.
+Optional: title, angle, audience, tone, must_include, must_avoid, sources, hook_choice.
 
 ## Nhiệm vụ
 
 Bạn đang làm việc trong repo `cuongtobi/gpt_web_yt_script`.
 
 1. Đọc `AGENTS.md`, `pipeline/PIPELINE.md`, `pipeline/QUALITY_GATES.md` và `docs/STYLE_DNA.md`.
-2. Tạo slug và khởi tạo `projects/<slug>/` từ `templates/project/`.
+2. Tạo slug và khởi tạo `projects/<slug>/` từ `templates/project_v2/`.
 3. Điền `00_input.md`, target WPM và target words.
-4. Chạy tuần tự 5 stage:
-   - Stage 1 Research → `01_research.md`
-   - Stage 2 Story Spine → `02_story_spine.md`
-   - Stage 3 Full Draft → `03_draft.md`
-   - Stage 4 Fact Audit → `04_fact_audit.md`
-   - Stage 5 Final Edit → `05_final_script.md`
-5. Cập nhật `project_state.json` sau mỗi stage.
-6. Nếu Fact Audit FAIL, sửa Research/Draft rồi audit lại trước Final Edit.
-7. Cuối cùng chạy `python scripts/check_project.py projects/<slug>` và chỉ coi project hoàn tất khi PASS.
+4. Chạy Stage 1 Research → `01_research.md`.
+5. Chạy Stage 2 Hook Lab theo `prompts/v2/02_hook_lab.md` → `02_hook_lab.md`.
+6. Cập nhật state thành `awaiting_hook_selection`, trình bày 10 candidate H1–H10 cho user và **DỪNG**.
+7. Chỉ khi user explicit chọn H1–H10 hoặc tên mechanism:
+   - cập nhật Selection trong `02_hook_lab.md`;
+   - đặt `hook_selection = SELECTED` cùng `selected_hook` và `selected_hook_mechanism` trong state;
+   - chạy Stage 3 Story Spine → `03_story_spine.md`;
+   - Stage 4 Full Draft → `04_draft.md`;
+   - Stage 5 Fact Audit → `05_fact_audit.md`;
+   - nếu audit FAIL, sửa Research/Draft rồi audit lại;
+   - Stage 6 Final Edit → `06_final_script.md`.
+8. Cập nhật `project_state.json` sau mỗi stage.
+9. Cuối cùng chạy `python scripts/check_project.py projects/<slug>` và chỉ coi project hoàn tất khi PASS.
+
+Nếu input ban đầu đã có `hook_choice`, vẫn tạo Hook Lab để trace alternatives nhưng có thể ghi selection ngay và tiếp tục mà không dừng.
+
+## Hook Lab doctrine
+
+Hook Lab luôn tạo đúng 10 **entry mechanisms** khác nhau:
+
+1. Contradiction
+2. Concrete scene
+3. Mystery / evidence first
+4. Reverse assumption
+5. Mechanism in motion
+6. Before → after transformation
+7. Object hook
+8. Stakes hook
+9. Timeline jump
+10. Unexpected cause
+
+Đây không phải 10 sentence templates. Mỗi candidate phải khác thật sự về đường vào story.
+
+Không mặc định:
+
+- `scene → direct question → Câu trả lời...`;
+- `Câu trả lời là...`;
+- `Câu trả lời bắt đầu...`;
+- `Câu trả lời ngắn gọn...`;
+- `The answer is...`;
+- `The short answer is...`;
+- `Hãy tưởng tượng...` / `Imagine...`.
+
+Central question phải rõ trong planning nhưng không bắt buộc xuất hiện trực tiếp trong hook. Sau tension/question, ưu tiên fact, evidence, mechanism, contradiction hoặc consequence.
+
+### Human choice is mandatory
+
+Không tự xếp hạng rồi chọn hộ user. Có thể ghi ngắn trade-off của từng candidate trong artifact, nhưng completion message sau Hook Lab chỉ cần đưa 10 lựa chọn rõ ràng và yêu cầu user chọn.
+
+Nếu user chưa chọn, **không chạy Story Spine trở đi**, dù user ban đầu dùng cụm “chạy toàn bộ pipeline”. Hook selection là intentional human gate của pipeline v2.
 
 ## Story target
 
-Pipeline không cố tối ưu hàng chục controller. Mục tiêu là một story spine rõ:
-
-```text
-concrete opening
-→ big contrast / central question
-→ before-state or origin
-→ change
-→ consequence
-→ next change
-→ stronger evidence/case
-→ larger transformation
-→ modern form
-→ direct answer
-→ callback
-```
-
-Chronology được phép nếu chronology chính là story.
-
-## Writing doctrine
+Sau selection, Story Spine ưu tiên một causal/chronological/mechanistic chain rõ. Không ép một north-star flow duy nhất cho mọi topic.
 
 Ưu tiên ba phẩm chất:
 
@@ -57,31 +80,31 @@ Chronology được phép nếu chronology chính là story.
 - **concrete** — thường xuyên có người/vật/địa điểm/action/mechanism cụ thể;
 - **causal** — đoạn sau xuất hiện vì đoạn trước tạo consequence hoặc câu hỏi thật.
 
-Không ép:
-
-- R1→R5;
-- Scale Escalation Map;
-- Curiosity Debt Map;
-- scene quota;
-- hook archetype quota;
-- cross-project similarity hard gate;
-- narrator-scaffolding score.
-
-Những thứ này có thể là editorial observations, không phải bài kiểm tra writer phải vượt qua.
+Selected hook là opening direction. Có thể polish exact wording nhưng không đổi mechanism chỉ vì một skeleton khác dễ viết hơn.
 
 ## Factual doctrine
 
 Research là factual boundary.
 
-Không bịa source, quote, statistic, probability, exact historical action, sensory detail hoặc causal certainty.
+Không bịa source, quote, statistic, probability, exact historical action, sensory detail hoặc causal certainty. High-risk claims phải được kiểm tra lại ở Fact Audit, ưu tiên original/primary source.
 
-High-risk claims phải được kiểm tra lại ở Fact Audit, ưu tiên original/primary source.
-
-## Completion message
+## Message sau Hook Lab
 
 Báo ngắn:
 
 - project path;
+- Research readiness;
+- H1–H10: mechanism + nguyên văn hook candidate;
+- câu nhắc: `Chọn H1–H10 (hoặc tên mechanism). Sau khi bạn chọn, pipeline sẽ tiếp tục từ Story Spine.`
+
+Không báo project hoàn tất ở bước này.
+
+## Completion message sau Final
+
+Báo ngắn:
+
+- project path;
+- selected hook + mechanism;
 - final words / target;
 - estimated duration;
 - Fact Audit verdict;

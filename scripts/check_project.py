@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Simple final validation for YouTube documentary projects."""
+"""Final validation for simple_v2, simple_v1 and legacy YouTube documentary projects."""
 
 from __future__ import annotations
 
@@ -10,7 +10,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-SIMPLE_FILES = [
+SIMPLE_V2_FILES = [
+    "00_input.md",
+    "01_research.md",
+    "02_hook_lab.md",
+    "03_story_spine.md",
+    "04_draft.md",
+    "05_fact_audit.md",
+    "06_final_script.md",
+    "project_state.json",
+]
+
+SIMPLE_V1_FILES = [
     "00_input.md",
     "01_research.md",
     "02_story_spine.md",
@@ -42,6 +53,17 @@ SOFT_TEMPLATE_PATTERNS = [
     r"\bnhưng câu hỏi tiếp theo là\b",
 ]
 
+EARLY_HOOK_SCAFFOLD_PATTERNS = [
+    r"\bcâu trả lời là\b",
+    r"\bcâu trả lời bắt đầu\b",
+    r"\bcâu trả lời ngắn(?: nhất| gọn)?\b",
+    r"\bthe answer is\b",
+    r"\bthe answer starts with\b",
+    r"\bthe short answer is\b",
+    r"\bđể hiểu điều này,? (?:ta|chúng ta) (?:cần|phải)\b",
+    r"\bto understand this,? we (?:need|have) to\b",
+]
+
 
 def word_count(text: str) -> int:
     body = re.sub(r"(?m)^#.*$", "", text)
@@ -60,6 +82,11 @@ def verdict_from(text: str) -> str:
     return "UNKNOWN"
 
 
+def hook_lab_selection_from(text: str) -> str:
+    match = re.search(r"(?im)^\s*-\s*Status:\s*\**\s*(SELECTED|PENDING)\b", text)
+    return match.group(1).upper() if match else "UNKNOWN"
+
+
 def load_state(path: Path) -> tuple[dict, list[str]]:
     errors: list[str] = []
     if not path.exists():
@@ -71,6 +98,15 @@ def load_state(path: Path) -> tuple[dict, list[str]]:
         return value, errors
     except (OSError, json.JSONDecodeError, ValueError) as exc:
         return {}, [f"Invalid project_state.json: {exc}"]
+
+
+def detect_layout(project: Path, state: dict) -> tuple[str, list[str], str, str]:
+    version = str(state.get("pipeline_version") or "")
+    if version == "simple_v2" or (project / "06_final_script.md").exists():
+        return "simple_v2", SIMPLE_V2_FILES, "06_final_script.md", "05_fact_audit.md"
+    if version == "simple_v1" or (project / "05_final_script.md").exists():
+        return "simple_v1", SIMPLE_V1_FILES, "05_final_script.md", "04_fact_audit.md"
+    return "legacy", LEGACY_FILES, "07_final_script.md", "05_fact_audit.md"
 
 
 def main() -> int:
@@ -90,14 +126,25 @@ def main() -> int:
     state, state_errors = load_state(project / "project_state.json")
     errors.extend(state_errors)
 
-    simple = state.get("pipeline_version") == "simple_v1" or (project / "05_final_script.md").exists()
-    required = SIMPLE_FILES if simple else LEGACY_FILES
-    final_name = "05_final_script.md" if simple else "07_final_script.md"
-    fact_name = "04_fact_audit.md" if simple else "05_fact_audit.md"
+    pipeline, required, final_name, fact_name = detect_layout(project, state)
 
     for name in required:
         if not (project / name).exists():
             errors.append(f"Missing required file: {name}")
+
+    if pipeline == "simple_v2":
+        if str(state.get("hook_selection") or "").upper() != "SELECTED":
+            errors.append("Hook selection is not SELECTED")
+        if not str(state.get("selected_hook") or "").strip():
+            errors.append("selected_hook missing or empty")
+        if not str(state.get("selected_hook_mechanism") or "").strip():
+            errors.append("selected_hook_mechanism missing or empty")
+
+        hook_path = project / "02_hook_lab.md"
+        if hook_path.exists():
+            hook_status = hook_lab_selection_from(hook_path.read_text(encoding="utf-8"))
+            if hook_status != "SELECTED":
+                errors.append(f"Hook Lab selection is {hook_status}, expected SELECTED")
 
     target = int(state.get("target_words") or 0)
     final_path = project / final_name
@@ -119,7 +166,7 @@ def main() -> int:
         if verdict != "PASS":
             errors.append(f"Fact Audit is {verdict}, expected PASS")
 
-    if not simple:
+    if pipeline == "legacy":
         retention_path = project / "06_retention_audit.md"
         if retention_path.exists():
             verdict = verdict_from(retention_path.read_text(encoding="utf-8"))
@@ -138,14 +185,23 @@ def main() -> int:
     if re.match(r"(?i)^(hãy\b|hãy thử\b|hãy tưởng tượng\b|imagine\b|picture this\b)", body):
         warnings.append("Opening uses an imperative/imagination formula; keep it only if it is genuinely the strongest opening")
 
+    early_words = re.findall(r"\b[\w’'-]+\b|[^\w\s]+", body, flags=re.UNICODE)
+    early_text = " ".join(early_words[:500])
+    for pattern in EARLY_HOOK_SCAFFOLD_PATTERNS:
+        if re.search(pattern, early_text, flags=re.I):
+            warnings.append(f"Opening uses answer/scaffolding phrase; confirm it is intentional rather than a repeated hook template: /{pattern}/")
+
     percentages = re.findall(r"\b\d+(?:[.,]\d+)?\s*%", final_text)
     if percentages:
         warnings.append(f"Final contains {len(percentages)} percentage claim(s); confirm direct research support")
 
     project_display = project.relative_to(ROOT) if project.is_relative_to(ROOT) else project
     print(f"Project: {project_display}")
-    print(f"Pipeline: {'simple_v1' if simple else 'legacy'}")
+    print(f"Pipeline: {pipeline}")
     print(f"Final words: {final_words}" + (f" / target {target}" if target else ""))
+
+    if pipeline == "simple_v2":
+        print(f"Hook selection: {state.get('selected_hook', '')} / {state.get('selected_hook_mechanism', '')}")
 
     for item in warnings:
         print(f"WARN: {item}")
