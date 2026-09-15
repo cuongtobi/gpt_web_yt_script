@@ -1,6 +1,6 @@
 {
   "project_slug": "how-prehistoric-humans-lived-without-salt",
-  "current_stage": 0,
+  "current_stage": 1,
   "target_wpm": 152,
   "target_words": 3040,
   "draft_words": 0,
@@ -24,9 +24,14 @@
   "scene_density": "PENDING",
   "reveal_ladder": "PENDING",
   "blocked_claims": [],
-  "important_uncertainties": [],
-  "stage_history": [
-    {"stage": 0, "artifact": "00_input.md", "verdict": "PASS"}
+  "important_uncertainties": [
+    "Không thể dùng sự thiếu vắng di tích để kết luận mọi nhóm Paleolithic đều không khai thác muối.",
+    "Yanomami là một case sinh lý hiện đại, không phải bản sao của tổ tiên Paleolithic.",
+    "Mối liên hệ agriculture/carbohydrate-rich diet với supplementary salt là xu hướng có support, không phải quy luật tuyệt đối cho mọi xã hội."
   ],
-  "updated_at": "2026-09-15T20:20:00+07:00"
+  "stage_history": [
+    {"stage": 0, "artifact": "00_input.md", "verdict": "PASS"},
+    {"stage": 1, "artifact": "01_research_ledger.md", "verdict": "PASS"}
+  ],
+  "updated_at": "2026-09-15T20:29:00+07:00"
 }
