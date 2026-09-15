@@ -2,189 +2,249 @@
 
 ## Viewer promise
 
-The viewer will discover how humans took one unusually versatile Cannabis population and, over thousands of years, pulled it toward increasingly different forms for fiber, seed/oil, resin and psychoactive use—and why the familiar hemp-versus-drug split is a late chapter, not the beginning.
+The viewer will discover how one unusually versatile Cannabis crop became radically different human-designed forms—not in one domestication moment, but through a chain of selection, specialization, movement and remixing that grows from individual plants to a Eurasian system.
 
 ## Central contradiction
 
-Modern Cannabis can look like two different design projects: tall, relatively unbranched fiber plants on one side; shorter, more highly branched flower/resin-oriented plants on the other. Yet the strongest genomic model traces these cultivated forms back toward one early domestication history in East Asia.
+Put modern fiber-oriented and drug-oriented Cannabis side by side and they can look like different design projects: one rewards long, relatively unbranched stems; the other rewards branching, flowers and resin. Yet the strongest genomic model connects these forms to one much earlier cultivated history in East Asia.
 
-The story question is therefore not simply “where did Cannabis come from?” It is: **how did repeated human choices make one crop diverge so dramatically?**
+**Central question:** How did humans turn one multipurpose crop into such different forms—and why did the split never stay clean?
 
-## Opening engine
+## Hook archetype
 
-**Opening image:** split-screen contrast between a tall fiber crop and a highly branched resin-oriented crop.
+**Transformation Hook.**
 
-**Immediate tension:** these forms reflect different human goals, but they did not begin as two separate crops.
+- Before-state: one multipurpose cultivated population.
+- After-state: highly divergent fiber- and drug-oriented forms.
+- Transformation mystery: human selection created the divergence, but later movement repeatedly mixed the branches again.
 
-**Central question:** How did humans turn one multipurpose Cannabis population into increasingly specialized forms?
+Opening visual: fiber field ↔ branched flowering crop.
 
-**First reward:** within the first minute, reveal that the strongest current genomic model points toward early Neolithic East Asia, with a deep cultivated split modeled at roughly 12,000 years ago.
+Opening promise: the answer begins much earlier than modern “hemp versus marijuana,” and the story gets larger as the crop moves from field-level choices to continental exchange.
 
-**Curiosity handoff:** if that is roughly where the story begins, what were people actually selecting the plant for?
+## Act architecture
+
+### Act I — The impossible-looking split
+- Entry question: How can one crop end up looking designed for opposite jobs?
+- Scale: plant/object → region.
+- Payoff: strongest current genomic model points toward early Neolithic East Asia; the deep split is modeled around ~12,000 BP.
+- Act turn: origin is only half the mystery. What were people selecting for?
+- Story expansion: **changes interpretation**—modern categories are not the starting point.
+
+### Act II — Before hemp and drug type
+- Entry question: Was Cannabis first domesticated for fiber or intoxication?
+- Scale: plant parts → human use → farm-level selection.
+- Payoff: early domesticated Cannabis was probably multipurpose; stronger specialization came much later, around ~4,000 BP in the model.
+- Act turn: a multipurpose plant is a compromise; once one output matters more, the same crop gets pulled in different directions.
+- Story expansion: **deepens mechanism + raises stakes**—selection can remake the body of the crop.
+
+### Act III — The hidden engine: who reproduces
+- Entry question: How does human preference become inherited change?
+- Scale: field/farmer → reproductive biology → molecular chemistry.
+- Payoff: seed saving, pollen/sex management and repeated propagation act as reproductive filters; selection reaches architecture and cannabinoid-related genes.
+- Act turn: if specialization is pushing lineages apart, do they become clean branches?
+- Story expansion: **deepens mechanism** from visible morphology to heredity and chemistry.
+
+### Act IV — The crop becomes a Eurasian network
+- Entry question: Did the branches stay separate?
+- Scale: genome → population → Eurasian movement/system.
+- Payoff: 2025 pangenome work shows repeated gene flow and mosaic ancestry; archaeological reviews show broad human use across Eurasia.
+- Major reversal: the “family tree” is better understood as a braided river.
+- Act turn: if the categories formed gradually and were repeatedly remixed, can archaeology catch an unfinished crop?
+- Story expansion: **widens scale + changes interpretation**.
+
+### Act V — Archaeology catches the transformation
+- Entry question: Can physical remains show the messy middle—and when does direct psychoactive evidence appear?
+- Scale: charred seed/object → local community/ritual → species history.
+- Payoff 1: Haimenkou preserves >800 Cannabis grains with overlapping morphology consistent with diversification in progress.
+- Payoff 2 / reversal: Jirzankal gives strong direct evidence of psychoactive burning around 500 BCE, many millennia after the modeled beginning of domestication.
+- Final synthesis: psychoactive use is an important branch, not a demonstrated original motive; domestication is the accumulated result of repeated reproductive choices plus movement and remixing.
+- Story expansion: **raises stakes + synthesizes scales**.
 
 ## Viewer-question chain
 
-1. **How can one crop end up with such different forms?**
-   - Reveal: modern hemp- and drug-oriented forms reflect divergent human selection.
-   - Handoff: where does that divergence begin?
+Q1. How can one crop produce such opposite-looking forms?
+- Trigger: opening split-screen.
+- Payoff: divergent human selection.
+- Consequence: where did the shared history begin?
 
-2. **Where does the strongest evidence place early domestication?**
-   - Reveal: genomic evidence points toward East Asia in the early Neolithic; ~12,000 years is a model-based estimate.
-   - Handoff: what was the original goal?
+Q2. Where does the strongest evidence place early domestication?
+- Trigger: shared history.
+- Payoff: East Asia / early Neolithic; ~12,000 BP is model-based.
+- Consequence: if origin is early, what was the original goal?
 
-3. **Was Cannabis first domesticated for fiber or intoxication?**
-   - Reveal: the strongest model is multipurpose first, specialization later.
-   - Handoff: why would a multipurpose crop split?
+Q3. Fiber first or intoxication first?
+- Trigger: modern categories.
+- Payoff: probably neither as a single purpose; early crop was multipurpose.
+- Consequence: why would a useful compromise split?
 
-4. **Why does specialization create divergence?**
-   - Reveal: a general-purpose plant is a compromise; fiber and flower/resin goals reward different architecture.
-   - Handoff: how do preferences become inherited rather than merely harvested?
+Q4. What forces specialization?
+- Trigger: competing uses.
+- Payoff: fiber and flower/resin goals reward different architecture.
+- Consequence: harvesting alone cannot make traits hereditary—what determines the next generation?
 
-5. **How do growers turn preference into heredity?**
-   - Reveal: seed saving, sex management, pollen control and repeated propagation act as reproductive filters.
-   - Handoff: if reproduction changes, does chemistry change too?
+Q5. How does preference become heredity?
+- Trigger: architecture differences.
+- Payoff: reproductive filtering through seed, pollen and propagation.
+- Consequence: if reproduction changes morphology, can it change chemistry?
 
-6. **Can people domesticate chemistry without understanding genes?**
-   - Reveal: selection-linked THCAS/CBDAS patterns show chemistry shifting with breeding history.
-   - Handoff: did this split happen cleanly?
+Q6. Can humans alter cannabinoids without understanding genes?
+- Trigger: reproductive filter.
+- Payoff: selection-linked THCAS/CBDAS patterns show chemical divergence.
+- Consequence: this suggests two branches—but did they stay separate?
 
-7. **Did hemp and drug types become two neat branches?**
-   - Reveal: no; gene flow and hybridization repeatedly remixed lineages.
-   - Handoff: can archaeology catch that messy transition in real material?
+Q7. Did the branches become clean lineages?
+- Trigger: divergence model.
+- Payoff: no; repeated gene flow makes a mosaic history.
+- Consequence: how does that look in real archaeological material?
 
-8. **Can ancient remains show specialization while it is still unfinished?**
-   - Reveal: Haimenkou seed morphometrics overlap modern categories, consistent with a crop still diversifying.
-   - Handoff: when does direct evidence of deliberate psychoactive use finally appear?
+Q8. Can we catch a crop mid-transition?
+- Trigger: messy genomic history.
+- Payoff: Haimenkou overlap looks like an unfinished category.
+- Consequence: when do we directly see psychoactive use?
 
-9. **Was intoxication the original reason Cannabis was domesticated?**
-   - Reveal: Jirzankal provides strong direct evidence of psychoactive burning around 500 BCE—many millennia after the modeled beginning of domestication.
-   - Handoff: then what is the simplest answer to how domestication happened?
+Q9. Was intoxication the original motive?
+- Trigger: modern association with cannabis.
+- Payoff: Jirzankal psychoactive burning appears much later than modeled domestication.
+- Consequence: central answer must be broader than any single use.
 
-10. **Final answer**
-    - Repeated selection for different uses changed anatomy, reproduction and chemistry; movement then remixed those branches. Domestication was not one invention but a long branching experiment.
+Q10. So what did humans actually do?
+- Payoff: repeated selection changed reproduction, anatomy and chemistry; movement then remixed the branches.
 
 ## Causal ladder
 
-### Step 1 — Versatility creates repeated human interest
-- Condition: one plant offers edible/storable seeds, bast fiber and resinous flowers.
-- Human response: gather, move, cultivate and replant useful plants.
-- Consequence: human choices begin changing reproductive success.
-- Support: C04, C09, C13.
+1. Cannabis offers multiple useful outputs → humans repeatedly gather/cultivate/propagate useful plants. [C04, C09, C13]
+2. Repeated propagation creates an early cultivated gene pool → strongest genomic signal points toward East Asia. [C01, C02, C03]
+3. Multiple useful outputs favor a general-purpose crop → modern categories do not yet exist as clean types. [C04]
+4. Narrower goals create trade-offs → fiber- and drug-oriented lineages diverge more strongly around ~4,000 BP. [C05, C06]
+5. Reproductive management makes preference heritable → architecture and trait frequencies change across generations. [C09]
+6. Selection reaches chemistry → THCAS/CBDAS patterns diverge in cultivated groups. [C07]
+7. Human movement reconnects populations → hybridization creates mosaic ancestry. [C08, C11]
+8. Archaeology preserves intermediate forms → Haimenkou shows overlapping morphology consistent with ongoing diversification. [C10]
+9. Direct psychoactive ritual evidence appears later → Jirzankal cannot be projected backward as the original domestication motive. [C12]
 
-### Step 2 — Repeated propagation creates an early cultivated gene pool
-- Condition: useful plants are repeatedly propagated and moved.
-- Consequence: a domestication-related genomic signal emerges.
-- Support: C01, C02.
-- Qualification: C03, C08.
+## Scale escalation map
 
-### Step 3 — Multipurpose cultivation delays a clean split
-- Condition: several useful outputs remain valuable at once.
-- Consequence: early cultivated Cannabis remains a compromise rather than modern “hemp” or “drug type.”
-- Support: C04.
+| Story segment | Primary scale | Movement |
+|---|---|---|
+| Hook | individual plants | close-up contrast |
+| Origin | East Asian population history | zoom out to region/time |
+| Multipurpose use | seed/stem/flower + growers | zoom in to human utility |
+| Architecture | field/crop body | physical mechanism |
+| Reproduction | pollen/seed/sex | zoom in to generational filter |
+| Chemistry | genes/pathways | deepest micro scale |
+| Hybridization | populations/Eurasia | major zoom out |
+| Haimenkou | 800+ charred grains | zoom in to object/site |
+| Jirzankal | ritual objects/community | human-scale scene |
+| Ending | whole domestication history | zoom out to species + humanity |
 
-### Step 4 — Narrower goals reward different bodies
-- Condition: fiber rewards long stems; flower/resin goals reward different branching and reproductive traits.
-- Consequence: stronger divergent selection, modeled around ~4,000 BP.
-- Support: C05, C06.
+**Controller rule:** no more than 2 consecutive beats remain at the same abstract scale.
 
-### Step 5 — Reproductive management makes those preferences heritable
-- Condition: Cannabis is usually dioecious and wind-pollinated.
-- Human response: seed saving, pollen management, propagation of preferred plants.
-- Consequence: preferred traits get disproportionate reproductive success.
-- Support: C09.
+## Story expansion map
 
-### Step 6 — Selection reaches chemistry
-- Condition: chemical phenotype is part of what growers value.
-- Consequence: strong THCAS/CBDAS loss-of-function patterns become associated with different cultivated groups.
-- Support: C07.
+Every beat must do at least one:
 
-### Step 7 — Movement prevents a clean tree
-- Condition: crops move across regions and previously separated populations meet.
-- Consequence: hybridization creates a mosaic history rather than two sealed branches.
-- Support: C08, C11.
-
-### Step 8 — Archaeology records the messy middle
-- Condition: populations in transition leave seeds and other remains.
-- Consequence: Haimenkou preserves overlapping morphologies consistent with diversification in progress.
-- Support: C10.
-
-### Step 9 — Direct psychoactive evidence arrives late
-- Condition: some populations with high psychoactive potential are deliberately burned.
-- Consequence: Jirzankal demonstrates intoxicating use by ~500 BCE but cannot explain the initial domestication motive.
-- Support: C12.
+- Origin reveal → **changes interpretation**.
+- Multipurpose crop → **changes interpretation**.
+- Specialization → **deepens mechanism**.
+- Reproductive filter → **deepens mechanism**.
+- Chemistry → **deepens mechanism**.
+- Hybridization → **widens scale + reverses model**.
+- Haimenkou → **makes abstraction physical**.
+- Jirzankal → **raises stakes + reverses popular motive story**.
+- Ending → **synthesizes scales**.
 
 ## Reveal ladder
 
-- **R1 — 0:00–0:45:** the dramatic modern split is human-made selection acting on one crop history.
-- **R2 — ~1:00:** strongest current genomic model points to early Neolithic East Asia; ~12,000 years is an estimate, not an excavated date.
-- **R3 — ~3:00:** early Cannabis was probably multipurpose; the hemp/drug split came later.
-- **R4 — ~6:00:** domestication is a reproductive filter—harvesting matters less than who gets to reproduce.
-- **R5 — ~8:00:** humans selected chemistry without knowing biochemistry.
-- **R6 — ~10:30:** the family tree is actually braided by repeated hybridization.
-- **R7 — ~12:00:** Haimenkou looks like a crop still between categories.
-- **R8 — ~13:15:** direct psychoactive ritual evidence appears thousands of years after proposed domestication began.
+- R1 — Opening: opposite-looking crops share one domestication history.
+- R1 — Origin: strongest current model points toward early Neolithic East Asia.
+- R3 — Reframe: early cultivated Cannabis was probably multipurpose.
+- R2 — Mechanism: specialization reshapes plant architecture.
+- R2 — Mechanism: domestication is a reproductive filter.
+- R2 — Mechanism: selection can reshape chemistry without biochemical knowledge.
+- R4 — Major reversal: the family tree becomes a braided river through gene flow.
+- R3 — Physical reframe: Haimenkou looks like categories still forming.
+- R4 — Major reversal: strong direct psychoactive evidence arrives surprisingly late.
+- R5 — Synthesis: domestication is repeated selective reproduction plus movement/remixing, not one discovery or purpose.
 
-## Curiosity debt
+## Curiosity debt map
 
-- Macro loop: How did one crop become so different under human selection?
-- Active micro loops should stay at 1–2 at a time.
-- Every beat must pay one question before opening the next.
-- No generic cliffhanger; each handoff must arise from the consequence of the previous answer.
+- Macro loop: How did one crop become radically different forms?
+- Micro loops active at once: target 1–2.
+- Every beat pays the entering question before opening the next.
+- R4 hybridization pays “did branches stay separate?” before opening archaeology.
+- R4 Jirzankal pays “was intoxication the beginning?” before final synthesis.
+
+## Playable scene density map
+
+Target: at least one physical/playable sequence every ~60–90 seconds when evidence allows.
+
+1. Split-screen tall fiber crop / branched flowering crop.
+2. East Asia map + populations branching through time.
+3. Conditional physical sequence: seed, stem and flowers as different rewards from the same plant.
+4. Conditional selection sequence: save seed from tall straight plants → next generation shifts.
+5. Pollen moving between male/female plants; selected seed becomes next generation.
+6. Simplified cannabinoid pathway paired with visible selection outcome.
+7. Eurasian movement map; tree morphs into braided network.
+8. Haimenkou charred grains measured and overlapping on a simple plot.
+9. Jirzankal braziers + burned stones + residue evidence.
+10. Return to opening plants with the whole causal chain now visible.
+
+No invented dialogue, weather, emotions, sounds or undocumented ancient actions.
+
+## Historical detour policy for this 15-minute project
+
+Allowed only if it does one of the following:
+- widens Eurasian scale;
+- provides a concrete archaeological scene;
+- creates a reversal;
+- proves a causal step.
+
+Do not add post-antiquity hemp/prohibition history because the current Research Ledger does not support it and it would dilute the 15-minute domestication question.
 
 ## First 3 minutes design
 
-Do **not** lead with evidence methodology.
+0:00–0:45: transformation contradiction + central question.
+0:45–1:40: East Asia / early Neolithic reveal.
+1:40–2:10: concise qualification—model, not excavated field.
+2:10–3:00: multipurpose-first reframe begins.
 
-Order:
-1. modern visual contradiction;
-2. central question;
-3. genomic East Asia/~12k reveal;
-4. one concise qualification: model, not excavated plant;
-5. immediately move to motive: fiber, food, resin—what were people selecting for?
-
-Methodological distinction between use/cultivation/domestication appears only when needed to interpret evidence, not as a lecture before the first payoff.
-
-## Visual progression
-
-1. tall fiber field vs. branched flowering plant;
-2. East Asia map + population tree;
-3. seed / stem / flower close-ups;
-4. split-screen architecture comparison;
-5. pollen + male/female reproduction animation;
-6. simplified cannabinoid synthase fork;
-7. braided network/map for hybridization;
-8. Haimenkou charred seeds;
-9. Jirzankal wooden brazier and burned stones;
-10. return to opening split-screen with the whole causal chain now understood.
+First 3 minutes must feel like **answer → complication → stronger answer**, not “context before the story.”
 
 ## Uncertainty map
 
 - ~12,000 BP: model-based estimate; not directly excavated domestic Cannabis.
-- exact center: East Asia is strongly supported by current genomic model, but precise geography and wild ancestor remain unresolved.
+- exact center/wild ancestor: unresolved within Asia.
 - ~4,000 BP specialization: approximate/model-dependent.
-- Haimenkou: suggestive/consistent with diversification, not proof of a finished crop category.
-- Jirzankal: direct evidence of deliberate psychoactive burning, not proof of original domestication motive or deliberate high-THC cultivation.
-- multiregional human use does not imply multiple independent domestications.
+- Haimenkou: consistent with diversification, not proof of a finished category.
+- Jirzankal: direct evidence of deliberate psychoactive burning, not proof of original domestication motive or deliberate potency breeding.
+- multiregional human use ≠ multiple independent domestications.
 
 ## Ending
 
-**Answer:** humans domesticated Cannabis by repeatedly choosing which plants reproduced, first within a versatile multipurpose crop and later under stronger selection for narrower goals. Those choices changed plant shape, reproduction and chemistry, while human movement repeatedly remixed the branches.
+**Answer:** humans domesticated Cannabis by repeatedly filtering reproduction within a versatile crop, then intensifying different traits for different goals while movement repeatedly remixed those lineages.
 
-**Reframe:** hemp and drug-type Cannabis are not two separate beginnings; they are divergent outcomes of one long, messy selection history.
+**Reframe:** hemp- and drug-oriented forms are not two separate beginnings; they are branching—and repeatedly rejoining—outcomes of one long human-plant experiment.
 
-**Callback:** return to the opening tall stalk and resinous flowering plant. They now read as two answers to the same human question: “what do we want this plant to become?”
+**Callback:** return to the opening two plants. Their contrast is no longer the mystery; it is the visible record of thousands of years of human choices.
 
 ## Architecture gate self-score
 
-1. opening image: 2/2
+1. opening image/contrast: 2/2
 2. central contradiction: 2/2
 3. central question: 2/2
-4. viewer-question chain: 2/2
-5. causal ladder: 2/2
-6. early payoff: 2/2
-7. curiosity handoff: 2/2
-8. escalation/reveal ladder: 2/2
-9. visual variety: 2/2
-10. ending callback: 2/2
+4. hook archetype: 2/2
+5. act progression: 2/2
+6. viewer-question chain: 2/2
+7. causal ladder: 2/2
+8. early payoff: 2/2
+9. curiosity handoff: 2/2
+10. reveal ladder: 2/2
+11. R3/R4: 2/2
+12. scale escalation: 2/2
+13. story expansion: 2/2
+14. playable scene plan: 2/2
+15. visual/scale variety: 2/2
+16. ending: 2/2
 
-**Gate B: PASS — 20/20**
+**Gate B: PASS — 32/32**
