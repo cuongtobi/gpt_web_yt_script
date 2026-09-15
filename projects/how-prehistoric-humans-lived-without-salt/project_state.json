@@ -1,6 +1,6 @@
 {
   "project_slug": "how-prehistoric-humans-lived-without-salt",
-  "current_stage": 1,
+  "current_stage": 2,
   "target_wpm": 152,
   "target_words": 3040,
   "draft_words": 0,
@@ -14,15 +14,15 @@
   },
   "first_3_minutes": "PENDING",
   "architecture_gate": {
-    "score": 0,
+    "score": 32,
     "max_score": 32,
-    "verdict": "PENDING"
+    "verdict": "PASS"
   },
   "timing_gate": "PENDING",
-  "act_progression": "PENDING",
-  "scale_escalation": "PENDING",
-  "scene_density": "PENDING",
-  "reveal_ladder": "PENDING",
+  "act_progression": "PASS",
+  "scale_escalation": "PASS",
+  "scene_density": "PASS",
+  "reveal_ladder": "PASS",
   "blocked_claims": [],
   "important_uncertainties": [
     "Không thể dùng sự thiếu vắng di tích để kết luận mọi nhóm Paleolithic đều không khai thác muối.",
@@ -31,7 +31,8 @@
   ],
   "stage_history": [
     {"stage": 0, "artifact": "00_input.md", "verdict": "PASS"},
-    {"stage": 1, "artifact": "01_research_ledger.md", "verdict": "PASS"}
+    {"stage": 1, "artifact": "01_research_ledger.md", "verdict": "PASS"},
+    {"stage": 2, "artifact": "02_story_architecture.md", "verdict": "PASS"}
   ],
-  "updated_at": "2026-09-15T20:29:00+07:00"
+  "updated_at": "2026-09-15T20:36:00+07:00"
 }
