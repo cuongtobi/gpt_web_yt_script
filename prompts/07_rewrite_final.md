@@ -1,6 +1,6 @@
 # Stage 7 Prompt — Final Rewrite
 
-Đọc Draft + Fact Audit + Retention Audit + Research Ledger + Architecture + Outline + `docs/STYLE_DNA.md`.
+Đọc Draft + Fact Audit + Retention Audit + Research Ledger + Architecture + Outline + `docs/STYLE_DNA.md` + `docs/HOOK_STRATEGY_REGISTRY.md`.
 
 Viết lại thành `07_final_script.md`.
 
@@ -13,8 +13,9 @@ Viết lại thành `07_final_script.md`.
 5. retention + scale escalation + reveal ladder;
 6. playable scene density;
 7. spoken clarity;
-8. duration;
-9. style.
+8. anti-template naturalness;
+9. duration;
+10. style.
 
 Accuracy là hard boundary. Bên trong boundary đó, ưu tiên version khiến viewer muốn biết chuyện gì xảy ra tiếp theo.
 
@@ -55,6 +56,74 @@ Không được bịa dialogue, emotion, sensory detail, exact historical action
 - cắt decorative detour không tạo scale/scene/reframe/stakes value;
 - đưa final về duration tolerance;
 - xóa editor notes/citations khỏi narration nếu user không yêu cầu.
+
+## Remove Narrator Scaffolding Pass
+
+Sau khi structure đã đúng, chạy một pass riêng để **che skeleton của pipeline khỏi prose**.
+
+Tìm các câu/phrase mà narrator đang tự giải thích chức năng của đoạn thay vì để evidence/consequence làm việc, ví dụ:
+
+- “Đây là bước ngoặt.”
+- “Đây là nơi câu chuyện thay đổi.”
+- “Và đây là điều thú vị.”
+- “Bây giờ câu chuyện trở nên lớn hơn.”
+- “Nhưng câu hỏi tiếp theo là…”
+- “Câu trả lời đầu tiên…”
+- “Đến đây, nghịch lý…”
+- “Điều đó đưa chúng ta trở lại…”
+- các biến thể tiếng Anh tương đương.
+
+### Rule
+
+- Xóa hoặc rewrite phần lớn scaffolding nếu câu kế bên đã tự thể hiện reveal/turn/handoff.
+- Không thay bằng một catchphrase template khác.
+- Giữ tối đa một số ít câu meta-transition khi chúng thực sự giúp comprehension.
+- Ưu tiên `evidence/action → consequence` thay cho `narrator announces turn → evidence`.
+- Không ép mọi beat phải kết bằng rhetorical question.
+- Không ép mọi act turn phải có một one-liner dramatic.
+- Cho phép nhịp bất đối xứng: có beat chuyển mềm, có beat chuyển bằng evidence, có beat chuyển bằng consequence.
+
+Sau pass này, `narrator_scaffolding_gate` chỉ được PASS khi final không còn cảm giác “script đang tự thuyết minh architecture của nó”.
+
+## Cross-Project Opening Check
+
+Trước khi chốt final:
+
+1. Đọc `Hook Strategy Selection` trong `02_story_architecture.md`.
+2. Đọc `style_fingerprint` của tối đa 5 project hoàn tất gần nhất.
+3. Kiểm tra opening final thực tế vẫn đúng strategy/surface đã chọn.
+4. Không được vô tình quay lại surface lặp kiểu `imperative_imagination` nếu Architecture đã chọn surface khác.
+5. Nếu opening signature hoặc surface form trùng gần project trước, rewrite opening mà không phá central contradiction/early payoff.
+
+## Style Fingerprint
+
+Sau khi final ổn định, cập nhật `project_state.json.style_fingerprint`:
+
+```json
+{
+  "hook_strategy": "<Hxx / strategy id>",
+  "hook_surface_form": "<surface family>",
+  "opening_signature": "<functional sequence>",
+  "opening_first_words": "<8-16 từ đầu, chỉ để audit>",
+  "dominant_transition_forms": ["<form>", "<form>"],
+  "narrator_scaffolding_hits": 0,
+  "rhetorical_question_count": 0,
+  "sentence_length_profile": "mixed | short-heavy | long-heavy",
+  "finalized": true
+}
+```
+
+Đồng thời cập nhật:
+
+- `narrator_scaffolding_gate`: PASS/FAIL;
+- `cross_project_similarity_gate.verdict`: PASS/FAIL;
+- `cross_project_similarity_gate.compared_projects`;
+- `closest_project`;
+- `max_opening_similarity` nếu checker có kết quả;
+- `surface_form_repeat`;
+- `opening_signature_repeat`.
+
+Không tự bịa similarity score nếu chưa chạy checker. Có thể để `max_opening_similarity` ở 0 và để `scripts/check_project.py --write-style-state` điền sau.
 
 ## First 3 minutes rewrite test
 
@@ -163,6 +232,9 @@ Trước khi lưu:
 - kiểm tra theory vs fact;
 - kiểm tra decorative factual detail;
 - kiểm tra transition phrase lặp;
+- kiểm tra narrator scaffolding;
+- kiểm tra opening similarity với recent projects;
+- kiểm tra style fingerprint đã được cập nhật;
 - kiểm tra ending callback.
 
 Chỉ lưu final khi không còn blocker.
