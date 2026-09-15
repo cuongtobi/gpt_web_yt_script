@@ -1,0 +1,32 @@
+{
+  "project_slug": "how-prehistoric-humans-lived-without-salt",
+  "current_stage": 0,
+  "target_wpm": 152,
+  "target_words": 3040,
+  "draft_words": 0,
+  "final_words": 0,
+  "estimated_duration_minutes": 0,
+  "fact_audit": "PENDING",
+  "retention_audit": {
+    "score": 0,
+    "max_score": 40,
+    "verdict": "PENDING"
+  },
+  "first_3_minutes": "PENDING",
+  "architecture_gate": {
+    "score": 0,
+    "max_score": 32,
+    "verdict": "PENDING"
+  },
+  "timing_gate": "PENDING",
+  "act_progression": "PENDING",
+  "scale_escalation": "PENDING",
+  "scene_density": "PENDING",
+  "reveal_ladder": "PENDING",
+  "blocked_claims": [],
+  "important_uncertainties": [],
+  "stage_history": [
+    {"stage": 0, "artifact": "00_input.md", "verdict": "PASS"}
+  ],
+  "updated_at": "2026-09-15T20:20:00+07:00"
+}
