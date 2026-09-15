@@ -1,14 +1,17 @@
 {
   "project": "how-humans-domesticated-cannabis",
-  "current_stage": "research_blocked",
+  "current_stage": "complete",
   "language": "English",
   "duration_minutes": 15,
   "target_wpm": 158,
   "target_words": 2370,
-  "draft_words": 0,
-  "final_words": 0,
-  "fact_audit": "FAIL",
-  "retention_audit": "BLOCKED",
-  "blocked_claims": ["C01", "C02", "C03", "C04", "C05", "C06"],
-  "updated_at": "2026-09-15T16:59:00+07:00"
+  "draft_words": 2269,
+  "final_words": 2273,
+  "estimated_duration_minutes": 14.39,
+  "fact_audit": "PASS",
+  "retention_audit": "PASS 23/24",
+  "architecture_gate": "PASS 16/16",
+  "timing_gate": "PASS",
+  "blocked_claims": [],
+  "updated_at": "2026-09-15T17:00:00+07:00"
 }

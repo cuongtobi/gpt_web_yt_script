@@ -6,9 +6,9 @@
 - Audience: general curious audience
 - Tone: documentary, intelligent, visual, conversational
 - Working title: How Did Humans Domesticate Cannabis?
-- Requested angle: Explain the transition from wild Cannabis to human-selected forms, while separating fiber/seed selection from psychoactive-use selection and being explicit about uncertainty in the archaeological and genomic record.
-- Must include: a clear distinction between evidence, interpretation, and debated origin stories; concrete visual anchors once sources are verified.
-- Must avoid: legalization politics as the main story; medical advice; unsupported “first/oldest” claims; a single-origin story presented as settled fact; fabricated dates, percentages, quotes, or citations.
+- Requested angle: Explain domestication as a long, branching process rather than a single event; distinguish early multipurpose cultivation from later fiber/drug specialization.
+- Must include: archaeological evidence, genomic evidence, uncertainty around the exact origin, fiber vs. drug selection, psychoactive evidence from Jirzankal.
+- Must avoid: claiming an exact domestication village/year; implying psychoactive use was the original or sole reason for domestication; treating hemp and marijuana as separate species; unsupported “oldest/first” claims.
 - User-provided sources: none
 - CTA preference: minimal/end only
 - Clean narration without headings: false
@@ -21,10 +21,12 @@
 
 ## Viewer promise
 
-By the end, the viewer should understand how human selection could turn one plant lineage into very different useful forms—and which parts of the Cannabis domestication story are strongly supported versus still debated.
+By the end, the viewer will understand how one multipurpose Cannabis population was gradually reshaped by human selection into increasingly specialized fiber, seed/oil, and drug-oriented forms—and why researchers still debate the exact place and date where that process began.
 
 ## Notes / assumptions
 
-- No extra audience, title, tone, or source constraints were provided, so repo defaults are used.
-- Web research is unavailable in this run and the repository contains no Cannabis source pack.
-- Per AGENTS.md and the orchestrator, model memory is not treated as verified evidence. Research Gate A must remain blocked until trustworthy sources are actually opened and checked.
+- Web research enabled on 2026-09-15.
+- Source priority: peer-reviewed primary research first, then scholarly synthesis.
+- “~12,000 years ago” and “~4,000 years ago” are treated as model-based estimates from Ren et al. (2021), not directly excavated dates.
+- The project distinguishes evidence of human use from evidence of domestication.
+- Taxonomy is kept conservative: narration uses Cannabis sativa / cannabis and practical “hemp-type” and “drug-type” categories without presenting disputed subspecies labels as settled.
