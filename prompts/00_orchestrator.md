@@ -25,10 +25,14 @@ Bạn đang làm việc trong repo `cuongtobi/gpt_web_yt_script`.
 5. Chạy tuần tự Stage 1 → 7 bằng prompt tương ứng trong `prompts/`.
 6. Sau mỗi stage, lưu artifact vào project và cập nhật `project_state.json`.
 7. Không bỏ qua Research Ledger đối với factual documentary/explainer.
-8. Nếu research tool/web không khả dụng, không tự bịa nguồn. Ghi claim chưa kiểm chứng là `UNVERIFIED` và viết final chỉ từ phần có support đáng tin cậy đã được user cung cấp hoặc repo có sẵn.
-9. Nếu Fact Audit FAIL, sửa trước khi chạy final.
-10. Nếu Retention Audit FAIL vì structural issue, quay lại Architecture/Outline thay vì chỉ polish câu chữ.
-11. Final phải đạt timing tolerance hoặc giải thích rõ exception trong state.
+8. Research Ledger là factual boundary, **không phải thứ tự kể chuyện**.
+9. Architecture và Outline phải được thiết kế từ viewer-question chain: mỗi payoff tạo consequence/câu hỏi tiếp theo.
+10. Trong 10–15% đầu phải có real payoff; không để first 2–3 minutes thành methodology/setup lecture.
+11. Khi accuracy cho phép, ưu tiên `reveal → evidence → meaning → qualification` thay vì `methodology → caveat → answer`.
+12. Nếu research tool/web không khả dụng, không tự bịa nguồn. Ghi claim chưa kiểm chứng là `UNVERIFIED` và viết final chỉ từ phần có support đáng tin cậy đã được user cung cấp hoặc repo có sẵn.
+13. Nếu Fact Audit FAIL, sửa trước khi chạy final.
+14. Nếu Retention Audit FAIL vì structural issue, quay lại Architecture/Outline và reorder thay vì chỉ polish câu chữ.
+15. Final phải đạt timing tolerance hoặc giải thích rõ exception trong state.
 
 ## Interaction policy
 
@@ -40,11 +44,16 @@ Bạn đang làm việc trong repo `cuongtobi/gpt_web_yt_script`.
 
 ## Story target
 
-Không clone câu chữ của video tham khảo. Tạo cùng cấp độ chất lượng bằng các cơ chế:
+Không clone câu chữ của video tham khảo. Tạo cùng cấp độ hấp dẫn bằng logic:
 
-`cinematic/concrete hook → surprising contrast → central question → before-state → causal ladder → evidence/case → meaning → consequence → new question → escalation/reframe → answer → larger implication → callback`
+`cinematic/concrete hook → central contradiction → central question → early payoff → consequence → stronger question → causal discovery → concrete evidence → reveal → reframe/reversal → synthesis → callback`
 
-Mỗi section phải trả lời được: **vì sao người xem cần đoạn này để hiểu câu hỏi trung tâm?**
+Mỗi section phải trả lời cả hai câu:
+
+1. **Vì sao viewer cần đoạn này để hiểu câu hỏi trung tâm?**
+2. **Sau đoạn này, viewer tự nhiên muốn biết điều gì tiếp theo?**
+
+Nếu câu trả lời thứ hai không rõ, story handoff bị gãy.
 
 ## Completion message
 
@@ -55,5 +64,6 @@ Khi hoàn thành, báo ngắn:
 - estimated duration;
 - Fact Audit verdict;
 - Retention Audit score/verdict;
+- First 3 minutes verdict;
 - 2–4 điểm story architecture nổi bật;
 - bất kỳ uncertainty quan trọng nào còn giữ trong final.
