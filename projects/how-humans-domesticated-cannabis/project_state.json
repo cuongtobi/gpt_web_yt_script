@@ -1,0 +1,28 @@
+{
+  "project": "how-humans-domesticated-cannabis",
+  "pipeline_version": "simple_v1",
+  "current_stage": "input",
+  "language": "English",
+  "duration_minutes": 25,
+  "target_wpm": 158,
+  "target_words": 3950,
+  "draft_words": 0,
+  "final_words": 0,
+  "estimated_duration_minutes": 0,
+  "fact_audit": "PENDING",
+  "timing_gate": "PENDING",
+  "blocked_claims": [],
+  "important_uncertainties": [
+    "The ~12,000-year domestication date is a model-based genomic estimate, not an excavated first-domestication event.",
+    "The ~4,000-year hemp/drug split is an estimated population divergence, not a single worldwide cultural fork.",
+    "Jirzankal proves psychoactive burning by about 500 BCE but does not date the first intoxication or prove a modern-style high-THC cultivar."
+  ],
+  "stage_history": [
+    {
+      "stage": "input",
+      "status": "COMPLETE",
+      "timestamp": "2026-09-15T22:20:00+07:00"
+    }
+  ],
+  "updated_at": "2026-09-15T22:20:00+07:00"
+}
