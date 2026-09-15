@@ -15,16 +15,20 @@ FAIL nếu script chỉ có nhiều fact nhưng không có evidence cho causal c
 
 Chấm 0–2 mỗi mục:
 
-- opening image cụ thể;
-- central question rõ;
-- surprising contrast;
-- causal ladder thay vì timeline dump;
-- escalation;
-- payoff placement;
-- visual variety;
-- ending callback.
+1. opening image cụ thể;
+2. central contradiction mạnh;
+3. central question rõ;
+4. viewer-question chain tự nhiên;
+5. causal ladder thay vì timeline dump;
+6. early payoff trong 10–15%;
+7. curiosity handoff giữa beats;
+8. escalation/reveal ladder;
+9. visual variety;
+10. ending callback.
 
-PASS: >= 13/16 và không mục nào 0 ở central question, causal ladder, ending.
+PASS: >= 16/20 và không mục nào 0 ở central question, viewer-question chain, causal ladder, early payoff, ending.
+
+FAIL tự động nếu 2–3 phút đầu chủ yếu là methodology/setup mà chưa có real payoff.
 
 ## Gate C — Draft integrity
 
@@ -33,9 +37,12 @@ PASS khi:
 - độ dài draft trong ±10% target;
 - không paragraph nào chỉ lặp lại ý trước;
 - không có 3 đoạn abstract liên tiếp;
+- không có 2 beat methodology/caveat-heavy liên tiếp nếu chưa payoff;
 - source/name/date chỉ xuất hiện khi cần;
 - CTA không phá hook;
-- script nói thành tiếng tự nhiên.
+- script nói thành tiếng tự nhiên;
+- mỗi beat có story function rõ;
+- không có decorative factual detail unsupported.
 
 ## Gate D — Fact Audit
 
@@ -46,7 +53,8 @@ PASS khi:
 - 100% “first/oldest/only/largest” có support đủ mạnh hoặc đã qualify;
 - không có fabricated probability;
 - theory ≠ fact;
-- current facts có nguồn phù hợp với thời điểm project.
+- current facts có nguồn phù hợp với thời điểm project;
+- cinematic/sensory detail trình bày như fact cũng phải có support.
 
 Bất kỳ fabricated source/number/quote nào = FAIL tự động.
 
@@ -54,20 +62,31 @@ Bất kỳ fabricated source/number/quote nào = FAIL tự động.
 
 Score 0–2 mỗi mục:
 
-1. hook visual/tension;
+1. hook visual + central contradiction;
 2. central question;
-3. information importance early;
-4. micro open loops;
-5. payoff cadence;
-6. escalation;
-7. concrete visuals;
-8. scale/pattern variation;
-9. transition diversity;
-10. no padding;
-11. memorable but non-spammy lines;
-12. ending callback.
+3. first meaningful payoff early;
+4. viewer-question chain;
+5. curiosity handoffs;
+6. payoff cadence;
+7. causal escalation;
+8. major reframe/reversal;
+9. concrete visuals;
+10. scale/pattern variation;
+11. transition diversity;
+12. no research-order leak;
+13. no methodology drag;
+14. no padding;
+15. memorable but non-spammy lines;
+16. ending answer + callback.
 
-PASS: >= 19/24 và hook, escalation, no padding, ending không được 0.
+PASS: >= 26/32 và hook, first payoff, viewer-question chain, escalation, no padding, ending không được 0.
+
+FAIL tự động nếu:
+
+- first 3 minutes chủ yếu là setup/methodology;
+- có 2+ `BROKEN HANDOFF` nghiêm trọng liên tiếp;
+- major reveal bị chôn sau đoạn explanation có thể reorder mà không ảnh hưởng accuracy;
+- script có nhiều đoạn đúng nhưng viewer không có lý do cụ thể để tiếp tục.
 
 ## Gate F — Final timing
 
@@ -88,4 +107,9 @@ Tự động flag nếu có:
 - claim định lượng không có ledger support;
 - “obviously”, “everyone knows”, “scientists proved” cho claim phức tạp;
 - “the reason is simple” khi thực tế có nhiều nguyên nhân;
-- conclusion thêm claim mới chưa được research.
+- conclusion thêm claim mới chưa được research;
+- methodology/caveat xuất hiện trước first reward dù có thể dời xuống;
+- beat chỉ tồn tại vì research có fact đó, không phải vì story cần nó;
+- generic cliffhanger không có consequence thật;
+- >90 giây không có reveal/case/mechanism/consequence/reversal;
+- >2 phút abstraction không có visual/human-scale anchor.
