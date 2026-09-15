@@ -1,6 +1,6 @@
 # Stage 2 Prompt — Story Architecture
 
-Đọc `00_input.md`, `01_research_ledger.md`, `AGENTS.md`, `docs/STYLE_DNA.md`.
+Đọc `00_input.md`, `01_research_ledger.md`, `AGENTS.md`, `docs/STYLE_DNA.md` và `docs/HOOK_STRATEGY_REGISTRY.md`.
 
 Không viết full script. Thiết kế trải nghiệm kể chuyện từ góc nhìn viewer.
 
@@ -23,23 +23,68 @@ Ví dụ dạng trừu tượng:
 
 ## 3. Hook archetype
 
-Ưu tiên một trong hai archetype mạnh:
+Archetype là logic story cấp cao, không phải câu mở đầu cố định.
 
-### A. Transformation Hook
-`concrete before-state → extreme present/after contrast → impossible-looking transformation → central question`
-
-### B. World-Before-X Hook
-`place viewer in world before X → remove familiar assumption → show why modern X is strange → central question`
-
-Có thể dùng archetype khác nếu topic đòi hỏi, nhưng opening phải làm viewer nghĩ: **“Tôi cần biết làm sao chuyện này xảy ra.”**
+Có thể dùng Transformation Hook, World-Before-X Hook hoặc archetype khác nếu topic đòi hỏi. Opening phải làm viewer nghĩ: **“Tôi cần biết làm sao chuyện này xảy ra.”**
 
 Không mở bằng methodology, disclaimer, taxonomy hoặc caveat dài.
 
-## 4. Central question
+## 4. Hook Strategy Registry + Cross-Project Anti-Template
+
+Trước khi chốt hook:
+
+1. Đọc `docs/HOOK_STRATEGY_REGISTRY.md`.
+2. Đọc `project_state.json` của tối đa 5 project hoàn tất gần nhất trong `projects/`.
+3. Thu thập nếu có:
+   - `style_fingerprint.hook_strategy`;
+   - `style_fingerprint.hook_surface_form`;
+   - `style_fingerprint.opening_signature`.
+4. Không lặp `hook_surface_form` của 2 project gần nhất.
+5. Không lặp exact `opening_signature` của 2 project gần nhất.
+6. Nếu nhiều project gần đây dùng cùng `hook_strategy`, chỉ được giữ strategy đó khi surface form và sequence mở đầu thực sự khác.
+7. `imperative_imagination` kiểu “Hãy tưởng tượng…”, “Hãy thử…”, “Imagine…” không được dùng như default. Nếu một trong 5 project gần nhất đã dùng surface này thì phải chọn surface khác, trừ khi user yêu cầu rõ.
+
+### Hook Candidate Tournament
+
+Tạo ít nhất **4 candidate hooks khác nhau về cấu trúc**, không chỉ paraphrase.
+
+Mỗi candidate ghi:
+
+- Strategy ID từ registry;
+- Surface form;
+- Opening signature;
+- Concrete anchor;
+- Contradiction/tension;
+- Early payoff path;
+- Similarity risk với recent projects.
+
+Chọn candidate thắng theo thứ tự:
+
+1. factual integrity;
+2. central-question clarity;
+3. curiosity;
+4. playable visual;
+5. uniqueness so với recent projects;
+6. spoken naturalness.
+
+Ghi rõ trong `02_story_architecture.md`:
+
+```md
+## Hook Strategy Selection
+- Strategy ID:
+- Hook archetype:
+- Surface form:
+- Opening signature:
+- Recent projects checked:
+- Rejected similar patterns:
+- Why this opening is distinct:
+```
+
+## 5. Central question
 
 Một câu hỏi đủ lớn để giữ cả video nhưng đủ cụ thể để trả lời.
 
-## 5. Act Architecture
+## 6. Act Architecture
 
 Thiết kế 4–5 acts. Không bắt buộc tên cố định, nhưng progression nên có cảm giác:
 
@@ -58,7 +103,7 @@ Mỗi act phải trả lời:
 
 Không chia act chỉ theo chronology hoặc số phút.
 
-## 6. Viewer-question chain
+## 7. Viewer-question chain
 
 Viết chuỗi 5–10 câu hỏi tự nhiên mà viewer sẽ lần lượt muốn biết.
 
@@ -75,7 +120,7 @@ Q1: <question>
 
 Không nhất thiết đọc các câu hỏi này thành lời trong final.
 
-## 7. Causal ladder
+## 8. Causal ladder
 
 Tạo 5–9 bước. Mỗi bước phải có:
 
@@ -87,7 +132,7 @@ Tạo 5–9 bước. Mỗi bước phải có:
 
 Nếu giữa hai bước chỉ có quan hệ chronological, đánh dấu và tìm causal bridge hoặc bỏ.
 
-## 8. Scale Escalation Controller
+## 9. Scale Escalation Controller
 
 Gắn scale cho từng beat/act:
 
@@ -107,7 +152,7 @@ Rule:
 
 Lập **Scale Escalation Map** và chỉ ra ít nhất 2 chỗ story zoom out hoặc zoom in có chủ ý.
 
-## 9. Story Expansion Test
+## 10. Story Expansion Test
 
 Mỗi beat phải làm ít nhất một việc:
 
@@ -122,7 +167,7 @@ Hỏi thêm:
 
 > Câu trả lời này có làm câu chuyện lớn hơn, sâu hơn hoặc khác đi không?
 
-## 10. Reveal ladder
+## 11. Reveal ladder
 
 Gắn các reveal chính theo cấp:
 
@@ -136,7 +181,7 @@ Không giữ tất cả payoff đến cuối. Trong 10–15% đầu phải có �
 
 Với video 15–30 phút, nếu evidence cho phép phải chủ động tìm ít nhất một **R4**: một counterexample, consequence hoặc new evidence khiến model viewer vừa hình thành phải được sửa lại.
 
-## 11. Curiosity debt map
+## 12. Curiosity debt map
 
 - 1 macro loop từ hook.
 - 3–7 micro loops tổng thể.
@@ -144,7 +189,7 @@ Với video 15–30 phút, nếu evidence cho phép phải chủ động tìm í
 - Mỗi loop có nơi mở, partial payoff nếu cần, final payoff và curiosity handoff.
 - Không mở loop giả chỉ để clickbait.
 
-## 12. Historical / explanatory detours
+## 13. Historical / explanatory detours
 
 Detour được phép nếu nó làm ít nhất một trong các việc:
 
@@ -157,7 +202,7 @@ Detour được phép nếu nó làm ít nhất một trong các việc:
 
 Detour phải quay lại central question bằng một consequence rõ. Nếu chỉ là fact thú vị, bỏ.
 
-## 13. Story-order test
+## 14. Story-order test
 
 Tách **research order** khỏi **story order**.
 
@@ -170,7 +215,7 @@ Hỏi với từng beat:
 
 Ưu tiên `reward → evidence → meaning → necessary qualification` khi không gây hiểu sai.
 
-## 14. Escalation map
+## 15. Escalation map
 
 Xếp novelty/stakes 1–5.
 
@@ -185,7 +230,7 @@ Mỗi 2–3 beats phải chỉ ra chính xác story đã tăng ở đâu:
 
 Nếu beat sau có thể đổi chỗ với beat trước mà không ảnh hưởng story, cấu trúc còn quá modular.
 
-## 15. Visual Scene Density Map
+## 16. Visual Scene Density Map
 
 Phân biệt:
 
@@ -198,13 +243,13 @@ Sau một beat abstract/genomic/system-heavy, ưu tiên một human-scale scene 
 
 Không bịa historical action/sensory detail để đạt scene density.
 
-## 16. Uncertainty map
+## 17. Uncertainty map
 
 Liệt kê nơi script phải dùng wording như `may`, `one explanation`, `evidence suggests`, `researchers disagree`.
 
 Không biến uncertainty map thành phần mở đầu. Qualification phải được đặt ở nơi chính xác nhưng ít phá momentum nhất.
 
-## 17. Ending
+## 18. Ending
 
 `answer → reframe → larger implication → callback to opening image/contradiction`.
 
