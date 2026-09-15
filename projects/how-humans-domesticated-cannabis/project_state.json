@@ -1,7 +1,7 @@
 {
   "project": "how-humans-domesticated-cannabis",
   "pipeline_version": "simple_v1",
-  "current_stage": "input",
+  "current_stage": "research",
   "language": "English",
   "duration_minutes": 25,
   "target_wpm": 158,
@@ -18,11 +18,8 @@
     "Jirzankal proves psychoactive burning by about 500 BCE but does not date the first intoxication or prove a modern-style high-THC cultivar."
   ],
   "stage_history": [
-    {
-      "stage": "input",
-      "status": "COMPLETE",
-      "timestamp": "2026-09-15T22:20:00+07:00"
-    }
+    {"stage": "input", "status": "COMPLETE", "timestamp": "2026-09-15T22:20:00+07:00"},
+    {"stage": "research", "status": "PASS", "timestamp": "2026-09-15T22:20:00+07:00"}
   ],
   "updated_at": "2026-09-15T22:20:00+07:00"
 }
