@@ -1,11 +1,11 @@
 {
   "project_slug": "how-prehistoric-humans-lived-without-salt",
-  "current_stage": 6,
+  "current_stage": 7,
   "target_wpm": 152,
   "target_words": 3040,
   "draft_words": 3025,
-  "final_words": 0,
-  "estimated_duration_minutes": 19.90,
+  "final_words": 3056,
+  "estimated_duration_minutes": 20.11,
   "fact_audit": "PASS",
   "retention_audit": {
     "score": 38,
@@ -37,7 +37,8 @@
     {"stage": 3, "artifact": "03_outline.md", "verdict": "PASS"},
     {"stage": 4, "artifact": "04_draft.md", "verdict": "PASS"},
     {"stage": 5, "artifact": "05_fact_audit.md", "verdict": "PASS"},
-    {"stage": 6, "artifact": "06_retention_audit.md", "verdict": "PASS"}
+    {"stage": 6, "artifact": "06_retention_audit.md", "verdict": "PASS"},
+    {"stage": 7, "artifact": "07_final_script.md", "verdict": "PASS"}
   ],
-  "updated_at": "2026-09-15T21:02:00+07:00"
+  "updated_at": "2026-09-15T21:08:00+07:00"
 }
