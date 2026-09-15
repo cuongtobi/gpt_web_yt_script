@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a project workspace from templates using only the Python standard library."""
+"""Create a simple_v1 YouTube documentary project from templates."""
 
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ def replace_field(text: str, label: str, value: str) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Initialize a YouTube script project")
+    parser = argparse.ArgumentParser(description="Initialize a simple YouTube documentary project")
     parser.add_argument("--topic", required=True)
     parser.add_argument("--language", required=True)
     parser.add_argument("--duration", type=float, required=True, help="Target duration in minutes")
@@ -87,6 +87,7 @@ def main() -> int:
     state.update(
         {
             "project": slug,
+            "pipeline_version": "simple_v1",
             "language": args.language,
             "duration_minutes": args.duration,
             "target_wpm": wpm,
@@ -97,7 +98,9 @@ def main() -> int:
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print(f"Created projects/{slug}")
+    print("Pipeline: simple_v1")
     print(f"Target: {target_words} words at {wpm} WPM (~{args.duration:g} minutes)")
+    print(f"Final artifact: projects/{slug}/05_final_script.md")
     return 0
 
 
