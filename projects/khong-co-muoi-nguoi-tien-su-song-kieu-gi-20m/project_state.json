@@ -1,0 +1,54 @@
+{
+  "project": "khong-co-muoi-nguoi-tien-su-song-kieu-gi-20m",
+  "pipeline_version": "simple_v1",
+  "current_stage": "complete",
+  "language": "tiếng Việt",
+  "duration_minutes": 20,
+  "target_wpm": 152,
+  "target_words": 3040,
+  "draft_words": 3268,
+  "final_words": 3026,
+  "estimated_duration_minutes": 19.91,
+  "fact_audit": "PASS",
+  "timing_gate": "PASS",
+  "blocked_claims": [],
+  "important_uncertainties": [
+    "Không có một khẩu phần natri duy nhất cho mọi cộng đồng tiền sử.",
+    "Hành vi dùng salt lick/suối mặn thường khó chứng minh trực tiếp cho từng cộng đồng.",
+    "Nông nghiệp làm muối quan trọng hơn là synthesis phụ thuộc sinh thái, không phải causal switch phổ quát.",
+    "Poiana Slatinei-Lunca được gọi là một trong những bằng chứng rất sớm, không khẳng định 'cổ nhất thế giới'."
+  ],
+  "stage_history": [
+    {
+      "stage": "input",
+      "status": "PASS"
+    },
+    {
+      "stage": "research",
+      "status": "PASS"
+    },
+    {
+      "stage": "story_spine",
+      "status": "PASS"
+    },
+    {
+      "stage": "draft",
+      "status": "PASS",
+      "words": 3268
+    },
+    {
+      "stage": "fact_audit",
+      "status": "PASS"
+    },
+    {
+      "stage": "final_edit",
+      "status": "PASS",
+      "words": 3026
+    },
+    {
+      "stage": "validation",
+      "status": "PASS"
+    }
+  ],
+  "updated_at": "2026-09-15T23:57:00+07:00"
+}
