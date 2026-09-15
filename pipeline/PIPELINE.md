@@ -52,7 +52,10 @@ Thiết kế câu chuyện trước khi viết câu chữ.
 Bắt buộc có:
 
 - central contradiction;
-- hook archetype: ưu tiên Transformation Hook hoặc World-Before-X Hook khi phù hợp;
+- hook archetype;
+- Hook Strategy Registry selection;
+- Hook Candidate Tournament với ít nhất 4 candidate khác cấu trúc;
+- cross-project scan tối đa 5 project hoàn tất gần nhất;
 - central question;
 - 4–5 Act Architecture;
 - viewer-question chain;
@@ -65,6 +68,16 @@ Bắt buộc có:
 - Visual Scene Density Map;
 - uncertainty map;
 - ending answer + reframe + implication + callback.
+
+### Hook anti-template rule
+
+Đọc `docs/HOOK_STRATEGY_REGISTRY.md` và recent `project_state.json`.
+
+- Không lặp `hook_surface_form` của 2 project gần nhất.
+- Không lặp exact `opening_signature` của 2 project gần nhất.
+- `imperative_imagination` kiểu “Hãy tưởng tượng… / Hãy thử… / Imagine…” không được dùng lại nếu đã xuất hiện trong recent window, trừ khi user yêu cầu rõ.
+- Cùng `hook_strategy` vẫn có thể dùng lại nếu surface/signature thực sự khác.
+- Backend story logic có thể giống ở mức nguyên lý; surface phải đa dạng.
 
 ### Act rule
 
@@ -225,6 +238,7 @@ Audit:
 - methodology drag;
 - decorative detours;
 - transition/template repetition;
+- narrator scaffolding risk;
 - compression;
 - weakest-60-seconds test.
 
@@ -247,10 +261,29 @@ Thứ tự ưu tiên:
 5. scale escalation + reveal ladder;
 6. playable scene density;
 7. spoken clarity;
-8. duration;
-9. style.
+8. anti-template naturalness;
+9. duration;
+10. style.
 
 Không giữ câu hay nếu sai/overstated.
+
+### Remove Narrator Scaffolding Pass
+
+Sau khi structure đúng, chạy một pass riêng để xóa/rewrite phần lớn các câu narrator tự báo chức năng như:
+
+- “Đây là bước ngoặt.”
+- “Đây là nơi…”
+- “Bây giờ câu chuyện…”
+- “Nhưng câu hỏi tiếp theo là…”
+- “Câu trả lời đầu tiên…”
+
+Ưu tiên để evidence, action và consequence tự tạo turn. Không thay scaffold cũ bằng scaffold mới.
+
+### Final cross-project check
+
+Final opening phải được so lại với recent project để phát hiện drift khỏi Hook Strategy Selection.
+
+Sau khi final ổn định, cập nhật `style_fingerprint`, `narrator_scaffolding_gate`, `cross_project_similarity_gate` trong state.
 
 Final phải đạt:
 
@@ -261,9 +294,24 @@ Final phải đạt:
 - reveal ladder pass;
 - Fact Audit pass;
 - Retention/Story Momentum pass;
-- timing pass.
+- timing pass;
+- narrator scaffolding pass;
+- cross-project similarity pass.
 
 Output: `07_final_script.md`.
+
+## Stage 8 — Static Final Validation
+
+Chạy:
+
+```bash
+python scripts/check_project.py projects/<slug> --write-style-state
+python scripts/check_project.py projects/<slug>
+```
+
+`--write-style-state` cập nhật fingerprint và kết quả Gate G. Lần chạy thứ hai là validation sạch.
+
+Nếu anti-template FAIL, không sửa vài từ cho qua threshold. Quay lại Stage 2/7 để thay surface/signature hoặc loại scaffolding thực sự.
 
 ## State
 
@@ -279,7 +327,21 @@ Cập nhật `project_state.json` sau mỗi stage:
 - `architecture_gate`;
 - `timing_gate`;
 - `blocked_claims`;
-- `updated_at`.
+- `updated_at`;
+- `anti_template_version`;
+- `narrator_scaffolding_gate`;
+- `cross_project_similarity_gate`;
+- `style_fingerprint`.
+
+`style_fingerprint` tối thiểu phải lưu:
+
+- `hook_strategy`;
+- `hook_surface_form`;
+- `opening_signature`;
+- `opening_first_words`;
+- `narrator_scaffolding_hits`;
+- `rhetorical_question_count`;
+- `finalized`.
 
 Có thể thêm:
 
@@ -295,3 +357,5 @@ Có thể thêm:
 - `FLAT ACT`, scale stagnation, weak R4 → sửa Stage 2/3 trước.
 - Scene density fail → sửa Outline rồi Draft; không bịa scene.
 - Duration fail >10% → rebudget Outline trước khi cắt/thêm ngẫu nhiên.
+- Hook surface/signature repeat → quay lại Hook Candidate Tournament hoặc rewrite opening ở Stage 7.
+- Narrator scaffolding fail → chạy lại Remove Narrator Scaffolding Pass; không thay một catchphrase bằng catchphrase khác.
