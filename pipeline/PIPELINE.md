@@ -1,361 +1,188 @@
-# Pipeline
+# Simple YouTube Documentary Pipeline
 
-## Stage 0 — Intake
+Pipeline này cố ý **đơn giản**. Mục tiêu là tạo script có cảm giác như một documentary writer đang kể một chuỗi biến đổi có thật, không phải một model đang hoàn thành hàng chục controller.
 
-File: `00_input.md`
+## Stage 0 — Input
 
-Chuẩn hóa topic, language, duration, audience, tone, title/angle nếu có. Tính target word budget. Viết một câu `viewer_promise`: xem hết video, người xem sẽ hiểu hoặc nhìn khác điều gì?
+Artifact: `00_input.md`
 
-Không research sâu ở stage này.
+Chuẩn hóa:
 
-## Stage 1 — Research Ledger
+- topic;
+- language;
+- duration;
+- audience / title / angle nếu user cung cấp;
+- target WPM;
+- target words.
+
+Không research sâu ở Stage 0.
+
+---
+
+## Stage 1 — Research
 
 Prompt: `prompts/01_research.md`
 
-Mục tiêu không phải tạo encyclopedia. Mục tiêu là thu thập đúng evidence cần cho central question **và một inventory đủ mạnh để kể story**.
+Artifact: `01_research.md`
 
-Research theo các nhóm:
+Research pack gồm:
 
-1. origin / before-state;
-2. mechanism;
-3. turning points;
-4. concrete cases / objects / experiments / people;
-5. reframe / counterevidence / reversal;
-6. scale-expansion evidence;
-7. modern consequence / why it matters.
+- 1–2 central question candidates;
+- timeline / causal background cần thiết;
+- khoảng 10–20 core claims;
+- 5–8 strong cases / objects / studies;
+- useful numbers / quotes;
+- important uncertainties.
 
-Mỗi claim cần factual metadata + story metadata:
-
-- status/source/support/limits;
-- story role;
-- story value;
-- visual potential;
-- playable scene/concrete anchor;
-- human-scale example;
-- scale potential;
-- escalation value.
-
-Research Ledger là factual boundary + story inventory, không phải narration order.
-
-Output: `01_research_ledger.md`.
+Research là factual boundary, không phải narration order.
 
 ### Gate
 
-Không sang architecture nếu thesis chính dựa trên claim `UNVERIFIED`.
+Không sang Story Spine nếu thesis chính dựa trên claim `UNVERIFIED` hoặc các bước lớn của câu chuyện chưa có support.
 
-## Stage 2 — Story Architecture
+---
 
-Prompt: `prompts/02_architecture.md`
+## Stage 2 — Story Spine
 
-Thiết kế câu chuyện trước khi viết câu chữ.
+Prompt: `prompts/02_story_spine.md`
 
-Bắt buộc có:
+Artifact: `02_story_spine.md`
 
-- central contradiction;
-- hook archetype;
-- Hook Strategy Registry selection;
-- Hook Candidate Tournament với ít nhất 4 candidate khác cấu trúc;
-- cross-project scan tối đa 5 project hoàn tất gần nhất;
+Chỉ thiết kế:
+
 - central question;
-- 4–5 Act Architecture;
-- viewer-question chain;
-- causal ladder 5–9 bước;
-- Scale Escalation Map;
-- Story Expansion Test;
-- Reveal Ladder R1→R5;
-- Curiosity Debt Map;
-- historical/explanatory detours có chức năng;
-- Visual Scene Density Map;
-- uncertainty map;
-- ending answer + reframe + implication + callback.
+- một opening cụ thể;
+- 6–10 beats;
+- direct ending + callback.
 
-### Hook anti-template rule
+Mỗi beat trả lời:
 
-Đọc `docs/HOOK_STRATEGY_REGISTRY.md` và recent `project_state.json`.
+```text
+What happened / what do we learn?
+Why does it matter to the central question?
+What does it naturally lead to next?
+Evidence / cases used:
+```
 
-- Không lặp `hook_surface_form` của 2 project gần nhất.
-- Không lặp exact `opening_signature` của 2 project gần nhất.
-- `imperative_imagination` kiểu “Hãy tưởng tượng… / Hãy thử… / Imagine…” không được dùng lại nếu đã xuất hiện trong recent window, trừ khi user yêu cầu rõ.
-- Cùng `hook_strategy` vẫn có thể dùng lại nếu surface/signature thực sự khác.
-- Backend story logic có thể giống ở mức nguyên lý; surface phải đa dạng.
+Không ép R1–R5, acts, scale map, curiosity debt, scene quota hoặc hook archetype.
 
-### Act rule
+### Gate
 
-Mỗi act phải có:
+Nếu 3–4 beats có thể đổi chỗ tự do mà logic không đổi, Story Spine còn quá modular. Sắp lại cho causal/chronological transformation rõ hơn.
 
-- entry question/belief;
-- payoff;
-- scale/stakes/depth increase;
-- consequence mở act kế.
+---
 
-Act chỉ gom các fact cùng chủ đề = fail.
+## Stage 3 — Full Draft
 
-### Causal rule
+Prompt: `prompts/03_draft.md`
 
-Causal ladder phải đọc được:
+Artifact: `03_draft.md`
 
-`A → therefore B → creates C → response D → consequence E`.
+Writer ưu tiên:
 
-Nếu chỉ `A happened, then B, then C`, chưa đạt.
+1. spoken;
+2. concrete;
+3. causal.
 
-### Scale rule
+Chronology được phép nếu chronology chính là story.
 
-Scale vocabulary:
+Draft target khoảng ±10% target words.
 
-`object → individual → community → institution → civilization → global/system`
+Không thêm filler chỉ để đủ từ.
 
-Không cần tăng tuyến tính nhưng mỗi 2–3 beats phải có intentional zoom hoặc lý do giữ scale.
+---
 
-Output: `02_story_architecture.md`.
+## Stage 4 — Fact Audit
 
-## Stage 3 — Retention Outline
+Prompt: `prompts/04_fact_audit.md`
 
-Prompt: `prompts/03_outline.md`
+Artifact: `04_fact_audit.md`
 
-Chia video thành acts + beats có timestamp/word budget.
+Audit high-risk claims:
 
-Mỗi beat phải ghi:
-
-- act;
-- viewer question;
-- evidence;
-- playable scene / physical sequence;
-- human-scale element;
-- reveal/payoff;
-- meaning;
-- consequence;
-- curiosity handoff;
-- scale + zoom direction;
-- story expansion function;
-- visual anchor;
-- open loops;
-- reveal level R1–R5;
-- novelty/stakes.
-
-### Story Expansion rule
-
-Mỗi beat phải ít nhất một:
-
-- deepens mechanism;
-- widens scale;
-- changes interpretation;
-- raises stakes.
-
-Không có function → cut/compress/fold.
-
-### Retention cadence
-
-- 0:00–0:45: hook + contradiction + central question;
-- 10–15% đầu: real payoff;
-- 25–40%: mechanism/reframe đầu;
-- 45–65%: evidence/case mạnh hơn opening;
-- 60–80%: R3/R4 nếu topic hỗ trợ;
-- 80–90%: hội tụ;
-- cuối: answer → reframe → implication → callback.
-
-### Scene density
-
-Topic giàu visual evidence: khoảng 60–90 giây nên có playable scene hoặc physical sequence. Không để >2 phút chỉ abstraction nếu có cách kể cụ thể hơn.
-
-Output: `03_outline.md`.
-
-## Stage 4 — Draft
-
-Prompt: `prompts/04_draft.md`
-
-Viết theo outline nhưng ưu tiên spoken rhythm và story momentum.
-
-Draft rules:
-
-- claim factual chỉ dùng từ Research Ledger;
-- mỗi beat phải có story expansion function;
-- giữ act turns và scale movement;
-- reward trước qualification khi accuracy cho phép;
-- sau abstraction, quay về concrete/human-scale consequence;
-- detour chỉ giữ nếu tăng scale/scene/reframe/stakes hoặc causal proof;
-- không spam generic cliffhanger;
-- không nhồi citation;
-- CTA nếu có ngắn và không phá narrative.
-
-### Dramatization doctrine
-
-**Dramatize structure, never facts.**
-
-Được reorder/delay/reveal/contrast/zoom/compress attribution.
-Không được bịa dialogue, emotion, exact historical action, sensory detail, motive hoặc certainty.
-
-Output: `04_draft.md`.
-
-## Stage 5 — Fact Audit
-
-Prompt: `prompts/05_fact_audit.md`
-
-Audit từng claim có rủi ro:
-
-- number/date/statistic;
+- precise number / percentage / date;
+- quotes;
 - named study/person/institution;
-- quotation;
-- “first/oldest/largest/only”;
-- causal claim;
-- consensus claim;
-- probability;
-- current fact;
-- cinematic/sensory detail kể như fact.
+- first/oldest/only/largest;
+- causal / consensus / current claims;
+- cinematic or sensory detail told as fact.
 
-Đánh dấu `KEEP`, `QUALIFY`, `REWRITE`, `REMOVE`, `VERIFY`.
+Actions:
 
-Zero tolerance:
+`KEEP | QUALIFY | REWRITE | REMOVE | VERIFY`
 
-- invented probability;
-- invented citation;
-- unsupported quote;
-- theory stated as settled fact;
-- invented cinematic detail;
-- current number không có nguồn hiện hành.
+`VERIFY` còn tồn tại = FAIL.
 
-Output: `05_fact_audit.md`.
+Fact Audit tập trung factual integrity, không redesign story nếu không cần.
 
-## Stage 6 — Retention / Story Momentum Audit
+---
 
-Prompt: `prompts/06_retention_audit.md`
+## Stage 5 — Final Edit
 
-Đọc draft như viewer lần đầu.
+Prompt: `prompts/05_final_edit.md`
 
-Audit:
+Artifact: `05_final_script.md`
 
-- first 3 minutes;
-- act progression / act turns;
-- viewer-question chain;
-- story expansion per beat;
-- curiosity handoff;
-- payoff cadence;
-- Scale Escalation;
-- intentional zoom-in/zoom-out;
-- Reveal Ladder R1–R5;
-- R3/R4 model change;
-- playable scene density;
-- research-order leak;
-- methodology drag;
-- decorative detours;
-- transition/template repetition;
-- narrator scaffolding risk;
-- compression;
-- weakest-60-seconds test.
+Final Edit:
 
-Retention score dùng thang `/40` trong `QUALITY_GATES.md`.
+- áp dụng Fact Audit;
+- cắt repetition/padding;
+- làm prose dễ nói;
+- rút methodology/attribution dài;
+- giữ concrete cases mạnh;
+- sửa transition máy móc khi cần;
+- đưa final về ±7% target words;
+- trả central question rõ ở cuối.
 
-Output: `06_retention_audit.md`.
+Anti-template là soft editorial check, không phải hard gate.
 
-## Stage 7 — Final Rewrite
+---
 
-Prompt: `prompts/07_rewrite_final.md`
-
-Áp dụng cả Fact Audit và Retention Audit ở cấp structure, act, scale, scene và prose.
-
-Thứ tự ưu tiên:
-
-1. factual integrity;
-2. viewer-question chain;
-3. central question/payoff;
-4. act progression + causal coherence;
-5. scale escalation + reveal ladder;
-6. playable scene density;
-7. spoken clarity;
-8. anti-template naturalness;
-9. duration;
-10. style.
-
-Không giữ câu hay nếu sai/overstated.
-
-### Remove Narrator Scaffolding Pass
-
-Sau khi structure đúng, chạy một pass riêng để xóa/rewrite phần lớn các câu narrator tự báo chức năng như:
-
-- “Đây là bước ngoặt.”
-- “Đây là nơi…”
-- “Bây giờ câu chuyện…”
-- “Nhưng câu hỏi tiếp theo là…”
-- “Câu trả lời đầu tiên…”
-
-Ưu tiên để evidence, action và consequence tự tạo turn. Không thay scaffold cũ bằng scaffold mới.
-
-### Final cross-project check
-
-Final opening phải được so lại với recent project để phát hiện drift khỏi Hook Strategy Selection.
-
-Sau khi final ổn định, cập nhật `style_fingerprint`, `narrator_scaffolding_gate`, `cross_project_similarity_gate` trong state.
-
-Final phải đạt:
-
-- first 3 minutes pass;
-- act progression pass;
-- scale escalation pass;
-- scene density pass;
-- reveal ladder pass;
-- Fact Audit pass;
-- Retention/Story Momentum pass;
-- timing pass;
-- narrator scaffolding pass;
-- cross-project similarity pass.
-
-Output: `07_final_script.md`.
-
-## Stage 8 — Static Final Validation
+## Final Validation
 
 Chạy:
 
 ```bash
-python scripts/check_project.py projects/<slug> --write-style-state
 python scripts/check_project.py projects/<slug>
 ```
 
-`--write-style-state` cập nhật fingerprint và kết quả Gate G. Lần chạy thứ hai là validation sạch.
+Hard FAIL chỉ khi:
 
-Nếu anti-template FAIL, không sửa vài từ cho qua threshold. Quay lại Stage 2/7 để thay surface/signature hoặc loại scaffolding thực sự.
+- thiếu artifact bắt buộc;
+- Fact Audit chưa PASS;
+- final lệch quá ±7% target;
+- final còn `[VERIFY]`, `[TODO]`, `[SOURCE]`, `[CHECK]`.
+
+Template-like prose chỉ WARN.
+
+---
 
 ## State
 
-Cập nhật `project_state.json` sau mỗi stage:
+`project_state.json` của project mới dùng:
 
-- `current_stage`;
-- `target_words`;
-- `draft_words`;
-- `final_words`;
-- `fact_audit`;
-- `retention_audit`;
-- `first_3_minutes`;
-- `architecture_gate`;
-- `timing_gate`;
-- `blocked_claims`;
-- `updated_at`;
-- `anti_template_version`;
-- `narrator_scaffolding_gate`;
-- `cross_project_similarity_gate`;
-- `style_fingerprint`.
+```json
+{
+  "pipeline_version": "simple_v1",
+  "current_stage": "input",
+  "target_words": 0,
+  "draft_words": 0,
+  "final_words": 0,
+  "fact_audit": "PENDING",
+  "timing_gate": "PENDING"
+}
+```
 
-`style_fingerprint` tối thiểu phải lưu:
+Có thể lưu thêm `blocked_claims`, `important_uncertainties`, `stage_history`.
 
-- `hook_strategy`;
-- `hook_surface_form`;
-- `opening_signature`;
-- `opening_first_words`;
-- `narrator_scaffolding_hits`;
-- `rhetorical_question_count`;
-- `finalized`.
-
-Có thể thêm:
-
-- `act_progression`;
-- `scale_escalation`;
-- `scene_density`;
-- `reveal_ladder`.
+---
 
 ## Rerun rules
 
-- Fact Audit fail → sửa Research Ledger hoặc Draft trước, không polish trực tiếp.
-- Retention fail vì structure → quay lại Architecture/Outline.
-- `FLAT ACT`, scale stagnation, weak R4 → sửa Stage 2/3 trước.
-- Scene density fail → sửa Outline rồi Draft; không bịa scene.
-- Duration fail >10% → rebudget Outline trước khi cắt/thêm ngẫu nhiên.
-- Hook surface/signature repeat → quay lại Hook Candidate Tournament hoặc rewrite opening ở Stage 7.
-- Narrator scaffolding fail → chạy lại Remove Narrator Scaffolding Pass; không thay một catchphrase bằng catchphrase khác.
+- Research thiếu support → sửa Stage 1.
+- Story bị rời rạc → sửa Stage 2.
+- Draft dài/ngắn vì thiếu substance → sửa Story Spine/Research, không filler.
+- Fact Audit FAIL → sửa Research/Draft rồi audit lại.
+- Final chỉ cần prose/timing cleanup → sửa Stage 5.
+
+Không quay về architecture framework phức tạp trừ khi user yêu cầu phân tích riêng.
