@@ -1,0 +1,30 @@
+{
+  "project": "to-tien-ta-vuot-bien-khi-chua-co-thuyen-20m",
+  "pipeline_version": "simple_v2",
+  "current_stage": "awaiting_hook_selection",
+  "language": "tiếng Việt",
+  "duration_minutes": 20,
+  "target_wpm": 152,
+  "target_words": 3040,
+  "hook_selection": "PENDING",
+  "selected_hook": "",
+  "selected_hook_mechanism": "",
+  "draft_words": 0,
+  "final_words": 0,
+  "estimated_duration_minutes": 0,
+  "fact_audit": "PENDING",
+  "timing_gate": "PENDING",
+  "blocked_claims": [],
+  "important_uncertainties": [
+    "Không biết thiết kế watercraft Pleistocene; mọi reconstruction cụ thể là inference.",
+    "Arrival sớm nhất tới Flores có thể intentional hoặc accidental drift/rafting; evidence hiện không giải quyết dứt điểm.",
+    "Mốc khoảng 65.000 năm của Madjedbebe có tranh luận; wording final phải giữ caveat hoặc dùng mốc bảo thủ hơn.",
+    "Các least-cost routes tới Sahul là mô hình plausibility, không phải bằng chứng trực tiếp về route thực tế."
+  ],
+  "stage_history": [
+    {"stage": "input", "status": "PASS", "timestamp": "2026-09-15T23:57:00+07:00"},
+    {"stage": "research", "status": "PASS", "timestamp": "2026-09-15T23:57:00+07:00"},
+    {"stage": "hook_lab", "status": "PASS_AWAITING_USER", "timestamp": "2026-09-15T23:57:00+07:00"}
+  ],
+  "updated_at": "2026-09-15T23:57:00+07:00"
+}
