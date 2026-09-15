@@ -3,17 +3,20 @@
 ## Viewer promise
 
 
-## Opening image
+## Central contradiction
 
 
-## Surprising contrast
+## Opening engine
 
 
 ## Central question
 
 
-## Before-state
+## Viewer-question chain
 
+| Q | Trigger | Payoff | Consequence / next question |
+|---|---|---|---|
+| Q1 | | | |
 
 ## Causal ladder
 
@@ -21,16 +24,25 @@
 |---|---|---|---|---|---|
 | 1 | | | | | |
 
+## Reveal ladder
+
+| Reveal | Level | What viewer learns | Why it matters |
+|---|---|---|---|
+| | R1/R2/R3/R4/R5 | | |
+
+## Curiosity debt map
+
+| Loop | Opened | Partial payoff | Final payoff | Handoff |
+|---|---|---|---|---|
+
+## Story-order notes
+
+- Research-order risks:
+- Reveal-before-methodology opportunities:
+- Beats that can be cut/reordered:
+
 ## Escalation map
 
-
-## Macro open loop
-
-
-## Micro loops / payoffs
-
-| Loop | Opened | Payoff | Honest? |
-|---|---|---|---|
 
 ## Visual map
 
@@ -39,6 +51,9 @@
 
 
 ## Ending answer
+
+
+## Reframe
 
 
 ## Callback
