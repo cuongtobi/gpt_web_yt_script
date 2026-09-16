@@ -1,7 +1,7 @@
 {
   "project": "con-nguoi-thuan-hoa-cho",
   "pipeline_version": "simple_v2",
-  "current_stage": "fact_audit",
+  "current_stage": "final_edit",
   "language": "Tiếng Việt",
   "duration_minutes": 20,
   "target_wpm": 152,
@@ -12,7 +12,7 @@
   "draft_words": 2847,
   "final_words": 0,
   "estimated_duration_minutes": 0,
-  "fact_audit": "IN_PROGRESS",
+  "fact_audit": "PASS",
   "timing_gate": "PENDING",
   "blocked_claims": [],
   "important_uncertainties": [
@@ -28,7 +28,8 @@
     "hook_selection: H1 Contradiction SELECTED",
     "story_spine: PASS",
     "draft: COMPLETE (2847 words)",
-    "fact_audit: IN_PROGRESS"
+    "fact_audit: PASS",
+    "final_edit: IN_PROGRESS"
   ],
-  "updated_at": "2026-09-16T14:39:00+07:00"
+  "updated_at": "2026-09-16T14:45:00+07:00"
 }
