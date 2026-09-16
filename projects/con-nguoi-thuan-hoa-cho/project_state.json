@@ -1,14 +1,14 @@
 {
   "project": "con-nguoi-thuan-hoa-cho",
   "pipeline_version": "simple_v2",
-  "current_stage": "awaiting_hook_selection",
+  "current_stage": "story_spine",
   "language": "Tiếng Việt",
   "duration_minutes": 20,
   "target_wpm": 152,
   "target_words": 3040,
-  "hook_selection": "PENDING",
-  "selected_hook": "",
-  "selected_hook_mechanism": "",
+  "hook_selection": "SELECTED",
+  "selected_hook": "H1",
+  "selected_hook_mechanism": "Contradiction",
   "draft_words": 0,
   "final_words": 0,
   "estimated_duration_minutes": 0,
@@ -25,7 +25,8 @@
     "input: COMPLETE",
     "research: PASS",
     "hook_lab: COMPLETE",
-    "awaiting_hook_selection"
+    "hook_selection: H1 Contradiction SELECTED",
+    "story_spine: IN_PROGRESS"
   ],
-  "updated_at": "2026-09-16T14:21:00+07:00"
+  "updated_at": "2026-09-16T14:31:00+07:00"
 }
