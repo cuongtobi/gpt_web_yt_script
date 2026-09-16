@@ -1,0 +1,31 @@
+{
+  "project": "con-nguoi-thuan-hoa-cho",
+  "pipeline_version": "simple_v2",
+  "current_stage": "awaiting_hook_selection",
+  "language": "Tiếng Việt",
+  "duration_minutes": 20,
+  "target_wpm": 152,
+  "target_words": 3040,
+  "hook_selection": "PENDING",
+  "selected_hook": "",
+  "selected_hook_mechanism": "",
+  "draft_words": 0,
+  "final_words": 0,
+  "estimated_duration_minutes": 0,
+  "fact_audit": "PENDING",
+  "timing_gate": "PENDING",
+  "blocked_claims": [],
+  "important_uncertainties": [
+    "Exact domestication date remains unresolved",
+    "Exact geographic origin remains unresolved",
+    "Single versus multiple domestication cannot yet be distinguished cleanly",
+    "Initial pathway such as commensal scavenging versus cooperative relationship is not directly observed"
+  ],
+  "stage_history": [
+    "input: COMPLETE",
+    "research: PASS",
+    "hook_lab: COMPLETE",
+    "awaiting_hook_selection"
+  ],
+  "updated_at": "2026-09-16T14:21:00+07:00"
+}
