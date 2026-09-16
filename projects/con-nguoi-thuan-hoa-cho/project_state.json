@@ -1,7 +1,7 @@
 {
   "project": "con-nguoi-thuan-hoa-cho",
   "pipeline_version": "simple_v2",
-  "current_stage": "story_spine",
+  "current_stage": "draft",
   "language": "Tiếng Việt",
   "duration_minutes": 20,
   "target_wpm": 152,
@@ -26,7 +26,8 @@
     "research: PASS",
     "hook_lab: COMPLETE",
     "hook_selection: H1 Contradiction SELECTED",
-    "story_spine: IN_PROGRESS"
+    "story_spine: PASS",
+    "draft: IN_PROGRESS"
   ],
-  "updated_at": "2026-09-16T14:31:00+07:00"
+  "updated_at": "2026-09-16T14:34:00+07:00"
 }
