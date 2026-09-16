@@ -123,7 +123,7 @@ Dẫn vào so sánh các model commensal/cooperative và phần evidence thật 
 
 ## Selection
 
-- Status: PENDING
-- Selected ID:
-- Selected mechanism:
-- User note:
+- Status: SELECTED
+- Selected ID: H1
+- Selected mechanism: Contradiction
+- User note: User selected H1 — Contradiction on 2026-09-16.
