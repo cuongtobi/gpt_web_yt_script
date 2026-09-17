@@ -1,0 +1,16 @@
+{
+  "pipeline_version": "simple_v2",
+  "current_stage": "awaiting_hook_selection",
+  "hook_selection": "PENDING",
+  "selected_hook": "",
+  "selected_hook_mechanism": "",
+  "target_words": 3950,
+  "draft_words": 0,
+  "final_words": 0,
+  "fact_audit": "PENDING",
+  "timing_gate": "PENDING",
+  "research_gate": "PASS",
+  "topic": "How Did Humans Domesticate Cannabis?",
+  "language": "English",
+  "duration_minutes": 25
+}
