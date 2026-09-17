@@ -1,0 +1,3 @@
+# Full Draft
+
+Status: PENDING HOOK SELECTION AND STORY SPINE
