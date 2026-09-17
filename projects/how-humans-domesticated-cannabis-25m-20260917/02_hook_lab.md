@@ -112,7 +112,7 @@ This opens a causal story centered on unconscious and conscious selection rather
 
 ## Selection
 
-- Status: PENDING
-- Selected ID:
-- Selected mechanism:
-- User note:
+- Status: SELECTED
+- Selected ID: H4
+- Selected mechanism: Reverse assumption
+- User note: User explicitly selected “H4 — Reverse assumption”.
