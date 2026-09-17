@@ -1,17 +1,39 @@
 {
+  "project": "how-humans-domesticated-cannabis-25m-20260917",
   "pipeline_version": "simple_v2",
-  "current_stage": "draft",
+  "current_stage": "complete",
+  "topic": "How Did Humans Domesticate Cannabis?",
+  "language": "English",
+  "duration_minutes": 25,
+  "target_wpm": 158,
+  "target_words": 3950,
   "hook_selection": "SELECTED",
   "selected_hook": "H4",
   "selected_hook_mechanism": "Reverse assumption",
-  "target_words": 3950,
-  "draft_words": 0,
-  "final_words": 0,
-  "fact_audit": "PENDING",
-  "timing_gate": "PENDING",
+  "draft_words": 3799,
+  "final_words": 3799,
+  "estimated_duration_minutes": 24.0,
   "research_gate": "PASS",
   "story_spine_gate": "PASS",
-  "topic": "How Did Humans Domesticate Cannabis?",
-  "language": "English",
-  "duration_minutes": 25
+  "fact_audit": "PASS",
+  "timing_gate": "PASS",
+  "blocked_claims": [],
+  "important_uncertainties": [
+    "The roughly 12,000-years-BP domestication timescale is a genomic demographic-model estimate with a broad interval, not a dated first farm.",
+    "The deeper natural geographic origin of Cannabis remains debated even though the 2021 genomic study supports early domestication in East Asia.",
+    "The true wild progenitor may be extinct, unsampled, or obscured by long cultivation and feralization.",
+    "Haimenkou seed morphometrics support diversification but cannot perfectly identify ancient end use.",
+    "Jirzankal establishes psychoactive cannabis burning by around 500 BCE, not the first psychoactive cannabis use ever or a proven standardized high-THC cultivar."
+  ],
+  "stage_history": [
+    "input: COMPLETE",
+    "research: PASS",
+    "hook_lab: COMPLETE",
+    "hook_selection: H4 Reverse assumption SELECTED",
+    "story_spine: PASS",
+    "draft: COMPLETE (3799 words)",
+    "fact_audit: PASS",
+    "final_edit: COMPLETE (3799 words)",
+    "timing_gate: PASS"
+  ]
 }
