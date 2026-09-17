@@ -1,6 +1,6 @@
 {
   "pipeline_version": "simple_v2",
-  "current_stage": "story_spine",
+  "current_stage": "draft",
   "hook_selection": "SELECTED",
   "selected_hook": "H4",
   "selected_hook_mechanism": "Reverse assumption",
@@ -10,6 +10,7 @@
   "fact_audit": "PENDING",
   "timing_gate": "PENDING",
   "research_gate": "PASS",
+  "story_spine_gate": "PASS",
   "topic": "How Did Humans Domesticate Cannabis?",
   "language": "English",
   "duration_minutes": 25
