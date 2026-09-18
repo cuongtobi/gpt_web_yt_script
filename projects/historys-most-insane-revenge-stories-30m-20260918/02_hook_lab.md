@@ -130,7 +130,7 @@ Otrar provides an immediate large-scale consequence, after which the documentary
 
 ## Selection
 
-- Status: PENDING
-- Selected ID:
-- Selected mechanism:
-- User note:
+- Status: SELECTED
+- Selected ID: H4
+- Selected mechanism: Reverse assumption
+- User note: User selected "H4 — Reverse assumption".
