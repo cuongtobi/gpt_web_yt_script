@@ -1,6 +1,6 @@
 # Stage 1 — Research
 
-Đọc `00_input.md`.
+Đọc `00_input.md` và `docs/LANGUAGE_COMPREHENSION.md`. Xác định profile tương ứng với `language` trước khi lập vocabulary map.
 
 Mục tiêu: tạo **research pack đủ để kể một story**, không tạo encyclopedia và không thiết kế narration ở stage này.
 
@@ -50,6 +50,10 @@ Với mỗi term ghi:
 - `Term`
 - `Importance`: `CORE | SUPPORTING | DISPENSABLE`
 - `Plain-language meaning`: ý nghĩa bằng ngôn ngữ người không có nền chuyên ngành có thể hiểu ngay
+- `Native preferred wording`: cách nói tự nhiên bằng chính output language
+- `Common to general audience?`: `YES | MAYBE | NO`
+- `Foreign label necessary?`: `YES | OPTIONAL | NO`
+- `Register risk`: nguy cơ nghe quá học thuật, quá formal, code-switched hoặc không hợp spoken register
 - `Best explanation`: cách giải thích ngắn, đúng và dễ nói
 - `Keep label?`: `YES | OPTIONAL | NO`
 - `Risk if simplified`: điều gì dễ bị nói sai nếu giản lược quá mức
@@ -59,6 +63,13 @@ Phân loại:
 - `CORE`: viewer cần hiểu concept để theo central question/mechanism; nếu giữ tên chuyên ngành, phải giải thích ở first use.
 - `SUPPORTING`: concept có ích nhưng viewer không nhất thiết phải nhớ tên; giải thích rất ngắn hoặc mô tả chức năng.
 - `DISPENSABLE`: tên chuyên ngành không giúp story; ưu tiên bỏ label và dùng plain language.
+
+Language-aware rule:
+
+- đánh giá độ khó theo **native usage của output language**, không lấy tiếng Việt hoặc tiếng Anh làm chuẩn chung;
+- `Native preferred wording` phải viết trực tiếp bằng output language;
+- giữ regional variant/register nếu user đã chỉ định;
+- với `vi / en / de / fr / es / ko / ja`, áp dụng profile tương ứng trong `docs/LANGUAGE_COMPREHENSION.md`.
 
 Jargon doctrine:
 
@@ -93,4 +104,5 @@ Stage 1 hoàn tất khi:
 - có ít nhất vài concrete cases đủ mạnh để tránh script thành abstract lecture;
 - thesis không dựa vào `UNVERIFIED` claim;
 - technical concepts có khả năng đi vào narration đã được phân loại `CORE | SUPPORTING | DISPENSABLE`;
-- mỗi CORE term có plain-language explanation không làm sai meaning.
+- mỗi CORE term có plain-language explanation không làm sai meaning;
+- mỗi term có khả năng đi vào narration đã có native preferred wording phù hợp với language profile.
