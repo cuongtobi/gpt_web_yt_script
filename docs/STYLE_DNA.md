@@ -144,6 +144,22 @@ Không dùng acronym, taxonomy hoặc tên đầy đủ chỉ để narration ng
 
 Simplification không được làm sai mechanism. Một analogy đẹp nhưng tạo hiểu lầm phải bỏ.
 
+### Native-language fit
+
+“Plain language” không có nghĩa là dịch wording tiếng Anh sang ngôn ngữ đích. Mỗi script phải nghe như documentary narration được viết trực tiếp bằng chính ngôn ngữ đó.
+
+Dùng `docs/LANGUAGE_COMPREHENSION.md` để kiểm:
+
+- English: academic nominalization / dense noun phrases;
+- German: compounds / Nominalstil / clause density;
+- French: academic written register / calques / Anglicisms;
+- Spanish: locale / false friends / English calques;
+- Korean: Sino-Korean density / English-acronym load / speech level;
+- Japanese: kanji density / katakana jargon / register consistency;
+- Vietnamese: unnecessary English/code-switching / research-note wording.
+
+Sau Draft, term thực tế phải được scan lại vì writer có thể tự sinh jargon mới mà Research chưa dự đoán.
+
 ## 11. Preserve the selected hook
 
 Sau khi user chọn Hook Lab candidate, Story Spine/Draft/Final được quyền polish để dễ nói, nhưng không được âm thầm đổi sang mechanism khác hoặc genericize thành `question → explicit answer`.
@@ -167,7 +183,11 @@ Dấu hiệu cần đọc lại:
 - narrator liên tục tự thông báo cấu trúc;
 - jargon xuất hiện trước meaning;
 - nhiều acronym mới dồn trong một đoạn;
-- định nghĩa textbook dài hơn giá trị nó mang lại cho story.
+- định nghĩa textbook dài hơn giá trị nó mang lại cho story;
+- code-switching hoặc foreign borrowing không phục vụ viewer;
+- register/locale drift;
+- một CORE concept được giải thích lại quá nhiều lần;
+- prose nghe như literal translation từ ngôn ngữ khác.
 
 Anti-template là editorial judgment. **Naturalness > artificial uniqueness.**
 
