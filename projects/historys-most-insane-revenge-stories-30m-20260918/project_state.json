@@ -1,7 +1,7 @@
 {
   "project": "historys-most-insane-revenge-stories-30m-20260918",
   "pipeline_version": "simple_v2",
-  "current_stage": "fact_audit",
+  "current_stage": "complete",
   "language": "English",
   "duration_minutes": 30,
   "target_wpm": 158,
@@ -10,10 +10,10 @@
   "selected_hook": "H4",
   "selected_hook_mechanism": "Reverse assumption",
   "draft_words": 4424,
-  "final_words": 0,
-  "estimated_duration_minutes": 0,
-  "fact_audit": "PENDING",
-  "timing_gate": "PENDING",
+  "final_words": 4703,
+  "estimated_duration_minutes": 29.77,
+  "fact_audit": "PASS",
+  "timing_gate": "PASS",
   "blocked_claims": [],
   "important_uncertainties": [
     "Harpagus and Tomyris dramatic details are source-dependent Herodotean traditions.",
@@ -57,7 +57,20 @@
       "artifact": "04_draft.md",
       "words": 4424,
       "gate": "PASS"
+    },
+    {
+      "stage": "fact_audit",
+      "status": "COMPLETE",
+      "artifact": "05_fact_audit.md",
+      "verdict": "PASS"
+    },
+    {
+      "stage": "final_edit",
+      "status": "COMPLETE",
+      "artifact": "06_final_script.md",
+      "words": 4703,
+      "timing_gate": "PASS"
     }
   ],
-  "updated_at": "2026-09-18T22:42:00+07:00"
+  "updated_at": "2026-09-18T22:55:00+07:00"
 }
