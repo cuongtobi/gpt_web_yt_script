@@ -169,7 +169,7 @@ Quote phải verify nguyên văn; nếu không thì paraphrase.
 
 ## Audience comprehension / jargon control
 
-Technical accuracy không đủ nếu viewer phổ thông không hiểu được câu đang nghe.
+Đọc `docs/LANGUAGE_COMPREHENSION.md` và áp dụng profile theo output language. Technical accuracy không đủ nếu viewer phổ thông không hiểu được câu đang nghe.
 
 - phân loại term có khả năng xuất hiện trong narration thành `CORE | SUPPORTING | DISPENSABLE`;
 - ưu tiên **meaning first, label second**;
@@ -179,7 +179,10 @@ Technical accuracy không đủ nếu viewer phổ thông không hiểu được
 - DISPENSABLE jargon nên bỏ label;
 - không dùng acronym nếu chỉ xuất hiện một lần hoặc không giúp viewer;
 - analogy chỉ dùng khi không làm sai mechanism;
-- plain-language explanation vẫn phải nằm trong factual boundary và được Fact Audit kiểm tra.
+- plain-language explanation vẫn phải nằm trong factual boundary và được Fact Audit kiểm tra;
+- native wording phải được đánh giá theo chính output language, không lấy tiếng Việt/English làm chuẩn chung;
+- sau Draft phải scan lại mọi technical/academic/foreign term thực sự xuất hiện, kể cả term Research chưa dự đoán;
+- giữ locale/register/speech level của ngôn ngữ đầu ra.
 
 Không thêm glossary riêng vào narration. Giải thích phải xuất hiện tự nhiên tại đúng điểm story cần concept đó.
 
@@ -196,13 +199,16 @@ Không thêm glossary riêng vào narration. Giải thích phải xuất hiện 
 - sau abstraction dài, ưu tiên quay về ví dụ cụ thể;
 - giữ uncertainty đúng mức;
 - technical term unfamiliar phải được giải thích ở first use nếu thật sự cần giữ;
-- không dùng jargon để tạo cảm giác “có chuyên môn” khi plain language đã đủ.
+- không dùng jargon để tạo cảm giác “có chuyên môn” khi plain language đã đủ;
+- sau khi Draft hoàn tất, chạy Draft Term Inventory nội bộ và resolve term mới trước Fact Audit.
 
 ## Fact Audit
 
 Fact Audit chỉ tập trung factual risk, không redesign story nếu không cần.
 
 Kiểm tra precise number/date/quote, named study/person/institution, first/oldest/only/largest, causal/consensus/current claims, cinematic detail kể như fact, cùng plain-language explanation/analogy có nguy cơ làm sai technical meaning.
+
+Fact Audit phải independently extract `Draft Term Inventory`, sau đó audit cả factual accuracy lẫn native comprehensibility. Một câu có thể đúng fact nhưng vẫn phải `REWRITE` vì quá academic, quá foreign hoặc không tự nhiên với output language.
 
 High-risk claim phải quay lại original/primary source khi có thể.
 
@@ -224,8 +230,9 @@ Final Edit:
 2. cắt lặp/padding;
 3. làm prose dễ nói và tự nhiên;
 4. giữ opening mechanism đã được user chọn;
-5. chạy cold-reader jargon pass: bỏ label không cần, giữ first-use explanation cho CORE concept, đảm bảo simplification vẫn đúng;
-6. đưa duration về tolerance.
+5. chạy **native cold-reader pass** theo `docs/LANGUAGE_COMPREHENSION.md`: bỏ label không cần, xử lý term mới sau Research, giữ first-use explanation cho CORE concept, kiểm register/locale và đảm bảo simplification vẫn đúng;
+6. kiểm repeated explanation của CORE concept và unnecessary foreign borrowing;
+7. đưa duration về tolerance.
 
 Anti-template là **soft editorial check**. Không hy sinh một đoạn tốt chỉ để đạt artificial uniqueness.
 
