@@ -1,0 +1,40 @@
+{
+  "project": "tai-sao-nguoi-toi-co-khong-an-muoi-25m-20260918",
+  "pipeline_version": "simple_v2",
+  "current_stage": "awaiting_hook_selection",
+  "language": "vi",
+  "duration_minutes": 25,
+  "target_wpm": 152,
+  "target_words": 3800,
+  "hook_selection": "PENDING",
+  "selected_hook": "",
+  "selected_hook_mechanism": "",
+  "draft_words": 0,
+  "final_words": 0,
+  "estimated_duration_minutes": 0,
+  "fact_audit": "PENDING",
+  "timing_gate": "PENDING",
+  "blocked_claims": [],
+  "important_uncertainties": [
+    "Không có một mức natri/ngày có thể gán cho toàn bộ người tiền sử.",
+    "Yanomami là đối chứng sinh lý hiện đại, không phải bản sao Paleolithic.",
+    "Ước tính 0,18 g/ngày chỉ cho điều kiện thích nghi tối đa và không đổ mồ hôi.",
+    "Mất mồ hôi và dịch có thể làm nhu cầu natri tăng đáng kể.",
+    "Bằng chứng Neolithic về sản xuất muối không phải bằng chứng về lần đầu con người ăn muối."
+  ],
+  "stage_history": [
+    {
+      "stage": "input",
+      "status": "PASS"
+    },
+    {
+      "stage": "research",
+      "status": "PASS"
+    },
+    {
+      "stage": "hook_lab",
+      "status": "PASS_AWAITING_USER_SELECTION"
+    }
+  ],
+  "updated_at": "2026-09-18T19:04:00+07:00"
+}
