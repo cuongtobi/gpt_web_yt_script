@@ -16,11 +16,11 @@ Prompt: `prompts/01_research.md`
 
 Artifact: `01_research.md`
 
-Research pack gồm central question candidates, timeline/causal background, 10–20 core claims, 5–8 strong cases/objects/studies, useful numbers/quotes và important uncertainties.
+Research pack gồm central question candidates, timeline/causal background, 10–20 core claims, 5–8 strong cases/objects/studies, useful numbers/quotes, important uncertainties và `Audience Vocabulary / Technical Term Map` cho các term có khả năng đi vào narration.
 
 ### Gate A
 
-Không sang Hook Lab nếu thesis chính dựa trên `UNVERIFIED` claim hoặc các bước lớn chưa có support.
+Không sang Hook Lab nếu thesis chính dựa trên `UNVERIFIED` claim hoặc các bước lớn chưa có support. CORE technical terms phải có plain-language explanation đủ chính xác trước khi sang downstream.
 
 ---
 
@@ -68,7 +68,7 @@ Prompt: `prompts/v2/03_story_spine.md`
 
 Artifact: `03_story_spine.md`
 
-Thiết kế central question, selected opening direction, 6–10 beats và direct ending/callback.
+Thiết kế central question, selected opening direction, 6–10 beats và direct ending/callback. Mỗi beat cũng xác định technical concept nào được introduce, viewer sẽ hiểu nó bằng cách nào và label có thật sự cần giữ hay không.
 
 Hook đã chọn là opening direction. Writer có thể polish wording nhưng không âm thầm đổi mechanism.
 
@@ -86,7 +86,9 @@ Prompt: `prompts/v2/04_draft.md`
 
 Artifact: `04_draft.md`
 
-Ưu tiên spoken, concrete, causal. Draft target khoảng ±10% target words.
+Ưu tiên spoken, concrete, causal và comprehensible. Draft target khoảng ±10% target words.
+
+Technical concept dùng `meaning first, label second`; giải thích function trước taxonomy; CORE term giải thích ở first use; DISPENSABLE jargon ưu tiên bỏ label.
 
 Giữ opening mechanism đã chọn; không biến nó thành generic question-answer scaffold chỉ vì dễ viết.
 
@@ -98,7 +100,7 @@ Prompt: `prompts/v2/05_fact_audit.md`
 
 Artifact: `05_fact_audit.md`
 
-Audit high-risk claims: number/date/quote, named study/person/institution, first/oldest/only/largest, causal/consensus/current claims và cinematic detail kể như fact.
+Audit high-risk claims: number/date/quote, named study/person/institution, first/oldest/only/largest, causal/consensus/current claims, cinematic detail kể như fact, và plain-language explanation/analogy có nguy cơ làm sai technical meaning.
 
 Actions: `KEEP | QUALIFY | REWRITE | REMOVE | VERIFY`.
 
@@ -112,7 +114,7 @@ Prompt: `prompts/v2/06_final_edit.md`
 
 Artifact: `06_final_script.md`
 
-Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism và đưa final về ±7% target words.
+Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism, chạy cold-reader jargon pass và đưa final về ±7% target words.
 
 ---
 
