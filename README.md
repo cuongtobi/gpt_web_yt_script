@@ -2,7 +2,7 @@
 
 Pipeline viết YouTube documentary/explainer theo kiểu **spoken + concrete + causal + comprehensible + evidence-grounded**.
 
-Current pipeline: **simple_v2** — thêm Hook Lab để opening đa dạng và có **human choice gate** trước Story Spine.
+Current pipeline: **simple_v2** — Hook Lab có **human choice gate** trước Story Spine và language-aware comprehension cho Vietnamese, English, German, French, Spanish, Korean và Japanese.
 
 ## Input
 
@@ -50,7 +50,7 @@ WAIT FOR USER TO CHOOSE H1–H10
 
 Tạo research pack vừa đủ để kể story: central question candidates, timeline/causal background, 10–20 core claims, 5–8 strong cases, useful numbers/quotes và important uncertainties.
 
-Research quyết định **cái gì được phép nói**, không quyết định thứ tự narration. Research cũng tạo `Audience Vocabulary / Technical Term Map` để phân loại jargon thành `CORE | SUPPORTING | DISPENSABLE` và chuẩn bị plain-language explanation trước khi viết.
+Research quyết định **cái gì được phép nói**, không quyết định thứ tự narration. Research cũng tạo `Audience Vocabulary / Technical Term Map` để phân loại jargon thành `CORE | SUPPORTING | DISPENSABLE`, chuẩn bị plain-language explanation và `Native preferred wording` theo `docs/LANGUAGE_COMPREHENSION.md`.
 
 ## Stage 2 — Hook Lab
 
@@ -112,6 +112,8 @@ Draft target khoảng ±10%. Không lặp ý để kéo duration. Không biến 
 
 Jargon control dùng hai nguyên tắc: **meaning first, label second** và **function before taxonomy**. CORE term phải giải thích ở first use; SUPPORTING term giải thích rất ngắn; DISPENSABLE jargon ưu tiên bỏ label.
 
+Sau khi Draft được viết, pipeline quét lại **mọi term thực tế xuất hiện**, kể cả jargon writer tự sinh mà Research chưa dự đoán. Mỗi term được `KEEP | EXPLAIN | REPLACE | REMOVE` theo native-language profile.
+
 ## Stage 5 — Fact Audit
 
 Audit cả opening và body:
@@ -122,7 +124,9 @@ Audit cả opening và body:
 - first/oldest/only/largest;
 - causal / consensus / current claims;
 - cinematic/sensory detail kể như fact;
-- plain-language technical explanation và analogy có làm sai meaning hay không.
+- plain-language technical explanation và analogy có làm sai meaning hay không;
+- Draft Term Inventory của term thực tế;
+- native comprehensibility, register/locale và foreign borrowing theo output language.
 
 Actions: `KEEP | QUALIFY | REWRITE | REMOVE | VERIFY`.
 
@@ -130,7 +134,7 @@ Còn `VERIFY` = chưa PASS. Nếu premise cốt lõi của selected hook không 
 
 ## Stage 6 — Final Edit
 
-Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism, chạy cold-reader jargon pass và đưa final về ±7%.
+Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism, chạy **native cold-reader pass** theo output language và đưa final về ±7%.
 
 Output chính:
 
@@ -255,6 +259,7 @@ pipeline/
 
 docs/
   STYLE_DNA.md
+  LANGUAGE_COMPREHENSION.md
 
 prompts/
   00_orchestrator.md
@@ -288,7 +293,7 @@ Project `simple_v2` hoàn tất khi:
 - research đủ support cho thesis;
 - Hook Lab có 10 candidate khác mechanism và explicit user selection;
 - Story Spine có 6–10 beat dễ theo;
-- narration spoken/concrete/causal;
+- narration spoken/concrete/causal và native-comprehensible;
 - selected hook mechanism được giữ qua Draft/Final;
 - Fact Audit = `PASS`;
 - final nằm trong ±7% target;
