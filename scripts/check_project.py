@@ -162,9 +162,20 @@ def main() -> int:
 
     fact_path = project / fact_name
     if fact_path.exists():
-        verdict = verdict_from(fact_path.read_text(encoding="utf-8"))
+        fact_text = fact_path.read_text(encoding="utf-8")
+        verdict = verdict_from(fact_text)
         if verdict != "PASS":
             errors.append(f"Fact Audit is {verdict}, expected PASS")
+
+        if pipeline == "simple_v2":
+            if not re.search(r"(?im)^##\s+Draft Term Inventory\s*$", fact_text):
+                warnings.append(
+                    "Fact Audit has no Draft Term Inventory; older simple_v2 project or multilingual comprehension pass may have been skipped"
+                )
+            if not re.search(r"(?im)^##\s+Language comprehension audit\s*$", fact_text):
+                warnings.append(
+                    "Fact Audit has no Language comprehension audit; older simple_v2 project or native-language audit may have been skipped"
+                )
 
     if pipeline == "legacy":
         retention_path = project / "06_retention_audit.md"
