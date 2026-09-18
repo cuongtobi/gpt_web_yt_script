@@ -1,7 +1,7 @@
 {
   "project": "cach-con-nguoi-thuan-hoa-meo-25m-20260918",
   "pipeline_version": "simple_v2",
-  "current_stage": "story_spine",
+  "current_stage": "fact_audit",
   "language": "Tiếng Việt",
   "duration_minutes": 25,
   "target_wpm": 152,
@@ -9,10 +9,10 @@
   "hook_selection": "SELECTED",
   "selected_hook": "H1",
   "selected_hook_mechanism": "Contradiction",
-  "draft_words": 0,
+  "draft_words": 3633,
   "final_words": 0,
   "estimated_duration_minutes": 0,
-  "fact_audit": "PENDING",
+  "fact_audit": "PASS",
   "timing_gate": "PENDING",
   "blocked_claims": [],
   "important_uncertainties": [
@@ -27,7 +27,10 @@
     "input: COMPLETE",
     "research: PASS",
     "hook_lab: COMPLETE",
-    "hook_selection: H1 Contradiction SELECTED"
+    "hook_selection: H1 Contradiction SELECTED",
+    "story_spine: PASS",
+    "draft: COMPLETE (3633 words)",
+    "fact_audit: PASS"
   ],
   "updated_at": "2026-09-18T14:19:00+07:00"
 }
