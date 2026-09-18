@@ -1,6 +1,6 @@
 # GPT Web YouTube Script Pipeline
 
-Pipeline viết YouTube documentary/explainer theo kiểu **spoken + concrete + causal + evidence-grounded**.
+Pipeline viết YouTube documentary/explainer theo kiểu **spoken + concrete + causal + comprehensible + evidence-grounded**.
 
 Current pipeline: **simple_v2** — thêm Hook Lab để opening đa dạng và có **human choice gate** trước Story Spine.
 
@@ -50,7 +50,7 @@ WAIT FOR USER TO CHOOSE H1–H10
 
 Tạo research pack vừa đủ để kể story: central question candidates, timeline/causal background, 10–20 core claims, 5–8 strong cases, useful numbers/quotes và important uncertainties.
 
-Research quyết định **cái gì được phép nói**, không quyết định thứ tự narration.
+Research quyết định **cái gì được phép nói**, không quyết định thứ tự narration. Research cũng tạo `Audience Vocabulary / Technical Term Map` để phân loại jargon thành `CORE | SUPPORTING | DISPENSABLE` và chuẩn bị plain-language explanation trước khi viết.
 
 ## Stage 2 — Hook Lab
 
@@ -96,6 +96,8 @@ Evidence / cases used:
 
 Selected hook là opening direction. Writer có thể polish wording nhưng không âm thầm đổi mechanism.
 
+Story Spine xác định technical concepts xuất hiện ở beat nào, cách viewer phổ thông hiểu chúng và label nào có thể bỏ.
+
 ## Stage 4 — Full Draft
 
 Ưu tiên:
@@ -108,6 +110,8 @@ causal
 
 Draft target khoảng ±10%. Không lặp ý để kéo duration. Không biến selected hook thành generic question-answer scaffold chỉ vì dễ viết.
 
+Jargon control dùng hai nguyên tắc: **meaning first, label second** và **function before taxonomy**. CORE term phải giải thích ở first use; SUPPORTING term giải thích rất ngắn; DISPENSABLE jargon ưu tiên bỏ label.
+
 ## Stage 5 — Fact Audit
 
 Audit cả opening và body:
@@ -117,7 +121,8 @@ Audit cả opening và body:
 - named study/person/institution;
 - first/oldest/only/largest;
 - causal / consensus / current claims;
-- cinematic/sensory detail kể như fact.
+- cinematic/sensory detail kể như fact;
+- plain-language technical explanation và analogy có làm sai meaning hay không.
 
 Actions: `KEEP | QUALIFY | REWRITE | REMOVE | VERIFY`.
 
@@ -125,7 +130,7 @@ Còn `VERIFY` = chưa PASS. Nếu premise cốt lõi của selected hook không 
 
 ## Stage 6 — Final Edit
 
-Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism và đưa final về ±7%.
+Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism, chạy cold-reader jargon pass và đưa final về ±7%.
 
 Output chính:
 
