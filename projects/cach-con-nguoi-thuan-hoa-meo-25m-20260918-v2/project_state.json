@@ -1,7 +1,7 @@
 {
   "project": "cach-con-nguoi-thuan-hoa-meo-25m-20260918-v2",
   "pipeline_version": "simple_v2",
-  "current_stage": "fact_audit",
+  "current_stage": "complete",
   "language": "Tiếng Việt",
   "duration_minutes": 25,
   "target_wpm": 152,
@@ -10,10 +10,10 @@
   "selected_hook": "H1",
   "selected_hook_mechanism": "Contradiction",
   "draft_words": 3690,
-  "final_words": 0,
-  "estimated_duration_minutes": 0,
+  "final_words": 3699,
+  "estimated_duration_minutes": 24.34,
   "fact_audit": "PASS",
-  "timing_gate": "PENDING",
+  "timing_gate": "PASS",
   "blocked_claims": [],
   "important_uncertainties": [
     "Cyprus shows early close association and human transport, not a complete proof of modern domestic status.",
@@ -33,7 +33,10 @@
     "draft: COMPLETE (3690 words)",
     "draft_term_inventory: COMPLETE",
     "language_comprehension_audit: PASS",
-    "fact_audit: PASS"
+    "fact_audit: PASS",
+    "final_edit: COMPLETE (3699 words)",
+    "native_cold_reader: PASS",
+    "timing_gate: PASS"
   ],
   "updated_at": "2026-09-18T15:31:00+07:00"
 }
