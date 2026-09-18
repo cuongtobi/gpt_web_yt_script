@@ -1,7 +1,7 @@
 {
   "project": "cach-con-nguoi-thuan-hoa-meo-25m-20260918-v2",
   "pipeline_version": "simple_v2",
-  "current_stage": "input",
+  "current_stage": "awaiting_hook_selection",
   "language": "Tiếng Việt",
   "duration_minutes": 25,
   "target_wpm": 152,
@@ -15,9 +15,20 @@
   "fact_audit": "PENDING",
   "timing_gate": "PENDING",
   "blocked_claims": [],
-  "important_uncertainties": [],
+  "important_uncertainties": [
+    "Cyprus shows early close association and human transport, not a complete proof of modern domestic status.",
+    "The grain-store → rodent → wildcat pathway is a strongly supported reconstruction, not directly observed history.",
+    "Egypt was a major later center of cat-human integration and dispersal, not the sole origin.",
+    "Much of the 2017 ancient-DNA lineage evidence follows maternal ancestry and should not be presented as the complete genome history.",
+    "Genomic selection signals do not establish a simple one-gene cause of friendliness.",
+    "The 2007 healed-fracture Hierakonpolis specimen was corrected to Felis chaus in 2008 and is not used as direct evidence for the domestic-cat lineage.",
+    "The c. 730 CE domestic cat in China is the earliest known in the current 2025/2026 study dataset, not a guaranteed permanent earliest date."
+  ],
   "stage_history": [
-    "input: COMPLETE"
+    "input: COMPLETE",
+    "research: PASS",
+    "hook_lab: COMPLETE",
+    "awaiting_hook_selection"
   ],
   "updated_at": "2026-09-18T15:31:00+07:00"
 }
