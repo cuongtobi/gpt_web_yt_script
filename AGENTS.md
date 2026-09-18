@@ -51,6 +51,7 @@ Ba ưu tiên:
 1. **Spoken** — câu viết để đọc thành tiếng.
 2. **Concrete** — thường xuyên dùng scene, object, person, place, action hoặc mechanism cụ thể.
 3. **Causal** — đoạn sau phải có lý do xuất hiện từ đoạn trước.
+4. **Comprehensible** — technical concept cần thiết phải hiểu được với khán giả phổ thông mà không cần kiến thức chuyên ngành trước.
 
 Story có thể đi theo chronology, mechanism, mystery, contrast hoặc transformation tùy topic. Không có một skeleton hook bắt buộc.
 
@@ -134,7 +135,8 @@ Research pack cần:
 - khoảng 10–20 core claims;
 - 5–8 strong cases/objects/studies;
 - useful numbers/quotes;
-- important uncertainties.
+- important uncertainties;
+- Audience Vocabulary / Technical Term Map cho những term có khả năng thật sự đi vào narration.
 
 Status:
 
@@ -165,6 +167,22 @@ Phân biệt correlation, plausible mechanism, contributor và direct cause.
 
 Quote phải verify nguyên văn; nếu không thì paraphrase.
 
+## Audience comprehension / jargon control
+
+Technical accuracy không đủ nếu viewer phổ thông không hiểu được câu đang nghe.
+
+- phân loại term có khả năng xuất hiện trong narration thành `CORE | SUPPORTING | DISPENSABLE`;
+- ưu tiên **meaning first, label second**;
+- ưu tiên **function before taxonomy**;
+- CORE term phải được giải thích ở first use trước khi trở thành mắt xích trong lập luận;
+- SUPPORTING term nên giải thích rất ngắn hoặc dùng plain-language replacement;
+- DISPENSABLE jargon nên bỏ label;
+- không dùng acronym nếu chỉ xuất hiện một lần hoặc không giúp viewer;
+- analogy chỉ dùng khi không làm sai mechanism;
+- plain-language explanation vẫn phải nằm trong factual boundary và được Fact Audit kiểm tra.
+
+Không thêm glossary riêng vào narration. Giải thích phải xuất hiện tự nhiên tại đúng điểm story cần concept đó.
+
 ## Draft rules
 
 - đi theo Story Spine nhưng writer được quyền điều chỉnh nhịp;
@@ -176,13 +194,15 @@ Quote phải verify nguyên văn; nếu không thì paraphrase.
 - không đặt rhetorical question ở cuối mọi section;
 - không cần một one-liner ở mọi transition;
 - sau abstraction dài, ưu tiên quay về ví dụ cụ thể;
-- giữ uncertainty đúng mức.
+- giữ uncertainty đúng mức;
+- technical term unfamiliar phải được giải thích ở first use nếu thật sự cần giữ;
+- không dùng jargon để tạo cảm giác “có chuyên môn” khi plain language đã đủ.
 
 ## Fact Audit
 
 Fact Audit chỉ tập trung factual risk, không redesign story nếu không cần.
 
-Kiểm tra precise number/date/quote, named study/person/institution, first/oldest/only/largest, causal/consensus/current claims và cinematic detail kể như fact.
+Kiểm tra precise number/date/quote, named study/person/institution, first/oldest/only/largest, causal/consensus/current claims, cinematic detail kể như fact, cùng plain-language explanation/analogy có nguy cơ làm sai technical meaning.
 
 High-risk claim phải quay lại original/primary source khi có thể.
 
@@ -204,7 +224,8 @@ Final Edit:
 2. cắt lặp/padding;
 3. làm prose dễ nói và tự nhiên;
 4. giữ opening mechanism đã được user chọn;
-5. đưa duration về tolerance.
+5. chạy cold-reader jargon pass: bỏ label không cần, giữ first-use explanation cho CORE concept, đảm bảo simplification vẫn đúng;
+6. đưa duration về tolerance.
 
 Anti-template là **soft editorial check**. Không hy sinh một đoạn tốt chỉ để đạt artificial uniqueness.
 
