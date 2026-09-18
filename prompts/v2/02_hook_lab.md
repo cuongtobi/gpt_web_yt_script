@@ -1,6 +1,6 @@
 # Stage 2 — Hook Lab
 
-Đọc `00_input.md` và `01_research.md`.
+Đọc `00_input.md`, `01_research.md` và `docs/LANGUAGE_COMPREHENSION.md`. Dùng profile của output language khi đánh giá jargon và spoken naturalness.
 
 Mục tiêu: tạo nhiều **đường vào câu chuyện thực sự khác nhau** để user chọn opening direction trước khi Story Spine được viết.
 
@@ -92,6 +92,8 @@ Với mỗi H1–H10:
 Không xếp hạng Best/Winner. Không tự chọn.
 
 Dùng `Audience Vocabulary / Technical Term Map` trong Research để tránh đưa CORE/SUPPORTING term vào hook như một nhãn trống. Curiosity phải đến từ contradiction, evidence, mechanism hoặc consequence — không phải từ việc viewer không biết một từ chuyên ngành nghĩa là gì.
+
+Hook cũng phải nghe tự nhiên theo storytelling conventions của chính output language. Không dịch một nhịp hook kiểu English/Vietnamese sang German/French/Spanish/Korean/Japanese theo kiểu literal.
 
 ## Selection section
 
