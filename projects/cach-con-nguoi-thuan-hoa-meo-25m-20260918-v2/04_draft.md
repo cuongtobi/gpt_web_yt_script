@@ -34,6 +34,8 @@ Chỉ riêng việc vận chuyển đã cho thấy quan hệ này sâu hơn chuy
 
 Nhưng ta cũng phải tránh đi quá xa. Ngôi mộ không cho biết con mèo ấy có ngủ trong nhà, có được đặt tên hay được vuốt ve giống thú cưng ngày nay hay không. Nó cũng không cho biết toàn bộ quần thể mèo khi đó đã thay đổi đến mức nào. Cyprus vì thế là bằng chứng rất mạnh cho một mối quan hệ gần gũi và việc con người vận chuyển mèo, chứ không phải giấy chứng nhận rằng “mèo nhà hiện đại” đã xuất hiện đầy đủ từ lúc đó.
 
+Điểm phân biệt này quan trọng vì một con vật có thể được con người mang theo trước khi nó thay đổi rõ về hình dạng. Người tiền sử từng vận chuyển nhiều loài ra đảo vì những mục đích khác nhau. Vì vậy, sự có mặt của mèo trên Cyprus cho thấy con người đã can thiệp vào nơi chúng sống, nhưng chưa đủ để xác định chính xác mức độ thay đổi di truyền của quần thể mèo lúc ấy. Với mèo, bằng chứng về mối quan hệ gần gũi xuất hiện sớm hơn nhiều so với những dấu hiệu rõ của việc con người chọn ngoại hình.
+
 Từ đây, câu hỏi tiếp theo là: những con mèo ấy thuộc về nhánh nào trong họ mèo rừng?
 
 Các nghiên cứu di truyền đã giúp thu hẹp câu trả lời. Khi so sánh DNA của mèo nhà với nhiều quần thể mèo rừng khác nhau, các nhà nghiên cứu nhận thấy mèo nhà gần nhất với mèo rừng sống ở Tây Á và Bắc Phi, chứ không phải mèo rừng châu Âu.
@@ -58,11 +60,15 @@ Một nghiên cứu năm 2017 phân tích hơn hai trăm mẫu mèo khảo cổ 
 
 Nhiều quần thể thuộc cùng nhóm mèo rừng Tây Á–Bắc Phi đã góp vào lịch sử đó, và Ai Cập trở thành một trung tâm rất quan trọng của giai đoạn sau.
 
+Điều này cũng giải thích vì sao hai loại bằng chứng tưởng như mâu thuẫn thực ra có thể cùng đúng. Cyprus cho thấy quan hệ người–mèo rất sớm ở phía đông Địa Trung Hải. Ai Cập lại cho thấy một giai đoạn sau, khi mèo đã gắn sâu hơn với xã hội con người và những dòng mèo liên quan Ai Cập lan rộng. Ta không cần chọn một bên rồi loại bỏ bên kia. Câu chuyện hợp lý hơn là một quá trình dài, trong đó nhiều quần thể của cùng nhóm mèo rừng tham gia ở những thời điểm khác nhau.
+
 Đây cũng là lúc vai trò của con người trở nên chủ động hơn.
 
 Ở giai đoạn đầu, mèo có thể là phía tìm đến vì chuột. Nhưng mèo không thể tự bơi tới Cyprus. Và khi các dòng mèo xuất hiện ở những nơi xa hàng nghìn kilomet, dọc theo những vùng có liên hệ buôn bán và đi lại của con người, lời giải thích hợp lý nhất là chúng đã được mang theo.
 
 Ta không cần tưởng tượng mọi con tàu cổ đều có một con mèo ngồi săn chuột trên boong. Bằng chứng không cho phép nói chắc như vậy. Điều có thể nói là việc di chuyển của mèo ngày càng gắn với chính mạng lưới di chuyển của con người.
+
+Một khi mèo được mang tới một cảng, một hòn đảo hay một khu định cư mới, chúng lại gặp đúng điều kiện từng giúp tổ tiên chúng tiến gần con người: thức ăn được cất giữ, loài gặm nhấm và những nơi trú ẩn do con người tạo ra. Nhờ vậy, sự vận chuyển của con người không chỉ đưa mèo đi xa. Nó còn liên tục đặt chúng vào những môi trường nơi việc sống gần chúng ta tiếp tục có lợi.
 
 Đó là một thay đổi rất lớn trong mối quan hệ hai loài. Ban đầu, môi trường của con người hút mèo tới. Về sau, con người bắt đầu đưa mèo đi.
 
@@ -105,6 +111,8 @@ Nhưng nhánh đó không đi tiếp thành mèo nhà phổ biến toàn cầu.
 Những phân tích DNA cổ công bố gần đây cho thấy mèo nhà thật sự xuất hiện ở Trung Quốc muộn hơn nhiều. Trong bộ dữ liệu hiện có, mẫu sớm nhất được xác định là mèo nhà vào khoảng năm 730, và nguồn gốc di truyền của nó liên hệ với các quần thể ở phía tây. Các tác giả cho rằng mèo nhà nhiều khả năng đã đi vào Đông Á theo các mạng lưới trao đổi của Con đường Tơ lụa.
 
 Chi tiết Trung Quốc rất quan trọng vì nó phá vỡ một câu chuyện quá đơn giản. Chỉ có làng, kho lương và chuột chưa đủ để đảm bảo một loài sẽ trở thành vật nuôi toàn cầu. Những yếu tố đó mở cánh cửa, nhưng lịch sử còn phụ thuộc vào loài nào được con người dung nạp, cá thể nào được mang đi, quần thể nào tiếp tục sinh sản gần người và những mạng lưới nào giúp chúng lan rộng.
+
+Nó cũng cho thấy thuần hóa không phải một công thức chắc chắn. Hai loài mèo nhỏ có thể cùng tận dụng loài gặm nhấm quanh làng, nhưng chỉ một dòng cuối cùng lan theo con người trên quy mô rất lớn. Những lựa chọn của con người, những tuyến di chuyển cụ thể và cả những sự kiện lịch sử ngẫu nhiên đều có thể quyết định dòng nào tiếp tục mở rộng và dòng nào không.
 
 Vì vậy, thuần hóa mèo không phải câu chuyện một bên kiểm soát hoàn toàn bên kia. Ban đầu, con người thay đổi môi trường sống bằng nông nghiệp. Mèo rừng phản ứng với môi trường đó vì có nguồn mồi mới. Con người nhận ra lợi ích của mèo, chấp nhận chúng ở gần, rồi bắt đầu mang chúng đi. Qua nhiều thế hệ, những quần thể sống gần người tích lũy khác biệt, và mãi về sau con người mới chọn giống mạnh theo sở thích ngoại hình.
 
