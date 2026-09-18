@@ -1,14 +1,14 @@
 {
   "project": "historys-most-insane-revenge-stories-30m-20260918",
   "pipeline_version": "simple_v2",
-  "current_stage": "awaiting_hook_selection",
+  "current_stage": "draft",
   "language": "English",
   "duration_minutes": 30,
   "target_wpm": 158,
   "target_words": 4740,
-  "hook_selection": "PENDING",
-  "selected_hook": "",
-  "selected_hook_mechanism": "",
+  "hook_selection": "SELECTED",
+  "selected_hook": "H4",
+  "selected_hook_mechanism": "Reverse assumption",
   "draft_words": 0,
   "final_words": 0,
   "estimated_duration_minutes": 0,
@@ -40,9 +40,17 @@
       "gate": "PASS_FOR_USER_SELECTION"
     },
     {
-      "stage": "awaiting_hook_selection",
-      "status": "CURRENT"
+      "stage": "hook_selection",
+      "status": "COMPLETE",
+      "selected_hook": "H4",
+      "mechanism": "Reverse assumption"
+    },
+    {
+      "stage": "story_spine",
+      "status": "COMPLETE",
+      "artifact": "03_story_spine.md",
+      "gate": "PASS"
     }
   ],
-  "updated_at": "2026-09-18T22:15:00+07:00"
+  "updated_at": "2026-09-18T22:30:00+07:00"
 }
