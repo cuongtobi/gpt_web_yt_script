@@ -2,11 +2,11 @@
 
 Pipeline chỉ giữ hard gate cho những thứ làm project sai hoặc unusable. Hook diversity chủ yếu là editorial judgment, ngoại trừ việc **user phải chọn hook trước khi pipeline tiếp tục**.
 
-Audience comprehension là quality requirement xuyên suốt: technical concept cần thiết phải được giải thích đủ cho khán giả phổ thông, nhưng pipeline không biến mọi jargon thành hard dictionary check.
+Audience comprehension là quality requirement xuyên suốt: technical concept cần thiết phải được giải thích đủ cho khán giả phổ thông, nhưng pipeline không biến mọi jargon thành hard dictionary check. Đánh giá comprehension theo profile trong `docs/LANGUAGE_COMPREHENSION.md`, không dùng một chuẩn tiếng Việt/English chung.
 
 ## Gate A — Research readiness
 
-PASS khi central question có thể trả lời bằng evidence, thesis không dựa trên `UNVERIFIED`, causal/chronological steps lớn có support, có concrete cases đủ mạnh, technical terms có khả năng đi vào narration đã được phân loại `CORE | SUPPORTING | DISPENSABLE`, và mỗi CORE term có plain-language meaning đủ chính xác.
+PASS khi central question có thể trả lời bằng evidence, thesis không dựa trên `UNVERIFIED`, causal/chronological steps lớn có support, có concrete cases đủ mạnh, technical terms có khả năng đi vào narration đã được phân loại `CORE | SUPPORTING | DISPENSABLE`, mỗi CORE term có plain-language meaning đủ chính xác và vocabulary map có native preferred wording phù hợp output language.
 
 ---
 
@@ -68,13 +68,17 @@ PASS khi:
 - người xem phổ thông không cần biết trước jargon để hiểu logic;
 - CORE term được giải thích ở first use;
 - không acronym/technical label dư thừa chỉ để narration có vẻ chuyên môn;
-- explanation ưu tiên function/meaning trước taxonomy.
+- explanation ưu tiên function/meaning trước taxonomy;
+- Draft đã scan term thực tế phát sinh sau Research, không chỉ term dự đoán trong vocabulary map;
+- wording/register phù hợp spoken conventions của output language.
 
 ---
 
 ## Gate E — Fact Audit
 
 PASS khi mọi high-risk claim đã KEEP/QUALIFY/REWRITE/REMOVE, không còn VERIFY blocker, không fabricated source/quote/number, không unsupported probability, theory/interpretation không bị viết như settled fact, plain-language explanation không materially distort meaning, analogy không tạo inference sai và technical label được dùng đúng nghĩa.
+
+Fact Audit phải có `Draft Term Inventory` từ term thực tế trong Draft và `Language comprehension audit` tách factual accuracy khỏi native comprehensibility. Term mới không có trong Research map vẫn phải được xử lý.
 
 ---
 
@@ -88,7 +92,7 @@ Hard PASS khi:
 - final nằm trong ±7% target words;
 - final không còn `[VERIFY]`, `[TODO]`, `[SOURCE]`, `[CHECK]`.
 
-Editorial readiness còn yêu cầu cold-reader pass: CORE concepts hiểu được mà không cần tra cứu, không concept quan trọng nào bị dùng trước khi giải thích, SUPPORTING jargon không làm narration nặng, DISPENSABLE labels được bỏ khi plain language tốt hơn, và simplification vẫn đúng factual meaning.
+Editorial readiness còn yêu cầu **native cold-reader pass**: CORE concepts hiểu được mà không cần tra cứu, không concept quan trọng nào bị dùng trước khi giải thích, SUPPORTING jargon không làm narration nặng, DISPENSABLE labels được bỏ khi plain language tốt hơn, simplification vẫn đúng factual meaning, output register/locale nhất quán và không có unnecessary foreign borrowing/literal translation đáng kể.
 
 Checker tự động hiện chỉ enforce structural/factual-state/timing markers; comprehension vẫn là editorial gate do agent thực hiện.
 
@@ -117,7 +121,12 @@ WARN không làm project FAIL.
 - technical term xuất hiện trước plain meaning;
 - định nghĩa kiểu textbook dài hơn giá trị nó đóng góp cho story;
 - nhiều acronym mới dồn trong một đoạn;
-- dùng jargon khi một cụm plain language ngắn đã đủ.
+- dùng jargon khi một cụm plain language ngắn đã đủ;
+- term mới do Draft tự sinh nhưng chưa được audit;
+- code-switching/foreign borrowing không cần thiết;
+- repeated definition của CORE concept;
+- register/locale/speech level drift;
+- literal English-style phrasing không tự nhiên trong output language.
 
 Không biến các anti-pattern này thành quota hoặc hard score. Chỉ sửa khi narration tốt hơn.
 
