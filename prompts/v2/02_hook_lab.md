@@ -52,7 +52,9 @@ Bắt buộc:
 - không bắt buộc central question xuất hiện nguyên văn;
 - candidate có thể dài/ngắn khác nhau; thường đủ 2–6 câu để user đánh giá, nhưng đây không phải quota;
 - sau setup/tension, ưu tiên đi tiếp bằng fact/evidence/mechanism/consequence;
-- mọi factual premise phải trace được về `01_research.md`.
+- mọi factual premise phải trace được về `01_research.md`;
+- hook không được phụ thuộc vào jargon mà khán giả phổ thông chưa hiểu;
+- nếu technical label buộc phải xuất hiện trong hook, meaning phải rõ ngay trong cùng nhịp mở đầu hoặc label phải được thay bằng plain language.
 
 Không mặc định dùng các scaffold:
 
@@ -88,6 +90,8 @@ Với mỗi H1–H10:
 ```
 
 Không xếp hạng Best/Winner. Không tự chọn.
+
+Dùng `Audience Vocabulary / Technical Term Map` trong Research để tránh đưa CORE/SUPPORTING term vào hook như một nhãn trống. Curiosity phải đến từ contradiction, evidence, mechanism hoặc consequence — không phải từ việc viewer không biết một từ chuyên ngành nghĩa là gì.
 
 ## Selection section
 
