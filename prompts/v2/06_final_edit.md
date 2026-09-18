@@ -1,6 +1,6 @@
 # Stage 6 — Final Edit
 
-Đọc `00_input.md`, `01_research.md`, `02_hook_lab.md`, `03_story_spine.md`, `04_draft.md` và `05_fact_audit.md`.
+Đọc `00_input.md`, `01_research.md`, `02_hook_lab.md`, `03_story_spine.md`, `04_draft.md`, `05_fact_audit.md` và `docs/LANGUAGE_COMPREHENSION.md`. Chọn đúng native-language profile trước khi edit.
 
 Chỉ chạy khi Fact Audit = PASS.
 
@@ -13,7 +13,7 @@ Biến draft thành voice-over sạch, tự nhiên, đúng thời lượng, dễ
 ## Làm
 
 - áp dụng mọi Required change của Fact Audit;
-- áp dụng correction trong Technical explanation audit;
+- áp dụng correction trong Draft Term Inventory, Language comprehension audit và Technical explanation audit;
 - cắt câu/đoạn lặp ý;
 - cắt research detail không phục vụ central question;
 - sửa câu khó nói thành spoken language;
@@ -27,9 +27,11 @@ Biến draft thành voice-over sạch, tự nhiên, đúng thời lượng, dễ
 - callback opening nếu tự nhiên;
 - đưa final về ±7% target words.
 
-## Audience Comprehension Pass
+## Native Audience Comprehension Pass
 
-Chạy một lượt riêng như **cold reader**. Giả định viewer tò mò, có trình độ phổ thông, chưa đọc Research, không học chuyên ngành của topic và không thể dừng video để tra Google.
+Chạy một lượt riêng như **native cold reader**. Giả định viewer là native/fluent speaker của output language, tò mò, có trình độ phổ thông, chưa đọc Research, không học chuyên ngành của topic và không thể dừng video để tra cứu.
+
+Đánh giá theo storytelling/spoken conventions của chính output language. Không dùng tiếng Việt hoặc tiếng Anh làm chuẩn chung.
 
 Với từng đoạn, hỏi:
 
@@ -40,6 +42,11 @@ Với từng đoạn, hỏi:
 - có acronym nào chỉ xuất hiện một lần không?
 - có quá nhiều term mới dồn trong cùng một câu/đoạn không?
 - explanation có đúng đại ý nhưng sai mechanism khi đọc kỹ không?
+- có term mới xuất hiện sau Research nhưng chưa được audit không?
+- có foreign borrowing/code-switching không cần thiết không?
+- register/locale/speech level có nhất quán không?
+- có câu nghe như literal translation từ English hoặc một ngôn ngữ khác không?
+- một CORE concept đã được giải thích rõ rồi có bị định nghĩa lại dài dòng lần nữa không?
 
 Quy tắc sửa:
 
@@ -50,6 +57,20 @@ Quy tắc sửa:
 - explanation dài hơn 3–4 câu nhưng không phải central mechanism → cắt taxonomy/detail thay vì biến narration thành lecture.
 
 Không thêm glossary section vào narration. Explanation phải nằm tự nhiên tại đúng điểm story cần concept đó.
+
+### Language-specific final checks
+
+- `en`: academic nominalization, dense noun phrase, methodology language;
+- `de`: compound density, Nominalstil, bureaucratic/deep-clause syntax;
+- `fr`: written-academic register, calques, unnecessary Anglicisms;
+- `es`: locale consistency, false friends, English calques;
+- `ko`: Sino-Korean term density, English/acronyms, speech-level consistency;
+- `ja`: kanji density, katakana jargon, `です・ます` vs `だ・である` consistency;
+- `vi`: unnecessary English/code-switching, research-note wording.
+
+### Explanation repetition check
+
+Nếu CORE concept đã được giải thích rõ ở first use, các lần sau chỉ callback ngắn khi cần. Không định nghĩa lại đầy đủ chỉ để chứng minh clarity.
 
 ## Opening preservation check
 
@@ -86,7 +107,10 @@ Final chỉ đạt editorial readiness khi:
 - SUPPORTING terms không làm narration nặng;
 - DISPENSABLE jargon đã được bỏ khi có thể;
 - không có concept quan trọng được dùng trước khi meaning của nó xuất hiện;
-- explanation không làm sai factual meaning.
+- explanation không làm sai factual meaning;
+- term thực tế trong Final đã được kiểm, kể cả term không có trong Research Map;
+- native wording/register tự nhiên và nhất quán với output language;
+- không còn unnecessary foreign borrowing hoặc repeated definition đáng kể.
 
 ## Final format
 
