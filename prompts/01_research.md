@@ -41,9 +41,38 @@ Với mỗi case chỉ ghi:
 
 Chỉ giữ number/quote có khả năng xuất hiện trong narration. Quote phải verify nguyên văn; nếu chưa verify, đánh `UNVERIFIED` và không dùng như quote trong final.
 
-## 6. Important uncertainties
+## 6. Audience Vocabulary / Technical Term Map
 
-Liệt kê 3–8 uncertainty/caveat có thể materially change wording.
+Xác định những thuật ngữ, acronym, tên cơ chế hoặc khái niệm chuyên ngành **có khả năng xuất hiện trong narration và có thể làm khán giả phổ thông bị mất mạch**. Không biến mục này thành glossary của toàn bộ research.
+
+Với mỗi term ghi:
+
+- `Term`
+- `Importance`: `CORE | SUPPORTING | DISPENSABLE`
+- `Plain-language meaning`: ý nghĩa bằng ngôn ngữ người không có nền chuyên ngành có thể hiểu ngay
+- `Best explanation`: cách giải thích ngắn, đúng và dễ nói
+- `Keep label?`: `YES | OPTIONAL | NO`
+- `Risk if simplified`: điều gì dễ bị nói sai nếu giản lược quá mức
+
+Phân loại:
+
+- `CORE`: viewer cần hiểu concept để theo central question/mechanism; nếu giữ tên chuyên ngành, phải giải thích ở first use.
+- `SUPPORTING`: concept có ích nhưng viewer không nhất thiết phải nhớ tên; giải thích rất ngắn hoặc mô tả chức năng.
+- `DISPENSABLE`: tên chuyên ngành không giúp story; ưu tiên bỏ label và dùng plain language.
+
+Jargon doctrine:
+
+- **Meaning first, label second**: cho viewer hiểu concept trước, rồi mới đưa tên nếu tên đáng giữ.
+- **Explain function before taxonomy**: ưu tiên “nó làm gì” trước “nó thuộc loại gì”.
+- Không giữ term chỉ vì source dùng term đó.
+- Không đưa acronym nếu acronym không được dùng lại hoặc không giúp narration.
+- Nếu term có thể thay bằng một cụm đời thường ngắn mà không mất nghĩa quan trọng, ưu tiên plain language.
+- Analogy chỉ dùng khi không làm sai mechanism.
+- Technical accuracy vẫn là boundary: dễ hiểu không có nghĩa được phép nói sai.
+
+## 7. Important uncertainties
+
+Liệt kê 3–8 uncertainty/caveat có thể materially change wording, bao gồm những chỗ mà cách giải thích “dễ hiểu” có nguy cơ làm sai khoa học.
 
 ## Research rules
 
@@ -51,7 +80,9 @@ Liệt kê 3–8 uncertainty/caveat có thể materially change wording.
 - không bịa paper, author, journal, year, DOI, URL, quote, statistic hoặc probability;
 - không chuyển `likely/probably` thành phần trăm;
 - fact không giúp trả central question hoặc chứng minh một bước của transformation thì không cần giữ;
-- Research quyết định **cái gì được phép nói**, không quyết định thứ tự narration.
+- Research quyết định **cái gì được phép nói**, không quyết định thứ tự narration;
+- technical term không mặc định được phép đi vào narration chỉ vì nó có trong source;
+- với term CORE/SUPPORTING, chuẩn bị plain-language explanation đủ chính xác để Draft không phải tự bịa analogy về sau.
 
 ## Readiness
 
@@ -60,4 +91,6 @@ Stage 1 hoàn tất khi:
 - central question có thể trả lời bằng evidence;
 - các causal/chronological step lớn có support;
 - có ít nhất vài concrete cases đủ mạnh để tránh script thành abstract lecture;
-- thesis không dựa vào `UNVERIFIED` claim.
+- thesis không dựa vào `UNVERIFIED` claim;
+- technical concepts có khả năng đi vào narration đã được phân loại `CORE | SUPPORTING | DISPENSABLE`;
+- mỗi CORE term có plain-language explanation không làm sai meaning.
