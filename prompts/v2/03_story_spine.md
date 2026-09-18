@@ -1,6 +1,6 @@
 # Stage 3 — Story Spine
 
-Đọc `00_input.md`, `01_research.md` và `02_hook_lab.md`.
+Đọc `00_input.md`, `01_research.md`, `02_hook_lab.md` và `docs/LANGUAGE_COMPREHENSION.md`.
 
 Chỉ chạy khi:
 
@@ -51,12 +51,13 @@ Không thêm beat chỉ để đạt quota. Một beat có thể dài hơn beat 
 
 ## 4. Audience comprehension planning
 
-Dùng `Audience Vocabulary / Technical Term Map` trong `01_research.md`.
+Dùng `Audience Vocabulary / Technical Term Map` trong `01_research.md` và language profile tương ứng với output language.
 
 Với mỗi technical concept thực sự đi vào Story Spine:
 
 - xác định lần đầu viewer cần hiểu nó;
 - quyết định giữ label hay chỉ giữ plain meaning;
+- xác định native preferred wording và register phù hợp với chính ngôn ngữ đầu ra;
 - nếu giữ label, ghi cách giải thích first-use;
 - không cho một term làm mắt xích trong lập luận **trước khi viewer đã có đủ meaning để hiểu nó**.
 
@@ -107,3 +108,5 @@ Sau đó chạy **cold-reader planning test**:
 - có concept nào được dùng để suy luận trước khi được giải thích không?
 
 Nếu có, sửa Story Spine trước Draft.
+
+Không dùng một chuẩn comprehension chung cho mọi ngôn ngữ: German phải được đọc như spoken German, French như spoken French, Spanish theo locale đã chọn, Korean/Japanese phải giữ speech/register nhất quán.
