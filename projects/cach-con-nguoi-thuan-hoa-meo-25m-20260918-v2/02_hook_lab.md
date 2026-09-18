@@ -141,7 +141,7 @@ Nguyên nhân bất ngờ “con người thay đổi môi trường trước”
 
 ## Selection
 
-- Status: PENDING
-- Selected ID:
-- Selected mechanism:
-- User note:
+- Status: SELECTED
+- Selected ID: H1
+- Selected mechanism: Contradiction
+- User note: User selected H1 — Contradiction.
