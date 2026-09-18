@@ -1,6 +1,6 @@
 # Simple YouTube Documentary Pipeline — v2
 
-Pipeline này giữ triết lý **đơn giản + evidence-grounded**, nhưng thêm một bước Hook Lab có human choice để opening không hội tụ về cùng một skeleton.
+Pipeline này giữ triết lý **đơn giản + evidence-grounded**, nhưng thêm Hook Lab có human choice và một language-aware comprehension layer để narration dễ hiểu theo chính output language.
 
 ## Stage 0 — Input
 
@@ -16,7 +16,7 @@ Prompt: `prompts/01_research.md`
 
 Artifact: `01_research.md`
 
-Research pack gồm central question candidates, timeline/causal background, 10–20 core claims, 5–8 strong cases/objects/studies, useful numbers/quotes, important uncertainties và `Audience Vocabulary / Technical Term Map` cho các term có khả năng đi vào narration.
+Research pack gồm central question candidates, timeline/causal background, 10–20 core claims, 5–8 strong cases/objects/studies, useful numbers/quotes, important uncertainties và `Audience Vocabulary / Technical Term Map` cho các term có khả năng đi vào narration. Map phải có native preferred wording theo profile trong `docs/LANGUAGE_COMPREHENSION.md`.
 
 ### Gate A
 
@@ -90,6 +90,8 @@ Artifact: `04_draft.md`
 
 Technical concept dùng `meaning first, label second`; giải thích function trước taxonomy; CORE term giải thích ở first use; DISPENSABLE jargon ưu tiên bỏ label.
 
+Sau khi Draft được viết, chạy **Draft Term Inventory** trên toàn bộ term thực tế xuất hiện. Term mới không có trong Research map vẫn phải `KEEP | EXPLAIN | REPLACE | REMOVE` theo native-language profile.
+
 Giữ opening mechanism đã chọn; không biến nó thành generic question-answer scaffold chỉ vì dễ viết.
 
 ---
@@ -101,6 +103,8 @@ Prompt: `prompts/v2/05_fact_audit.md`
 Artifact: `05_fact_audit.md`
 
 Audit high-risk claims: number/date/quote, named study/person/institution, first/oldest/only/largest, causal/consensus/current claims, cinematic detail kể như fact, và plain-language explanation/analogy có nguy cơ làm sai technical meaning.
+
+Fact Audit independently extracts Draft Term Inventory rồi audit hai trục: `factual accuracy` và `native comprehensibility`.
 
 Actions: `KEEP | QUALIFY | REWRITE | REMOVE | VERIFY`.
 
@@ -114,7 +118,7 @@ Prompt: `prompts/v2/06_final_edit.md`
 
 Artifact: `06_final_script.md`
 
-Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism, chạy cold-reader jargon pass và đưa final về ±7% target words.
+Áp dụng Fact Audit, cắt repetition/padding, làm prose dễ nói, giữ concrete cases mạnh, giữ selected hook mechanism, chạy **native cold-reader pass** theo output language, kiểm register/locale/repeated explanation và đưa final về ±7% target words.
 
 ---
 
