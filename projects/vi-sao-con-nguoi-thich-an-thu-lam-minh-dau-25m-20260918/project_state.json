@@ -1,7 +1,7 @@
 {
   "project": "vi-sao-con-nguoi-thich-an-thu-lam-minh-dau-25m-20260918",
   "pipeline_version": "simple_v2",
-  "current_stage": "story_spine",
+  "current_stage": "draft",
   "language": "Tiếng Việt",
   "duration_minutes": 25,
   "target_wpm": 152,
@@ -28,7 +28,8 @@
     "input: COMPLETE",
     "research: PASS",
     "hook_lab: COMPLETE",
-    "hook_selection: H1 Contradiction SELECTED"
+    "hook_selection: H1 Contradiction SELECTED",
+    "story_spine: PASS"
   ],
-  "updated_at": "2026-09-18T13:55:00+07:00"
+  "updated_at": "2026-09-18T14:03:00+07:00"
 }
