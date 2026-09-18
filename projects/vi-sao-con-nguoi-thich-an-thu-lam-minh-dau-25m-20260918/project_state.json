@@ -1,7 +1,7 @@
 {
   "project": "vi-sao-con-nguoi-thich-an-thu-lam-minh-dau-25m-20260918",
   "pipeline_version": "simple_v2",
-  "current_stage": "final_edit",
+  "current_stage": "complete",
   "language": "Tiếng Việt",
   "duration_minutes": 25,
   "target_wpm": 152,
@@ -10,10 +10,10 @@
   "selected_hook": "H1",
   "selected_hook_mechanism": "Contradiction",
   "draft_words": 3879,
-  "final_words": 0,
-  "estimated_duration_minutes": 0,
+  "final_words": 3859,
+  "estimated_duration_minutes": 25.39,
   "fact_audit": "PASS",
-  "timing_gate": "PENDING",
+  "timing_gate": "PASS",
   "blocked_claims": [],
   "important_uncertainties": [
     "No single mechanism fully explains liking for painful oral sensations.",
@@ -29,7 +29,9 @@
     "hook_selection: H1 Contradiction SELECTED",
     "story_spine: PASS",
     "draft: COMPLETE (3879 words)",
-    "fact_audit: PASS"
+    "fact_audit: PASS",
+    "final_edit: COMPLETE (3859 words)",
+    "timing_gate: PASS"
   ],
-  "updated_at": "2026-09-18T14:20:00+07:00"
+  "updated_at": "2026-09-18T14:27:00+07:00"
 }
