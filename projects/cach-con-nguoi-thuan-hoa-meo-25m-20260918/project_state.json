@@ -10,8 +10,8 @@
   "selected_hook": "H1",
   "selected_hook_mechanism": "Contradiction",
   "draft_words": 3633,
-  "final_words": 3677,
-  "estimated_duration_minutes": 24.19,
+  "final_words": 3668,
+  "estimated_duration_minutes": 24.13,
   "fact_audit": "PASS",
   "timing_gate": "PASS",
   "blocked_claims": [],
@@ -31,7 +31,7 @@
     "story_spine: PASS",
     "draft: COMPLETE (3633 words)",
     "fact_audit: PASS",
-    "final_edit: COMPLETE (3677 words)",
+    "final_edit: COMPLETE (3668 words)",
     "timing_gate: PASS"
   ],
   "updated_at": "2026-09-18T14:19:00+07:00"
