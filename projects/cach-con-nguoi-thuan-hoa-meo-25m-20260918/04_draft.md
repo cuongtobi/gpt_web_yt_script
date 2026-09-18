@@ -92,6 +92,14 @@ Bức tranh cho thấy ít nhất hai lớp lớn.
 
 Những dòng mèo liên quan tới Tây Nam Á xuất hiện sớm và lan cùng với các cộng đồng Neolithic. Về sau, những dòng liên quan tới Ai Cập tăng lên mạnh và xuất hiện rộng hơn trong thế giới cổ, đặc biệt vào các thời kỳ mạng lưới giao thương trên bộ và trên biển phát triển.
 
+Điều này không làm vai trò của Ai Cập nhỏ đi.
+
+Ở Ai Cập tiền triều đại, khảo cổ học đã tìm thấy những con mèo trong bối cảnh cho thấy con người ít nhất đã kiểm soát hoặc chăm sóc một số cá thể. Một số xương mèo có dấu vết chấn thương đã lành, gợi ý rằng chúng sống đủ lâu sau khi bị thương để được nuôi dưỡng hoặc bảo vệ. Về sau, trong văn hóa Ai Cập, mèo xuất hiện ngày càng rõ trong nghệ thuật, nghi lễ và đời sống con người.
+
+Nhưng có một khác biệt quan trọng giữa “Ai Cập làm quan hệ người–mèo sâu hơn và lan rộng hơn” với “Ai Cập là nơi duy nhất tạo ra mèo nhà”.
+
+Bằng chứng Cyprus đã có trước đó hàng nghìn năm. Genetics lại nối mèo nhà với quần thể mèo rừng rộng hơn ở Tây Á và Bắc Phi. Ancient DNA cho thấy ancestry từ Ai Cập thực sự lan mạnh về sau. Vì vậy, một câu chuyện chính xác hơn là: giai đoạn đầu có gốc sâu ở Tây Nam Á, rồi Ai Cập trở thành một trung tâm cực kỳ quan trọng của sự gắn bó, nhân rộng và phát tán mèo trong thế giới cổ.
+
 Điều này không có nghĩa mèo đã được “thuần hóa hai lần” theo một công thức sạch sẽ.
 
 Nó có nghĩa câu chuyện không phải một chấm trên bản đồ rồi một mũi tên duy nhất tỏa ra.
@@ -111,6 +119,18 @@ Một con mèo săn chuột tốt quanh kho lương, khu dân cư hay nơi cất
 Ta nên tránh biến điều này thành một câu chuyện quá đẹp kiểu “mọi con tàu cổ đều có mèo để săn chuột”. Bằng chứng không cho phép khẳng định điều đó cho mọi tuyến, mọi tàu và mọi thời kỳ.
 
 Nhưng pattern lớn thì khá rõ: sự phân bố của mèo ngày càng gắn với chính mạng lưới di chuyển của con người.
+
+Và đây là lý do ta phải cẩn thận với từ “thuần hóa”.
+
+Nếu chỉ thấy một con mèo ăn chuột quanh làng, ta mới biết nó đang khai thác môi trường của con người. Nếu thấy con người chủ động mang mèo tới một hòn đảo, ta biết quan hệ đã sâu hơn. Nếu qua nhiều thế hệ những quần thể sống gần người khác dần mèo rừng ở cách phản ứng với con người, phân bố địa lý và cấu trúc di truyền, ta bắt đầu nói tới domestication ở cấp population.
+
+Không có một đường kẻ duy nhất mà hôm qua là mèo rừng, hôm nay là mèo nhà.
+
+Đây là một gradient.
+
+Một cá thể có thể rất quen người nhưng vẫn thuộc một population hoang dã. Ngược lại, một con mèo nhà sinh ra từ quần thể đã sống với con người hàng nghìn năm vẫn có thể né người, săn giỏi và sống khá độc lập.
+
+Điều đó giải thích tại sao archaeology đôi khi cho ta bằng chứng về quan hệ gần gũi trước khi genetics hay hình thái cơ thể cho thấy một “domestic form” rõ ràng. Với mèo, relationship thay đổi trước khi ngoại hình bị biến đổi mạnh.
 
 Và đây là một bước chuyển rất quan trọng.
 
