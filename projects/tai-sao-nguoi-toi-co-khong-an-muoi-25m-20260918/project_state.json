@@ -56,7 +56,15 @@
       "stage": "final_edit",
       "status": "PASS",
       "words": 3568
+    },
+    {
+      "stage": "checker",
+      "status": "PASS",
+      "final_words": 3568,
+      "target_words": 3800,
+      "delta_percent": 6.11,
+      "warnings": 0
     }
   ],
-  "updated_at": "2026-09-18T19:22:00+07:00"
+  "updated_at": "2026-09-18T19:26:00+07:00"
 }
