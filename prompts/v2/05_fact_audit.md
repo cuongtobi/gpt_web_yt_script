@@ -1,6 +1,6 @@
 # Stage 5 — Fact Audit
 
-Đọc `01_research.md`, `02_hook_lab.md` và `04_draft.md`.
+Đọc `00_input.md`, `01_research.md`, `02_hook_lab.md`, `04_draft.md` và `docs/LANGUAGE_COMPREHENSION.md`. Chọn language profile theo output language trước khi audit.
 
 Audit factual risk của cả opening lẫn body. Mục tiêu là sửa factual problems, **không redesign story nếu không cần**.
 
@@ -21,9 +21,44 @@ Audit factual risk của cả opening lẫn body. Mục tiêu là sửa factual 
 
 Với high-risk claim, quay lại original/primary source khi có thể. Không chỉ tin research summary nếu claim quá quan trọng.
 
-## Comprehension accuracy audit
+## Draft Term Inventory — bắt buộc
 
-Dùng `Audience Vocabulary / Technical Term Map` trong Research để kiểm tra các term xuất hiện trong Draft.
+**Không bắt đầu từ Research map rồi chỉ kiểm những term đã biết.** Trước tiên extract tất cả technical/academic/foreign/unfamiliar terms **thực sự xuất hiện trong Draft**, kể cả term Draft tự sinh sau Research.
+
+Tạo inventory với:
+
+- `Term actually used`
+- `In Research Map?`: `YES | NO`
+- `Audience risk`: `LOW | MEDIUM | HIGH`
+- `Native/spoken naturalness`: `NATURAL | BORDERLINE | UNNATURAL`
+- `Action`: `KEEP | EXPLAIN | REPLACE | REMOVE`
+- `Replacement / first-use explanation`
+
+Một term mới `In Research Map = NO` không được miễn audit.
+
+## Language Comprehension Audit
+
+Dùng `Audience Vocabulary / Technical Term Map` trong Research **sau khi** đã extract Draft Term Inventory. Áp dụng profile trong `docs/LANGUAGE_COMPREHENSION.md`.
+
+Với mỗi risky wording, audit hai trục độc lập:
+
+1. **Factual accuracy** — explanation có giữ đúng evidence/mechanism không?
+2. **Native comprehensibility** — một general native viewer có hiểu tự nhiên khi nghe không?
+
+Một câu có thể factually correct và grammatically correct nhưng vẫn phải `REWRITE` vì nghe quá academic, quá foreign, quá dense hoặc không tự nhiên với output language.
+
+Kiểm thêm:
+
+- unnecessary foreign borrowing/code-switching;
+- English calque/literal translation;
+- German compound/Nominalstil risk;
+- French academic/Anglicism risk;
+- Spanish locale/false-friend risk;
+- Korean speech-level và Sino-Korean density;
+- Japanese register, kanji density và katakana jargon;
+- repeated explanation của CORE concept đã được giải thích rõ trước đó.
+
+## Comprehension accuracy audit
 
 Mỗi explanation phải trả lời:
 
@@ -61,6 +96,8 @@ Mỗi claim cần một action:
 
 FAIL nếu có fabricated source/quote/number, unsupported probability, theory/interpretation nói như settled fact, current claim quan trọng chưa kiểm tra, exact historical/sensory detail không support, hoặc plain-language explanation làm thay đổi materially scientific/historical meaning.
 
+Comprehension problems thường là `REWRITE/REMOVE` requirement chứ không tự động biến factual verdict thành FAIL; nhưng Fact Audit không được ghi PASS nếu Required changes cho term HIGH-risk/native-unnatural vẫn chưa có final wording xử lý.
+
 ## Output
 
 Lưu `05_fact_audit.md`:
@@ -75,6 +112,14 @@ Lưu `05_fact_audit.md`:
 
 ## Required changes
 ...
+
+## Draft Term Inventory
+| Term actually used | In Research Map? | Audience risk | Native/spoken naturalness | Action | Replacement / first-use explanation |
+|---|---|---|---|---|---|
+
+## Language comprehension audit
+| Wording / term | Factual accuracy | Native comprehension risk | Register / language issue | Action | Final native wording |
+|---|---|---|---|---|---|
 
 ## Technical explanation audit
 | Term / explanation | Accuracy risk | Evidence/source | Action | Final plain wording |
