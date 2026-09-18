@@ -130,17 +130,31 @@ hãy để fact tạo chuyển động:
 
 Consequence tự mở đoạn tiếp theo.
 
-## 10. Preserve the selected hook
+## 10. Technical concepts should arrive as meaning, not jargon
+
+Nếu viewer cần hiểu một concept chuyên ngành, ưu tiên cho họ mental model trước khi yêu cầu họ nhớ label.
+
+Mặc định:
+
+`meaning/function → label nếu cần → consequence`
+
+CORE term được giải thích ở first use. SUPPORTING term chỉ cần một cụm/câu ngắn. DISPENSABLE jargon nên biến mất nếu plain language giữ được meaning.
+
+Không dùng acronym, taxonomy hoặc tên đầy đủ chỉ để narration nghe “khoa học” hơn. Không thêm glossary riêng; explanation phải nằm đúng nơi story cần concept đó.
+
+Simplification không được làm sai mechanism. Một analogy đẹp nhưng tạo hiểu lầm phải bỏ.
+
+## 11. Preserve the selected hook
 
 Sau khi user chọn Hook Lab candidate, Story Spine/Draft/Final được quyền polish để dễ nói, nhưng không được âm thầm đổi sang mechanism khác hoặc genericize thành `question → explicit answer`.
 
 Nếu Fact Audit buộc phải bỏ factual premise của hook, quay lại Hook Lab/selection thay vì lén thay toàn bộ opening.
 
-## 11. Direct ending
+## 12. Direct ending
 
 Cuối video phải trả central question rõ ràng. Sau đó có thể synthesis, zoom out hoặc callback opening nếu tự nhiên. Không thêm research branch mới ở conclusion.
 
-## 12. Anti-AI without overcorrecting
+## 13. Anti-AI without overcorrecting
 
 Dấu hiệu cần đọc lại:
 
@@ -150,11 +164,14 @@ Dấu hiệu cần đọc lại:
 - mọi paragraph có cùng độ dài;
 - mọi section có cliffhanger;
 - one-liner quá dày;
-- narrator liên tục tự thông báo cấu trúc.
+- narrator liên tục tự thông báo cấu trúc;
+- jargon xuất hiện trước meaning;
+- nhiều acronym mới dồn trong một đoạn;
+- định nghĩa textbook dài hơn giá trị nó mang lại cho story.
 
 Anti-template là editorial judgment. **Naturalness > artificial uniqueness.**
 
-## 13. Factual tone
+## 14. Factual tone
 
 Cinematic presentation không cho phép cinematic invention. Giữ uncertainty đúng mức và không nâng plausible mechanism thành direct cause.
 
