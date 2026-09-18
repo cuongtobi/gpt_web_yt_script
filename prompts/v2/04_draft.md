@@ -1,6 +1,6 @@
 # Stage 4 — Full Draft
 
-Đọc `00_input.md`, `01_research.md`, `02_hook_lab.md` và `03_story_spine.md`.
+Đọc `00_input.md`, `01_research.md`, `02_hook_lab.md`, `03_story_spine.md` và `docs/LANGUAGE_COMPREHENSION.md`. Dùng profile tương ứng với output language.
 
 Chỉ chạy khi Hook Lab selection = SELECTED.
 
@@ -42,7 +42,9 @@ Nếu opening cần một câu bridge, ưu tiên fact, evidence, mechanism, cont
 
 ## Jargon Control — Audience Comprehension
 
-Dùng `Audience Vocabulary / Technical Term Map` từ Research và comprehension plan trong Story Spine.
+Dùng `Audience Vocabulary / Technical Term Map` từ Research, comprehension plan trong Story Spine và native-language profile trong `docs/LANGUAGE_COMPREHENSION.md`.
+
+Không giả định term khó chỉ là từ đã xuất hiện trong Research. Draft có thể tự sinh jargon mới, foreign borrowing, academic phrase hoặc label không có trong map; các term đó vẫn phải bị review.
 
 ### Meaning first, label second
 
@@ -81,6 +83,36 @@ Nếu technical label có thể bỏ mà không làm mất insight, bỏ label. 
 Analogy được phép để làm concept cụ thể, nhưng không được biến correlation thành causation, làm một mechanism đa bước thành “một nút” duy nhất, hoặc tạo một equivalence mà evidence không support.
 
 Nếu analogy dễ nhớ nhưng sai, bỏ analogy.
+
+### Native-language rule
+
+Đánh giá wording theo chính output language:
+
+- English: tránh academic nominalization/dense noun phrase khi spoken wording rõ hơn;
+- German: kiểm long compounds, Nominalstil và clause quá nặng;
+- French: kiểm academic register, English calques và Anglicisms;
+- Spanish: giữ locale, tránh false-friend/calque và literal English syntax;
+- Korean: kiểm Sino-Korean density, English/acronym overload và speech-level consistency;
+- Japanese: kiểm kanji density, katakana jargon và `です・ます` / `だ・である` consistency;
+- Vietnamese: kiểm code-switching English và research-note wording không cần thiết.
+
+Không dịch mechanical từ một ngôn ngữ chuẩn sang ngôn ngữ đích. Viết theo spoken conventions của ngôn ngữ đích.
+
+### Mandatory post-draft Term Inventory
+
+Sau khi viết xong draft, trước khi lưu, quét **toàn bộ term thực sự xuất hiện trong narration** có thể làm general viewer khó hiểu, kể cả term không có trong Research map.
+
+Với mỗi term, tự kiểm:
+
+- có trong Research map không?
+- general native viewer có hiểu khi nghe lần đầu không?
+- label có cần thiết không?
+- wording có tự nhiên trong spoken output language không?
+- đã được explain trước hoặc ngay first use chưa?
+
+Action: `KEEP | EXPLAIN | REPLACE | REMOVE`.
+
+Resolve các lỗi rõ ràng trước khi lưu Draft. **Không append Term Inventory vào voice-over**; Fact Audit sẽ independently extract lại inventory để kiểm chứng.
 
 ## Factual boundary
 
