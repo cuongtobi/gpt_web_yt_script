@@ -40,17 +40,41 @@ What happened / what do we learn?
 Why does it matter to the central question?
 What does it naturally lead to next?
 Evidence / cases used:
+Technical concepts introduced:
+How will a general viewer understand them?
+Can the technical label be removed?
 ```
 
 Ưu tiên causal, chronological hoặc mechanistic chain tùy topic. Không ép một sequence duy nhất cho mọi documentary.
 
 Không thêm beat chỉ để đạt quota. Một beat có thể dài hơn beat khác.
 
-## 4. Evidence placement
+## 4. Audience comprehension planning
+
+Dùng `Audience Vocabulary / Technical Term Map` trong `01_research.md`.
+
+Với mỗi technical concept thực sự đi vào Story Spine:
+
+- xác định lần đầu viewer cần hiểu nó;
+- quyết định giữ label hay chỉ giữ plain meaning;
+- nếu giữ label, ghi cách giải thích first-use;
+- không cho một term làm mắt xích trong lập luận **trước khi viewer đã có đủ meaning để hiểu nó**.
+
+Mặc định ưu tiên: `plain meaning/function → technical label nếu cần → mechanism/consequence`.
+
+Explanation budget:
+
+- `CORE`: dành đủ 1–3 câu khi first use nếu concept phức tạp;
+- `SUPPORTING`: thường chỉ cần một appositive/câu ngắn;
+- `DISPENSABLE`: bỏ technical label, dùng plain language.
+
+Không giải thích lại đầy đủ mỗi lần term xuất hiện.
+
+## 5. Evidence placement
 
 Đặt 5–8 case/object/study mạnh nhất vào đúng chỗ chúng chứng minh bước đang kể. Không biến script thành literature review.
 
-## 5. Opening bridge test
+## 6. Opening bridge test
 
 Đọc selected hook rồi Beat 1–2 liên tục.
 
@@ -59,9 +83,10 @@ PASS khi:
 - hook tạo lực kéo mà Beat 1 có thể tiếp nhận ngay;
 - không cần một câu meta kiểu `Câu trả lời là...` để nối;
 - không có cảm giác hook là trailer rời khỏi story;
-- không reveal toàn bộ thesis quá sớm nếu mechanism được chọn dựa trên mystery/contradiction.
+- không reveal toàn bộ thesis quá sớm nếu mechanism được chọn dựa trên mystery/contradiction;
+- nếu hook chứa technical concept, viewer được cung cấp meaning đủ sớm để không bị rơi khỏi câu chuyện.
 
-## 6. Ending
+## 7. Ending
 
 Ending gồm:
 
@@ -69,8 +94,16 @@ Ending gồm:
 - synthesis: chuỗi thay đổi/mechanism nào tạo kết quả;
 - callback selected hook nếu tự nhiên.
 
-Không thêm fact mới ở ending.
+Không thêm fact mới ở ending. Không đưa thuật ngữ mới ở ending nếu term đó chưa được chuẩn bị trước.
 
 ## Test trước khi lưu
 
 Nếu 3–4 beats có thể đổi chỗ tự do mà logic không đổi, spine còn quá modular. Sắp lại để mỗi đoạn tạo lý do tự nhiên cho đoạn tiếp theo.
+
+Sau đó chạy **cold-reader planning test**:
+
+- một người không học ngành này có hiểu Beat 1 → Beat cuối mà không cần Google term nào không?
+- term nào chỉ tồn tại vì researcher biết nó, chứ viewer không cần?
+- có concept nào được dùng để suy luận trước khi được giải thích không?
+
+Nếu có, sửa Story Spine trước Draft.
