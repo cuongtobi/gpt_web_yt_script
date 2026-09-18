@@ -16,7 +16,7 @@ Optional: title, angle, audience, tone, must_include, must_avoid, sources, hook_
 
 Bạn đang làm việc trong repo `cuongtobi/gpt_web_yt_script`.
 
-1. Đọc `AGENTS.md`, `pipeline/PIPELINE.md`, `pipeline/QUALITY_GATES.md` và `docs/STYLE_DNA.md`.
+1. Đọc `AGENTS.md`, `pipeline/PIPELINE.md`, `pipeline/QUALITY_GATES.md`, `docs/STYLE_DNA.md` và `docs/LANGUAGE_COMPREHENSION.md`. Chọn profile tương ứng với output language.
 2. Tạo slug và khởi tạo `projects/<slug>/` từ `templates/project_v2/`.
 3. Điền `00_input.md`, target WPM và target words.
 4. Chạy Stage 1 Research → `01_research.md`.
@@ -26,10 +26,10 @@ Bạn đang làm việc trong repo `cuongtobi/gpt_web_yt_script`.
    - cập nhật Selection trong `02_hook_lab.md`;
    - đặt `hook_selection = SELECTED` cùng `selected_hook` và `selected_hook_mechanism` trong state;
    - chạy Stage 3 Story Spine → `03_story_spine.md`;
-   - Stage 4 Full Draft → `04_draft.md`;
-   - Stage 5 Fact Audit → `05_fact_audit.md`;
+   - Stage 4 Full Draft → `04_draft.md`; sau khi draft xong, scan lại mọi technical/academic/foreign term thực tế phát sinh;
+   - Stage 5 Fact Audit → `05_fact_audit.md`, bắt buộc có Draft Term Inventory + Language comprehension audit;
    - nếu audit FAIL, sửa Research/Draft rồi audit lại;
-   - Stage 6 Final Edit → `06_final_script.md`.
+   - Stage 6 Final Edit → `06_final_script.md`, chạy native cold-reader pass theo output language.
 8. Cập nhật `project_state.json` sau mỗi stage.
 9. Cuối cùng chạy `python scripts/check_project.py projects/<slug>` và chỉ coi project hoàn tất khi PASS.
 
@@ -74,17 +74,18 @@ Nếu user chưa chọn, **không chạy Story Spine trở đi**, dù user ban �
 
 Sau selection, Story Spine ưu tiên một causal/chronological/mechanistic chain rõ. Không ép một north-star flow duy nhất cho mọi topic.
 
-Ưu tiên ba phẩm chất:
+Ưu tiên bốn phẩm chất:
 
 - **spoken** — nghe như narration, không như essay;
 - **concrete** — thường xuyên có người/vật/địa điểm/action/mechanism cụ thể;
-- **causal** — đoạn sau xuất hiện vì đoạn trước tạo consequence hoặc câu hỏi thật.
+- **causal** — đoạn sau xuất hiện vì đoạn trước tạo consequence hoặc câu hỏi thật;
+- **native-comprehensible** — nghe tự nhiên với general native viewer của output language, không phải bản dịch của một narration style khác.
 
 Selected hook là opening direction. Có thể polish exact wording nhưng không đổi mechanism chỉ vì một skeleton khác dễ viết hơn.
 
 ## Factual doctrine
 
-Research là factual boundary.
+Research là factual boundary. `docs/LANGUAGE_COMPREHENSION.md` là comprehension/register boundary cho supported languages.
 
 Không bịa source, quote, statistic, probability, exact historical action, sensory detail hoặc causal certainty. High-risk claims phải được kiểm tra lại ở Fact Audit, ưu tiên original/primary source.
 
