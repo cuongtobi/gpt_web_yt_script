@@ -145,7 +145,7 @@ Unexpected cause “agriculture first” dẫn story từ domestication của m�
 
 ## Selection
 
-- Status: PENDING
-- Selected ID:
-- Selected mechanism:
-- User note:
+- Status: SELECTED
+- Selected ID: H1
+- Selected mechanism: Contradiction
+- User note: User selected H1 — Contradiction.
