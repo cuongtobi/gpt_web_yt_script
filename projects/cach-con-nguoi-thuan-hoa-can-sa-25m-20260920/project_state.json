@@ -1,7 +1,7 @@
 {
   "project": "cach-con-nguoi-thuan-hoa-can-sa-25m-20260920",
   "pipeline_version": "simple_v2",
-  "current_stage": "final_validation",
+  "current_stage": "complete",
   "language": "vi",
   "duration_minutes": 25,
   "target_wpm": 152,
@@ -57,6 +57,12 @@
       "stage": "final_edit",
       "status": "PASS",
       "words": 3766
+    },
+    {
+      "stage": "final_validation",
+      "status": "PASS",
+      "checker": "python scripts/check_project.py",
+      "final_words": 3766
     }
   ],
   "updated_at": "2026-09-20T11:14:00+07:00"
