@@ -134,7 +134,7 @@ Cần sa hiện đại không chỉ bị thay đổi bởi những người mu�
 
 ## Selection
 
-- Status: PENDING
-- Selected ID:
-- Selected mechanism:
-- User note:
+- Status: SELECTED
+- Selected ID: H1
+- Selected mechanism: Contradiction
+- User note: User explicitly selected "H1 — Contradiction".
